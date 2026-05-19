@@ -1,0 +1,12 @@
+{
+  "incident_id": "90247-OMNIBUS-SUBSTRATE-STABILIZATION",
+  "assessment_date": "2026-05-19",
+  "control": "OMNIBUS-MASTER-DISCLOSURE-v281.6",
+  "observed_rulesets": [
+    {
+      "provider": "Akamai EdgeSuite WAF",
+      "layer": 7,
+      "signature_matches": ["SQLi", "RCE"]
+    }
+  ]
+}

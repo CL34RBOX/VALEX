@@ -1,0 +1,20 @@
+name: Substrate Integrity Validation
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  verify-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code Substrate
+      uses: actions/checkout@v4
+    - name: Initialize Node.js Environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: Validate Core Script Syntax
+      run: |
+        node -c src/core/omnibus_integrated_system.js
+        echo "Substrate Syntax Verification Complete: No Runtime Compilation Faults Detected."
