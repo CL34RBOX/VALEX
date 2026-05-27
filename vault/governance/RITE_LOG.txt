@@ -1,0 +1,10 @@
+2026-05-27T11:51:49Z | Action: Sealed archive and pushed Time-Zero tag
+Archive: OMNIBUS_MASTER_TOTALITY_v3.0_FINAL.tar.gz
+SHA256: 10c6f8e40635d53890bd307a70640608852a701f610d14c5e065324d6a240bb8
+Signing key: 58FF06F2B9D347A293832E75A98C330A3E40F031
+Signer UID: Enrique B Gonzalez <ps.ebgonzalez@outlook.com>
+Public key path: vault/keys/OMNIBUS_SIGNING_PUBKEY_58FF06F2.asc
+Revocation cert: vault/keys/revocation-58FF06F2B9D347A293832E75A98C330A3E40F031.rev
+Git tag: time-zero-sealed-20260527
+Pushed by: quiqui74 (SSH)
+Notes: Private key exported to secure HSM and removed from host.
