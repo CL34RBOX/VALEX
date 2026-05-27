@@ -123,3 +123,28 @@
     ]
   }
 }
+{
+  "archive": {
+    "filename": "OMNIBUS_MASTER_TOTALITY_v3.0_FINAL.tar.gz",
+    "sha256": "<computed-sha256>",
+    "signed": true,
+    "signature_files": [
+      "OMNIBUS_MASTER_TOTALITY_v3.0_FINAL.tar.gz.sig",
+      "OMNIBUS_MASTER_TOTALITY_v3.0_FINAL.tar.gz.sha256.asc"
+    ],
+    "signing_key": {
+      "fingerprint": "58FF06F2B9D347A293832E75A98C330A3E40F031",
+      "uid": "Enrique B Gonzalez (OMNIBUS signing key) <ps.ebgonzalez@outlook.com>",
+      "pubkey_path": "vault/keys/OMNIBUS_SIGNING_PUBKEY_58FF06F2.asc"
+    },
+    "revocation_certificates": [
+      "vault/keys/revocation-58FF06F2B9D347A293832E75A98C330A3E40F031.rev"
+    ],
+    "sealed_at": "2026-05-27T10:52:02Z"
+  }
+}
+"signing_key": {
+  "fingerprint": "58FF06F2B9D347A293832E75A98C330A3E40F031",
+  "uid": "Enrique B Gonzalez (OMNIBUS signing key) <ps.ebgonzalez@outlook.com>",
+  "pubkey_path": "vault/keys/OMNIBUS_SIGNING_PUBKEY_58FF06F2.asc"
+}
