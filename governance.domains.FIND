@@ -1,0 +1,82 @@
+{
+  "artifact_id": "OMNI-ID-FIND-AUDIT-REC-01",
+  "domain_layer_object": "Interface:FIND:AUDIT-RECORDINGS",
+  "original_source": "OneDrive",
+  "original_path": "/Attachments/APPLERecording 2026-04-14 015524.mp4",
+  "file_type": "video/mp4",
+  "sha256": "472251a2d59074d28e7c10b0270a256950795c64368a52934898144212953245",
+  "discovered_by": "Enrique",
+  "discovered_at": "2026-05-27T03:25:00Z",
+  "ingested_at": "2026-05-27T03:42:10Z",
+  "provenance_note": "Cloud-hosted recording ingested via OneDrive discovery sweep."
+}"AUDIT-RECORDINGS":
+ {
+  "id": "OMNI-ID-FIND-AUDIT-RECORDINGS",
+  "path": "vault/Interface/FIND/AUDIT-RECORDINGS",
+  "source": "OneDrive",
+  "type": "internet-shortcut",
+  "target": "APPLERecording 2026-04-14 015524.mp4",
+  "note": "OneDrive .url pointer to external recording stored under /Attachments/. Integrated as interface-level forensic artifact."
+}
+{
+  "Interface": {
+    "artifacts": {
+      "FIND": {
+        "AUDIT-RECORDINGS": {
+          "id": "OMNI-ID-FIND-AUDIT-RECORDINGS",
+          "path": "vault/Interface/FIND/AUDIT-RECORDINGS",
+          "items_count": 0,
+          "note": "Populated by ingestion workflow; contains OneDrive .url pointers and media targets."
+        },
+        "SCREENSHOTS": {
+          "id": "OMNI-ID-FIND-SCREENSHOTS",
+          "path": "vault/Interface/FIND/SCREENSHOTS",
+          "items_count": 0
+        }
+      }
+    }
+  },
+  "Telemetry": {
+    "artifacts": {
+      "FIND": {
+        "ONE_DRIVE_MANIFEST": {
+          "id": "OMNI-ID-FIND-ONEDRIVE-MANIFEST",
+          "path": "vault/Telemetry/FIND/ONE_DRIVE_MANIFEST.json",
+          "generated_at": "2026-05-27T03:25:00Z",
+          "note": "Index of OneDrive Attachments folder contents captured during ingestion"
+        }
+      }
+    }
+  }
+}
+@@
+   "Telemetry": {
+     "artifacts": {
+       "FIND": {
+         "ONE_DRIVE_MANIFEST": {
+           "id": "OMNI-ID-FIND-ONEDRIVE-MANIFEST",
+           "path": "vault/Telemetry/FIND/ONE_DRIVE_MANIFEST.json",
+-          "generated_at": "2026-05-27T03:25:00Z",
++          "generated_at": "2026-05-27T03:25:00Z",
+           "note": "Index of OneDrive Attachments folder contents captured during ingestion"
+         }
+       }
+     }
+   },
++  "Interface": {
++    "artifacts": {
++      "FIND": {
++        "AUDIT-RECORDINGS": {
++          "id": "OMNI-ID-FIND-AUDIT-RECORDINGS",
++          "path": "vault/Interface/FIND/AUDIT-RECORDINGS",
++          "items_count": 2,
++          "note": "Populated by ingestion workflow; contains OneDrive .url pointers and media targets."
++        },
++        "SCREENSHOTS": {
++          "id": "OMNI-ID-FIND-SCREENSHOTS",
++          "path": "vault/Interface/FIND/SCREENSHOTS",
++          "items_count": 2
++        }
++      }
++    }
++  }
