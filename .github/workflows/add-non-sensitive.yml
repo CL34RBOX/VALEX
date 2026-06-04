@@ -1,0 +1,65 @@
+name: Add non-sensitive files
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Stage non-sensitive files and commit
+        env:
+          BRANCH: add-non-sensitive-files-${{ github.run_id }}
+        run: |
+          git switch -c "$BRANCH"
+
+          echo "=== Dry-run: files that would be staged ==="
+          git ls-files --others --exclude-standard
+
+          git add --all -- \
+            ':(exclude)keyring/**' \
+            ':(exclude)vault/**' \
+            ':(exclude)OMNIBUS_MASTER_TOTALITY_v3.0_FINAL.tar.gz' \
+            ':(exclude)*.pem' \
+            ':(exclude)*.key' \
+            ':(exclude)*.asc' \
+            ':(exclude)*.sig' \
+            ':(exclude)*.tar.gz' \
+            ':(exclude)*.sha256' \
+            ':(exclude)*.sha256.asc' \
+            ':(exclude)*.private' \
+            ':(exclude)COLD_STORAGE/**' \
+            ':(exclude)QUARANTINE_LOCKED/**' || true
+
+          echo "=== Staged files (git status) ==="
+          git status --porcelain
+
+          if git diff --cached --quiet; then
+            echo "No non-sensitive changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(ci): add non-sensitive files (automated)"
+          git push --set-upstream origin "$BRANCH"
+
+      - name: Create PR (optional)
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(ci): add non-sensitive files (automated)"
+          branch: ${{ env.BRANCH }}
+          title: "Add non-sensitive files"
+          body: "Automated: staging and adding non-sensitive files. Please review before merging."
