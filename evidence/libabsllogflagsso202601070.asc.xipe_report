@@ -1,0 +1,26 @@
+XIPE-GLOBAL-REPORT
+Timestamp: 2026-05-25T11:12:31Z
+Base-Artifact: libabsllogflagsso202601070.asc
+
+Core Lineage Files:
+  - LINEAGE: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.lineage
+  - THREAD: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.thread
+
+Scrub & Language:
+  - SCRUBBED: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.scrubbed
+  - SCRUB LOG: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.scrubbed.scrublog
+  - LANG CHECK: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.langcheck
+
+Code Intelligence:
+  - CODE MAP: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.codecheck
+  - CODE RISK: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.coderisk
+  - CODE ANOMALY: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.codeanomaly
+  - CODE BLOCKS: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.codeblocks
+
+Signals:
+  - AUDIO: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.audio
+
+Hash & Integrity:
+  - HASH: /usr/lib/x86_64-linux-gnu/libabsllogflagsso202601070.asc.sha256
+
+Done.
