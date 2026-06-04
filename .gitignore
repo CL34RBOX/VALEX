@@ -1,2 +1,18 @@
-logs/
-*.log
+
+# =============================================================================
+# OMNIBUS KEYRING PROTECTIONS (CAJACL34R PROTOCOL)
+# =============================================================================
+keyring/omnibus_ed25519
+keyring/*_private*
+keyring/*.pem
+keyring/*.private.bak
+
+# OMNIBUS Keyring Protections
+keyring/omnibus_ed25519
+keyring/*_private*
+keyring/*.pem
+
+# OMNIBUS Keyring Protections
+keyring/omnibus_ed25519
+keyring/*_private*
+keyring/*.pem
