@@ -1,0 +1,478 @@
+15:36:28.629 GET
+https://www.irs.gov/?'https://www.irs.gov/ [HTTP/2 200 164ms] 15:25:47.393 GET https://www.irs.gov/pub/css/css_-BFpSz25vWuBsJJC-R_j6Zp5n_TruQwujBKlgOV5fPg.css?delta=0&language=en&theme=pup_irs&include=
+[HTTP/2 200  261ms]
+
+15:36:28.884 GET
+https://www.irs.gov/pub/css/css_-BFpSz25vWuBsJJC-R_j6Zp5n_TruQwujBKlgOV5fPg.css?delta=0&language=en&theme=pup_irs&include=eJx1kGtuxDAIhC9kx0eyiE0TtMRYYO82t282j7ZbbX_BfIwGAaQkmklKXLB0C_Cq44PyhM1Bzk2grOFqhg-V0lyaxbCErL0CD4c6YWQaw9EOycxleRQWyBsvt8gwIqOGi_on9Sf1bcYFHX62J73ST-kqKEwKdbZr8kOGXmofmWzG7GqvMd0wUxONlftE5deB78fv4O6cWEbgaKh3SngY_7DdR7rvQDMaGb0xpZtPoNIN-duxf89Xpe2HFzvSvLV1O3PasdFSGbfScIEaXmWUO6pS3hYbgqY5QqUIvUmSp69h-Ic7W22LCCMYfgHThcvm
+[HTTP/2 200  55ms]
+
+15:36:28.886 GET
+https://www.irs.gov/pub/css/css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css?delta=1&language=en&theme=pup_irs&include=eJx1kGtuxDAIhC9kx0eyiE0TtMRYYO82t282j7ZbbX_BfIwGAaQkmklKXLB0C_Cq44PyhM1Bzk2grOFqhg-V0lyaxbCErL0CD4c6YWQaw9EOycxleRQWyBsvt8gwIqOGi_on9Sf1bcYFHX62J73ST-kqKEwKdbZr8kOGXmofmWzG7GqvMd0wUxONlftE5deB78fv4O6cWEbgaKh3SngY_7DdR7rvQDMaGb0xpZtPoNIN-duxf89Xpe2HFzvSvLV1O3PasdFSGbfScIEaXmWUO6pS3hYbgqY5QqUIvUmSp69h-Ic7W22LCCMYfgHThcvm
+[HTTP/2 200  70ms]
+
+15:36:28.888 GET
+https://www.irs.gov/pub/css/css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css?delta=3&language=en&theme=pup_irs&include=eJx1kGtuxDAIhC9kx0eyiE0TtMRYYO82t282j7ZbbX_BfIwGAaQkmklKXLB0C_Cq44PyhM1Bzk2grOFqhg-V0lyaxbCErL0CD4c6YWQaw9EOycxleRQWyBsvt8gwIqOGi_on9Sf1bcYFHX62J73ST-kqKEwKdbZr8kOGXmofmWzG7GqvMd0wUxONlftE5deB78fv4O6cWEbgaKh3SngY_7DdR7rvQDMaGb0xpZtPoNIN-duxf89Xpe2HFzvSvLV1O3PasdFSGbfScIEaXmWUO6pS3hYbgqY5QqUIvUmSp69h-Ic7W22LCCMYfgHThcvm
+[HTTP/2 200  74ms]
+
+15:36:28.890 GET
+https://www.irs.gov/pub/js/js_KDJrWUHMfAKem9afv9zeDu0oqcEh3pcAadDZ4AT7VL4.js?scope=header&delta=0&language=en&theme=pup_irs&include=eJx1kWGSwyAIhS9k4pEcVGrYGnEQu-3tN2k3abLT_SO876GCQggskbi4GUtvFs7afVNMqAZiVIbysFsyXoSLGs-sTQWq3TNXBR0VOpqVK99QDkSZs1I1YeKGxb7C6PGykSi9Qh5fykRQyPBAsR4nuBFLM3jXTOW6Vf5Kk5hTRqeQbFqWv3qEL7if4Wxqr26ZHFsjT5l0nXOm4tYuPcjT99DQpswe8tBIcbggaBdsTzdcMZKyuJp7onJ4yM_2J_isJGn7LUGo6hvPoGEaJqQ06RtigmH9qwMp_dzcSpc4TDxjhYRDAOHeMO9uQ5Dl7H3XSzuo5KArB55rRkX7D_8Bj-nlkA
+[HTTP/2 200  71ms]
+
+15:36:28.892 GET
+https://www.irs.gov/modules/contrib/google_tag/js/gtag.js?teo9pd
+[HTTP/2 200  70ms]
+
+15:36:28.893 GET
+https://www.irs.gov/modules/contrib/google_tag/js/gtm.js?teo9pd
+[HTTP/2 200  70ms]
+
+15:36:28.895 GET
+https://www.irs.gov/static_assets/js/libs/jquery.min.js
+[HTTP/2 200  78ms]
+
+15:36:28.897 GET
+https://www.irs.gov/pub/js/js_w8fM3HiCn-P-n7TMi9seyjEJrCmAhX-z8-63A6hCyVU.js?scope=footer&delta=0&language=en&theme=pup_irs&include=eJx1kWGSwyAIhS9k4pEcVGrYGnEQu-3tN2k3abLT_SO876GCQggskbi4GUtvFs7afVNMqAZiVIbysFsyXoSLGs-sTQWq3TNXBR0VOpqVK99QDkSZs1I1YeKGxb7C6PGykSi9Qh5fykRQyPBAsR4nuBFLM3jXTOW6Vf5Kk5hTRqeQbFqWv3qEL7if4Wxqr26ZHFsjT5l0nXOm4tYuPcjT99DQpswe8tBIcbggaBdsTzdcMZKyuJp7onJ4yM_2J_isJGn7LUGo6hvPoGEaJqQ06RtigmH9qwMp_dzcSpc4TDxjhYRDAOHeMO9uQ5Dl7H3XSzuo5KArB55rRkX7D_8Bj-nlkA
+[HTTP/2 200  86ms]
+
+15:36:28.898 GET
+https://static.addtoany.com/menu/page.js
+[HTTP/2 200  59ms]
+
+15:36:28.901 GET
+https://www.irs.gov/pub/js/js_m__mkTNo9YqnnYIXj6IIhCklrkJ27ZPEnxrtdIS3ml0.js?scope=footer&delta=2&language=en&theme=pup_irs&include=eJx1kWGSwyAIhS9k4pEcVGrYGnEQu-3tN2k3abLT_SO876GCQggskbi4GUtvFs7afVNMqAZiVIbysFsyXoSLGs-sTQWq3TNXBR0VOpqVK99QDkSZs1I1YeKGxb7C6PGykSi9Qh5fykRQyPBAsR4nuBFLM3jXTOW6Vf5Kk5hTRqeQbFqWv3qEL7if4Wxqr26ZHFsjT5l0nXOm4tYuPcjT99DQpswe8tBIcbggaBdsTzdcMZKyuJp7onJ4yM_2J_isJGn7LUGo6hvPoGEaJqQ06RtigmH9qwMp_dzcSpc4TDxjhYRDAOHeMO9uQ5Dl7H3XSzuo5KArB55rRkX7D_8Bj-nlkA
+[HTTP/2 200  92ms]
+
+15:36:28.902 GET
+https://www.irs.gov/themes/custom/pup_base/images/us_flag_small.png
+[HTTP/2 200  91ms]
+
+15:36:28.903 GET
+https://www.irs.gov/themes/custom/pup_base/images/icon-dot-gov.svg
+[HTTP/2 200  90ms]
+
+15:36:28.904 GET
+https://www.irs.gov/themes/custom/pup_base/images/icon-https.svg
+[HTTP/2 200  89ms]
+
+15:36:28.905 GET
+https://www.irs.gov/themes/custom/pup_base/images/lock.svg
+[HTTP/2 200  88ms]
+
+15:36:28.906 GET
+https://www.irs.gov/themes/custom/pup_base/IRS-Logo.svg
+[HTTP/2 200  87ms]
+
+15:36:28.907 GET
+https://www.irs.gov/pub/homepage-tools-free-file-laptop.png
+[HTTP/2 200  92ms]
+
+15:36:28.907 GET
+https://www.irs.gov/themes/custom/pup_irs/images/logo-print.svg
+[HTTP/2 200  87ms]
+
+15:36:28.908 GET
+https://www.irs.gov/pub/image/OLA-desktop-250-208.png
+[HTTP/2 200  92ms]
+
+15:36:28.909 GET
+https://www.irs.gov/pub/image/1205-Where'sMyRefund_Desktop-250-208.png
+[HTTP/2 200  93ms]
+
+15:36:28.910 GET
+https://www.irs.gov/pub/image/DUT-homepage-tools.jpg
+[HTTP/2 200  89ms]
+
+15:36:28.911 GET
+https://www.irs.gov/pub/image/hp-parents-baby.jpg
+[HTTP/2 200  87ms]
+
+15:36:28.911 GET
+https://www.irs.gov/pub/image/homepage-tools-TAC-locator.png
+[HTTP/2 200  86ms]
+
+15:36:28.912 GET
+https://www.irs.gov/pub/image/hp-small-business-week-image.jpg
+[HTTP/2 200  92ms]
+
+15:36:28.913 GET
+https://www.irs.gov/pub/image/obba-7.jpg
+[HTTP/2 200  102ms]
+
+15:36:28.914 GET
+https://www.irs.gov/pub/image/vita-recruit-hpsize.jpg
+[HTTP/2 200  99ms]
+
+15:36:28.916 GET
+https://www.irs.gov/pub/image/scamhomepage.jpg
+[HTTP/2 200  99ms]
+
+15:36:28.942 Unknown property ‘-moz-border-radius-bottomright’.  Declaration dropped. css_-BFpSz25vWuBsJJC-R_j6Zp5n_TruQwujBKlgOV5fPg.css:30:8171
+15:36:28.942 Unknown property ‘-moz-border-radius-bottomleft’.  Declaration dropped. css_-BFpSz25vWuBsJJC-R_j6Zp5n_TruQwujBKlgOV5fPg.css:30:8232
+15:36:28.958 Error in parsing value for ‘-webkit-text-size-adjust’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:57
+15:36:28.959 Unknown pseudo-class or pseudo-element ‘-moz-focus-inner’.  Ruleset ignored due to bad selector. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:1267
+15:36:28.959 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:2563
+15:36:28.959 Error in parsing value for ‘outline’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:14447
+15:36:28.961 Error in parsing value for ‘outline’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:75369
+15:36:28.961 Unknown pseudo-class or pseudo-element ‘-ms-input-placeholder’.  Ruleset ignored due to bad selector. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:75930
+15:36:28.961 Unknown pseudo-class or pseudo-element ‘-ms-expand’.  Ruleset ignored due to bad selector. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:76029
+15:36:28.961 Error in parsing value for ‘margin-top’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:77990
+15:36:28.961 Error in parsing value for ‘outline’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:86663
+15:36:28.961 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:86969
+15:36:28.962 Expected ‘none’, URL, or filter function but found ‘progid’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:96214
+15:36:28.963 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:141740
+15:36:28.963 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:141910
+15:36:28.963 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:142814
+15:36:28.963 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:142867
+15:36:28.963 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:143840
+15:36:28.963 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:144215
+15:36:28.964 Expected media feature name but found ‘transform-3d’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:147911
+15:36:28.964 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:148831
+15:36:28.964 Expected ‘none’, URL, or filter function but found ‘progid’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:149097
+15:36:28.964 Expected ‘none’, URL, or filter function but found ‘progid’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:149333
+15:36:28.964 Expected ‘none’, URL, or filter function but found ‘alpha(’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:149526
+15:36:28.964 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:156548
+15:36:28.966 Unknown pseudo-class or pseudo-element ‘-ms-expand’.  Ruleset ignored due to bad selector. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:201578
+15:36:28.966 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:201894
+15:36:28.968 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:274873
+15:36:28.968 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:274909
+15:36:28.968 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:280610
+15:36:28.968 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:280646
+15:36:28.968 Unknown property ‘-moz-box-shadow’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:287285
+15:36:28.969 Unknown property ‘-moz-box-shadow’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:294242
+15:36:28.969 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:295280
+15:36:28.969 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:295348
+15:36:28.970 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:330145
+15:36:28.970 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:330172
+15:36:28.970 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:336660
+15:36:28.970 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:336709
+15:36:28.970 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:338795
+15:36:28.970 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:338822
+15:36:28.971 Unknown pseudo-class or pseudo-element ‘-ms-input-placeholder’.  Ruleset ignored due to bad selector. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:370242
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:370297
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:370335
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:370877
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:370915
+15:36:28.971 Unknown pseudo-class or pseudo-element ‘-ms-input-placeholder’.  Ruleset ignored due to bad selector. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:372434
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:372609
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:372647
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:373053
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:373091
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:374347
+15:36:28.971 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:374385
+15:36:28.972 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:378135
+15:36:28.972 Expected media feature name but found ‘-ms-high-contrast’. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:378173
+15:36:28.972 Error in parsing value for ‘padding-left’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:383914
+15:36:28.972 Expected ‘none’, URL, or filter function but found ‘progid’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:385406
+15:36:28.973 Expected ‘none’, URL, or filter function but found ‘progid’.  Error in parsing value for ‘filter’.  Declaration dropped. css_KrI8Zfe1iQpJiHfe5RVnBQWjfoKTSk8rjfLDq-3inA0.css:2:409274
+15:36:28.991 Expected color but found ‘-webkit-focus-ring-color’.  Error in parsing value for ‘outline-color’.  Declaration dropped. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:8073
+15:36:28.991 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:9506
+15:36:28.991 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:9544
+15:36:28.993 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:55567
+15:36:28.993 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:55605
+15:36:28.993 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:60450
+15:36:28.993 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:60488
+15:36:28.994 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:86758
+15:36:28.994 Unknown property ‘-moz-column-gap’.  Declaration dropped. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:86919
+15:36:28.995 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:121112
+15:36:28.995 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:121148
+15:36:28.995 Error in parsing value for ‘align-self’.  Declaration dropped. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:126802
+15:36:28.995 Unknown pseudo-class or pseudo-element ‘-ms-expand’.  Ruleset ignored due to bad selector. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:127098
+15:36:28.995 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:139931
+15:36:28.995 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:139958
+15:36:28.996 Unknown property ‘-moz-column-gap’.  Declaration dropped. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:149300
+15:36:28.996 Unknown pseudo-class or pseudo-element ‘-ms-expand’.  Ruleset ignored due to bad selector. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:172101
+15:36:28.996 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:179449
+15:36:28.996 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:179587
+15:36:28.997 Unknown property ‘-moz-outline’.  Declaration dropped. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:187951
+15:36:28.997 Unknown property ‘-moz-outline’.  Declaration dropped. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:188509
+15:36:28.997 Expected media feature name but found ‘-ms-high-contrast’. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:191560
+15:36:28.997 Unknown pseudo-class or pseudo-element ‘-ms-expand’.  Ruleset ignored due to bad selector. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:198278
+15:36:28.999 Unknown pseudo-class or pseudo-element ‘-ms-expand’.  Ruleset ignored due to bad selector. css_EbWGjClhsStXbsvwOq9iT6yGxHCg86ApUzr4bYwsoHk.css:2:250962
+15:36:29.035 GET
+https://www.irs.gov/pub/css/css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css?delta=2&language=en&theme=pup_irs&include=eJx1kGtuxDAIhC9kx0eyiE0TtMRYYO82t282j7ZbbX_BfIwGAaQkmklKXLB0C_Cq44PyhM1Bzk2grOFqhg-V0lyaxbCErL0CD4c6YWQaw9EOycxleRQWyBsvt8gwIqOGi_on9Sf1bcYFHX62J73ST-kqKEwKdbZr8kOGXmofmWzG7GqvMd0wUxONlftE5deB78fv4O6cWEbgaKh3SngY_7DdR7rvQDMaGb0xpZtPoNIN-duxf89Xpe2HFzvSvLV1O3PasdFSGbfScIEaXmWUO6pS3hYbgqY5QqUIvUmSp69h-Ic7W22LCCMYfgHThcvm
+[HTTP/2 200  34ms]
+
+15:36:29.041 GET
+https://www.irs.gov/themes/custom/pup_base/images/us_flag_small.png
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.042 GET
+https://www.irs.gov/themes/custom/pup_base/images/icon-https.svg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.042 GET
+https://www.irs.gov/themes/custom/pup_base/images/icon-dot-gov.svg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.043 GET
+https://www.irs.gov/themes/custom/pup_base/IRS-Logo.svg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.043 GET
+https://www.irs.gov/themes/custom/pup_base/images/lock.svg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.044 GET
+https://www.irs.gov/themes/custom/pup_irs/images/logo-print.svg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.050 GET
+https://www.irs.gov/pub/image/1205-Where'sMyRefund_Desktop-250-208.png
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.050 GET
+https://www.irs.gov/pub/image/OLA-desktop-250-208.png
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.050 GET
+https://www.irs.gov/pub/homepage-tools-free-file-laptop.png
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.051 GET
+https://www.irs.gov/pub/image/homepage-tools-TAC-locator.png
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.051 GET
+https://www.irs.gov/pub/image/DUT-homepage-tools.jpg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.052 GET
+https://www.googletagmanager.com/gtm.js?id=GTM-KV978ZL
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.052 GET
+https://www.irs.gov/pub/image/scamhomepage.jpg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.052 GET
+https://www.irs.gov/pub/image/vita-recruit-hpsize.jpg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.052 GET
+https://www.irs.gov/pub/image/obba-7.jpg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.052 GET
+https://www.irs.gov/pub/image/hp-small-business-week-image.jpg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.052 GET
+https://www.irs.gov/pub/image/hp-parents-baby.jpg
+[HTTP/1.1 200 OK 0ms]
+
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:5415
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:5472
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:7389
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:7607
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:7664
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:8182
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:8305
+15:36:29.074 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:8362
+15:36:29.075 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:10385
+15:36:29.075 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:10630
+15:36:29.075 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:10747
+15:36:29.075 Expected media feature name but found ‘-ms-high-contrast’. css_juMqqhZegJupGBzrmBqja3vIEefawLIZPVtHLZofWkA.css:2:10804
+15:36:29.111 GET
+https://www.irs.gov/themes/custom/pup_base/images/expand_more.svg
+[HTTP/2 200  34ms]
+
+15:36:29.112 GET
+https://www.irs.gov/themes/custom/pup_base/images/magnifying-glass.svg
+[HTTP/2 200  34ms]
+
+15:36:29.114 GET
+https://www.irs.gov/themes/custom/pup_irs/images/circle-check.svg
+[HTTP/2 200  45ms]
+
+15:36:29.119 GET
+https://www.irs.gov/themes/custom/pup_base/fonts/source-sans-pro/fonts/sourcesans3-regular.woff2
+[HTTP/2 200  39ms]
+
+15:36:29.120 GET
+https://www.irs.gov/themes/custom/pup_base/fonts/source-sans-pro/fonts/sourcesans3-bold.woff2
+[HTTP/2 200  47ms]
+
+15:36:29.123 GET
+https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+[HTTP/2 200  70ms]
+
+15:36:29.187 GET
+https://static.addtoany.com/menu/sm.25.html#type=core&event=load
+[HTTP/2 200  31ms]
+
+15:36:29.188 GET
+https://static.addtoany.com/menu/modules/core.ydpp7jcu.js
+[HTTP/2 200  21ms]
+
+15:36:29.197 GET
+https://www.irs.gov/themes/custom/pup_base/favicon.ico
+[HTTP/2 200  33ms]
+
+15:36:29.241 GET
+https://www.irs.gov/libraries/accesible-slick-carousel/ajax-loader.gif
+[HTTP/2 200  48ms]
+
+15:36:29.242 Partitioned cookie or storage access was provided to “https://static.addtoany.com/menu/sm.25.html#type=core&event=load” because it is loaded in the third-party context and dynamic state partitioning is enabled. local-and-session-storage.js:79:35
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 33) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 55) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 62) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 81) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 82) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 83) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 84) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 87) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 88) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 89) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 90) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 112) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 119) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 120) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 123) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 139) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 159) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 162) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 164) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 166) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.296 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 178) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 184) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 185) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 217) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 218) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 272) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 273) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 274) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 275) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 279) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 281) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 284) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 290) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 291) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 292) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 309) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 310) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 319) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 321) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 323) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 326) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 329) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 330) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 331) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 332) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 333) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 334) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 339) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 341) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 347) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 349) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 351) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 352) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 353) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 354) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 357) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 358) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 361) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 366) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 367) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 370) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 371) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 414) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 431) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 436) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 444) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 445) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 458) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 460) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 464) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 465) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 483) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 505) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 508) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 511) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 514) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 516) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 517) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 518) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 520) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 521) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 538) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 539) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 546) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 568) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 574) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 579) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 580) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 585) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 586) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 594) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 596) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 599) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 602) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 603) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 616) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 618) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 622) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 627) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 629) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 630) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 633) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 634) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 638) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 643) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 645) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 651) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 654) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 665) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 675) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 685) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 686) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 688) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.297 downloadable font: glyf: Glyph bbox was incorrect; adjusting (glyph 691) (font-family: "FontAwesome" style:normal weight:400 stretch:100 src index:1) source: https://www.irs.gov/themes/custom/pup_base/fonts/fontawesome-webfont.woff2?v=4.7.0
+15:36:29.851 GET
+https://www.irs.gov/pub/image/woman-on-laptop.svg
+[HTTP/2 200  30ms]
+
+15:36:30.293 GET
+https://www.googletagmanager.com/gtag/js?id=G-ZY6FM95CS5&cx=c&gtm=4e6562h1
+[HTTP/2 200  0ms]
+
+15:36:30.302 GET
+https://resources.digital-cloud-gov.medallia.com/wdcgov/20103/onsite/embed.js
+[HTTP/2 200  397ms]
+
+15:36:30.307 GET
+https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=IRS
+[HTTP/3 200  0ms]
+
+15:36:30.331 GET
+https://dap.digitalgov.gov/web-vitals/dist/web-vitals.attribution.iife.js
+[HTTP/3 200  0ms]
+
+15:36:30.333 GET
+https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L
+[HTTP/3 200  0ms]
+
+15:36:30.339 GET
+https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L&cx=c&gtm=4e6562h1
+[HTTP/3 200  0ms]
+
+15:36:30.686 GET
+https://resources.digital-cloud-gov.medallia.com/wdcgov/20103/onsite/generic1776352584096.js
+[HTTP/2 200  0ms]
+
+15:36:31.329 Cookie warnings 2
+15:36:36.724 XHRPOST
+https://www.google-analytics.com/g/collect?v=2&tid=G-ZY6FM95CS5&gtm=45je6562h1v879551436z876811980za20gzb76811980zd76811980&_p=1778279789032&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMDhkMT&_eu=AAAAAAQ&cid=559367228.1778279746&frm=0&pscdl=noapi&rcb=16&sr=1366x768&ul=en-us&_s=1&tag_exp=0~115938465~115938469~118128922~118463261&dr=&sid=1778279746&sct=1&seg=1&dl=https://www.irs.gov/?%27https://www.irs.gov/%20[HTTP/2%20200%20%20164ms]%20%2015:25:47.393%20GET%20https://www.irs.gov/pub/css/css_-BFpSz25vWuBsJJC-R_j6Zp5n_TruQwujBKlgOV5fPg.css?delta=0&language=en&theme=pup_irs&include=&dt=Internal Revenue Service | An official website of the United States government&_tu=QA&en=page_view&ep.page_entityId=58476&ep.page_entityLangcode=en&ep.page_primaryCategory=node&ep.page_canonical=/&ep.page_entityVid=6203736&ep.page_fragment=&ep.gtm_tag=PUP - GA4 | page_view | DOM-Ready&tfd=8126
+NS_ERROR_UNKNOWN_HOST
+
+15:36:36.725 XHRPOST
+https://www.google-analytics.com/g/collect?v=2&tid=G-CSLL4ZEK4L&gtm=45je6562v9131934939za200zb76811980zd76811980&_p=1778279789032&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMDhkMT&_eu=AAAAAAQ&cid=559367228.1778279746&frm=0&pscdl=noapi&rcb=13&sr=1366x768&ul=en-us&tag_exp=0~115616986~115938465~115938469~118463262~118948626&dl=https://irs.gov/&dt=Internal Revenue Service | An official website of the United States government&dr=&sid=1778278840&sct=3&seg=1&_tu=wA&_s=1&tfd=8127
+NS_ERROR_UNKNOWN_HOST
+
+15:36:37.339 XHRPOST
+https://www.google.com/g/collect?v=2&tid=G-ZY6FM95CS5&gtm=45je6562h1v879551436z876811980za20gzb76811980zd76811980&_p=1778279789032&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMDhkMT&_eu=AAAAAAQ&cid=559367228.1778279746&frm=0&pscdl=noapi&rcb=16&sr=1366x768&ul=en-us&_s=1&tag_exp=0~115938465~115938469~118128922~118463261&dr=&sid=1778279746&sct=1&seg=1&dl=https://www.irs.gov/?%27https://www.irs.gov/%20[HTTP/2%20200%20%20164ms]%20%2015:25:47.393%20GET%20https://www.irs.gov/pub/css/css_-BFpSz25vWuBsJJC-R_j6Zp5n_TruQwujBKlgOV5fPg.css?delta=0&language=en&theme=pup_irs&include=&dt=Internal+Revenue+Service+|+An+official+website+of+the+United+States+government&_tu=QA&en=page_view&ep.page_entityId=58476&ep.page_entityLangcode=en&ep.page_primaryCategory=node&ep.page_canonical=/&ep.page_entityVid=6203736&ep.page_fragment=&ep.gtm_tag=PUP+-+GA4+|+page_view+|+DOM-Ready&tfd=8126&gaf=1
+[HTTP/3 204  99ms]
+
+15:36:37.341 XHRPOST
+https://www.google.com/g/collect?v=2&tid=G-CSLL4ZEK4L&gtm=45je6562v9131934939za200zb76811980zd76811980&_p=1778279789032&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMDhkMT&_eu=AAAAAAQ&cid=559367228.1778279746&frm=0&pscdl=noapi&rcb=13&sr=1366x768&ul=en-us&tag_exp=0~115616986~115938465~115938469~118463262~118948626&dl=https://irs.gov/&dt=Internal+Revenue+Service+|+An+official+website+of+the+United+States+government&dr=&sid=1778278840&sct=3&seg=1&_tu=wA&_s=1&tfd=8127&gaf=1
+[HTTP/3 204  65ms]
+

@@ -1,0 +1,3 @@
+TIMESTAMP: 09:48:37.881
+ACTION: POST https://www.bing.com/web/xlsc.aspx?dl=1&f=8
+SIGNIFICANCE: Telemetry failover detected via Excel Services endpoint.

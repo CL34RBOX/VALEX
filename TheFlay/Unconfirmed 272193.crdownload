@@ -1,0 +1,43 @@
+// Force-reinitialize if it already exists, otherwise define it
+window.ClearboxxSerializer = (() => {
+  const VAULT_KEY = 'INTEGRITY_LEDGER';
+
+  return {
+    async sha256(message) {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      return [...new Uint8Array(hashBuffer)].map(b => b.toString(16).padStart(2, '0')).join('');
+    },
+
+    async appendRecord(url, rawBody) {
+      const timestamp = new Date().toISOString();
+      const payloadHash = await this.sha256(rawBody || '');
+      
+      let parsed;
+      try {
+        parsed = JSON.parse(rawBody);
+      } catch {
+        parsed = { error: "MALFORMED_JSON", raw: rawBody };
+      }
+
+      const record = {
+        timestamp,
+        node_id: "90247_GARDENA_CLEARBOXX_SENTINEL",
+        ingress_url: url,
+        event_type: parsed?.eventType || "GENERIC_BROWSER_TELEMETRY",
+        payload_hash: payloadHash,
+        extracted_payload: parsed
+      };
+
+      const entry = JSON.stringify(record);
+      const existing = localStorage.getItem(VAULT_KEY) || '';
+      localStorage.setItem(VAULT_KEY, existing + entry + '\n');
+      
+      console.log(`[+] Log committed. Hash: ${payloadHash}`);
+      return payloadHash;
+    }
+  };
+})();
+
+// Execution (will now succeed every time you paste it)
+window.ClearboxxSerializer.appendRecord(window.location.href, '{"eventType":"TEST_INTERCEPT"}');

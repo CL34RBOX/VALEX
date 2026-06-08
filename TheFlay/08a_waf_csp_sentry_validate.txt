@@ -1,0 +1,122 @@
+#!/usr/bin/env bash
+# =============================================================================
+# FILE: test_harness/01_waf_csp_sentry_validate.sh
+# PURPOSE: WAF, CSP, and Sentry endpoint validation replay
+# CLASSIFICATION: CONFIDENTIAL — STAGING
+# PACKAGE: FOR-2026-0512-001
+# =============================================================================
+set -euo pipefail
+
+STAGING_HOST="https://nist-stg.example.gov"
+ANALYTICS_HOST="https://analytics-staging.nist-stg.example.com"
+CSP_REPORT_HOST="https://csp-report.nist-stg.example.gov"
+SENTRY_HOST="https://o123456.ingest.sentry.io"
+CID_HASH="$(echo -n 'cid-8f3a21bc904d' | sha256sum | awk '{print $1}')"
+PASS=0; FAIL=0; WARN=0
+
+log()  { echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] $*"; }
+pass() { echo "  [PASS] $*"; ((PASS++)); }
+fail() { echo "  [FAIL] $*"; ((FAIL++)); }
+warn() { echo "  [WARN] $*"; ((WARN++)); }
+
+echo "============================================================"
+echo "  NIST STAGING — WAF / CSP / SENTRY VALIDATION HARNESS"
+echo "  Run Date: $(date -u)"
+echo "  Evidence: NST-STG-0001..0004"
+echo "============================================================"
+
+# ------------------------------------------------------------------
+# TEST 1 — Replay NST-STG-0001: Telemetry beacon
+# ------------------------------------------------------------------
+log "TEST 1: Replaying telemetry beacon (NST-STG-0001)"
+RESP=$(curl -s -o /dev/null -w "%{http_code}" \
+  "${ANALYTICS_HOST}/collect?v=1&tid=UA-XXXX-STAGING&cid=${CID_HASH}&t=pageview&dp=%2Fnist-staging" \
+  -H "User-Agent: Mozilla/5.0 (compatible; NIST-Staging-Monitor/1.0)" \
+  -H "Referer: ${STAGING_HOST}/csrc/publications/" \
+  --max-time 10)
+if [[ "$RESP" == "200" ]]; then
+  warn "NST-STG-0001: Telemetry endpoint still reachable (200 OK) — verify consent mechanism"
+elif [[ "$RESP" == "403" || "$RESP" == "401" ]]; then
+  pass "NST-STG-0001: Telemetry endpoint blocked by WAF (HTTP $RESP)"
+else
+  fail "NST-STG-0001: Unexpected response: HTTP $RESP"
+fi
+
+# ------------------------------------------------------------------
+# TEST 2 — Validate CSP report endpoint (NST-STG-0002)
+# ------------------------------------------------------------------
+log "TEST 2: CSP report collector liveness (NST-STG-0002)"
+RESP=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+  "${CSP_REPORT_HOST}/__csp-report" \
+  -H "Content-Type: application/csp-report" \
+  -d '{"csp-report":{"document-uri":"https://nist-stg.example.gov/test","violated-directive":"script-src-elem","blocked-uri":"inline","source-file":"test","line-number":1,"status-code":0}}' \
+  --max-time 10)
+if [[ "$RESP" == "204" ]]; then
+  pass "NST-STG-0002: CSP collector alive and accepting reports (HTTP 204)"
+else
+  fail "NST-STG-0002: CSP collector unexpected response: HTTP $RESP"
+fi
+
+# ------------------------------------------------------------------
+# TEST 3 — Validate CSP header on staging host
+# ------------------------------------------------------------------
+log "TEST 3: Validating CSP header on staging host"
+CSP_HEADER=$(curl -sI "${STAGING_HOST}/" --max-time 10 | grep -i "content-security-policy" || true)
+if echo "$CSP_HEADER" | grep -qi "unsafe-inline"; then
+  fail "TEST 3: 'unsafe-inline' found in CSP header — SEC-001 not yet applied"
+elif echo "$CSP_HEADER" | grep -qi "nonce-"; then
+  pass "TEST 3: Per-request nonce present in CSP header"
+else
+  warn "TEST 3: CSP header present but nonce not detected — check nonce injection"
+fi
+if echo "$CSP_HEADER" | grep -qi "strict-dynamic"; then
+  pass "TEST 3: 'strict-dynamic' present in CSP"
+else
+  warn "TEST 3: 'strict-dynamic' not found in CSP header"
+fi
+
+# ------------------------------------------------------------------
+# TEST 4 — Sentry beforeSend scrubber validation (NST-STG-0003)
+# ------------------------------------------------------------------
+log "TEST 4: Sentry PII scrubber check (NST-STG-0003)"
+# Check if Sentry DSN is accessible without WAF block
+RESP=$(curl -s -o /tmp/sentry_test.json -w "%{http_code}" \
+  "${SENTRY_HOST}/api/4567890/envelope/?sentry_key=REDACTED_IN_TEST&sentry_version=7" \
+  -H "Content-Type: application/x-sentry-envelope" \
+  --max-time 10 || echo "000")
+if [[ "$RESP" == "403" || "$RESP" == "401" || "$RESP" == "000" ]]; then
+  pass "NST-STG-0003: Sentry ingest blocked or unreachable (HTTP $RESP) — WAF active"
+else
+  warn "NST-STG-0003: Sentry ingest reachable (HTTP $RESP) — confirm beforeSend scrubber deployed"
+fi
+
+# ------------------------------------------------------------------
+# TEST 5 — Service Worker intercept check (NST-STG-0004)
+# ------------------------------------------------------------------
+log "TEST 5: Service Worker /sw.js fetch (NST-STG-0004)"
+RESP=$(curl -sI "${STAGING_HOST}/sw.js" \
+  -H "Service-Worker: script" \
+  --max-time 10)
+if echo "$RESP" | grep -qi "credentials"; then
+  warn "NST-STG-0004: 'credentials' keyword found in SW response headers — review"
+else
+  pass "NST-STG-0004: No credentials leak detected in SW headers"
+fi
+SW_BODY=$(curl -s "${STAGING_HOST}/sw.js" --max-time 10 || true)
+if echo "$SW_BODY" | grep -q "credentials.*include"; then
+  fail "NST-STG-0004: 'credentials: include' still present in sw.js — ENG-002 not applied"
+elif echo "$SW_BODY" | grep -q "credentials.*omit"; then
+  pass "NST-STG-0004: 'credentials: omit' confirmed in sw.js — ENG-002 applied"
+else
+  warn "NST-STG-0004: credentials mode not explicitly set in sw.js"
+fi
+
+# ------------------------------------------------------------------
+# SUMMARY
+# ------------------------------------------------------------------
+echo ""
+echo "============================================================"
+echo "  RESULTS: PASS=$PASS  FAIL=$FAIL  WARN=$WARN"
+echo "  $([ $FAIL -eq 0 ] && echo 'ALL REQUIRED CHECKS PASSED' || echo 'ACTION REQUIRED — SEE FAILS ABOVE')"
+echo "============================================================"
+exit $FAIL

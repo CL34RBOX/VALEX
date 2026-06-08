@@ -1,0 +1,85 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:32 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                           DISCLOSURE MANIFEST
+         NIST Staging Forensic Package — Signing, Transport & Recipients
+══════════════════════════════════════════════════════════════════════════════
+Document ID : DISC-2026-0512-001
+Date        : 2026-05-12
+══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1 — CLASSIFICATION & HANDLING
+────────────────────────────────────────
+  Classification : CONFIDENTIAL — STAGING
+  Handling       : STAGING-ONLY artifacts — do not transmit to production
+                   systems or external parties without Legal approval.
+  Retention      : 90 days from 2026-05-12 (expires 2026-08-10)
+  Destruction    : Secure deletion after retention period (shred -u or
+                   equivalent cryptographic erasure)
+
+SECTION 2 — SIGNING & ENCRYPTION
+───────────────────────────────────
+  Signing Algorithm   : GPG (RSA-4096 or Ed25519 preferred)
+  Signing Key ID      : [SIGNING-KEY-ID — obtain from Security keyring]
+  Encryption          : GPG symmetric AES-256 or asymmetric to recipient keys
+  Checksum Algorithm  : SHA-256 (MANIFEST.sha256 in package root)
+
+  Sign command:
+    gpg --armor --detach-sign --local-user [SIGNING-KEY-ID] \
+        forensic_package_NIST_STG_20260512.tar.gz
+
+  Encrypt command (to recipient keys):
+    gpg --armor --encrypt \
+        --recipient [ENG-GPG-KEY] \
+        --recipient [SEC-GPG-KEY] \
+        --recipient [LEGAL-GPG-KEY] \
+        forensic_package_NIST_STG_20260512.tar.gz
+
+  Verify signature:
+    gpg --verify forensic_package_NIST_STG_20260512.tar.gz.asc \
+                  forensic_package_NIST_STG_20260512.tar.gz
+
+SECTION 3 — TRANSPORT
+───────────────────────
+  Approved channels (in order of preference):
+    1. Staging secure file share (internal, TLS 1.3+, authenticated)
+    2. Encrypted email (S/MIME or GPG) to recipients below
+    3. Staging SFTP drop zone (key-based auth only)
+  Prohibited channels:
+    • Public cloud storage (Google Drive, Dropbox, etc.) unless encrypted
+    • Unencrypted email
+    • Slack / Teams (staging channels acceptable only for links, not files)
+    • Production systems
+
+SECTION 4 — RECIPIENTS
+────────────────────────
+  Owner                    │ Role                    │ Justification
+  ─────────────────────────┼─────────────────────────┼──────────────────────────────────
+  Engineering (Telemetry)  │ Primary remediation      │ ENG-001, ENG-002, ENG-003, ENG-004
+  Security (CSP/WAF)       │ CSP/WAF triage           │ SEC-001, SEC-002, SEC-003
+  Infra (Service Worker)   │ SW remediation           │ INF-001, ENG-007
+  Legal (Disclosure)       │ PII incident assessment  │ LEG-001, LEG-002
+
+  External disclosure: PROHIBITED without Legal (Disclosure) sign-off.
+  Regulator notification: Per LEG-001 assessment outcome.
+
+SECTION 5 — DISCLOSURE DECISION LOG
+──────────────────────────────────────
+  Date       │ Decision                          │ Approver
+  ───────────┼───────────────────────────────────┼────────────────────────
+  2026-05-12 │ Package assembled; internal only  │ Forensic Engine
+  TBD        │ Legal assessment complete          │ Legal (Disclosure)
+  TBD        │ External disclosure (if required)  │ Legal + CISO
+
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                 DISC-2026-0512-001

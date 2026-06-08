@@ -1,0 +1,16 @@
+# 1. Final environment lockdown (ensure all logs are read-only)
+chmod -R 400 ./XIPE-TOTECH/
+
+# 2. Re-run the Flay-Master to generate the final sealed bundle
+# This verifies the vault, creates the tar.gz, and generates the .asc signature
+./flay_master.sh
+
+# 3. Final display of transmittal assets
+echo -e "\n[!] TRANSMISSION READY"
+echo -e "[+] BUNDLE: OMNIBUS_v281.3_Submission.tar.gz"
+echo -e "[+] SIGNATURE: OMNIBUS_v281.3_Submission.tar.gz.asc"
+echo -e "[+] LEDGER: 90247_master_ledger.json"
+echo -e "[+] ETHICS: ETHICS_ATTESTATION.txt"
+
+# 4. Final verification of the detached signature
+gpg --verify OMNIBUS_v281.3_Submission.tar.gz.asc OMNIBUS_v281.3_Submission.tar.gz

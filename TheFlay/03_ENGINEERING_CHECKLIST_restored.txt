@@ -1,0 +1,133 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:32 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+              PRIORITIZED ENGINEERING TRIAGE & REMEDIATION CHECKLIST
+                NIST Staging — Telemetry / CSP / Sentry Incidents
+══════════════════════════════════════════════════════════════════════════════
+Document ID : CHK-2026-0512-001
+Color Key   : [RED]=<4h  [AMBER]=<24h  [YELLOW]=<72h  [GREEN]=Next Sprint
+══════════════════════════════════════════════════════════════════════════════
+
+PRIORITY 1 — CRITICAL [RED] — SLA: < 4 hours
+──────────────────────────────────────────────
+  ID       Owner                    Action                                  Done
+  ───────  ───────────────────────  ──────────────────────────────────────  ────
+  ENG-001  Engineering (Telemetry)  Deploy Sentry beforeSend scrubber:      [ ]
+           Evidence: NST-STG-0003   Remove user.id, user.email, and any
+                                    PII from Sentry event payload.
+                                    Code:
+                                      Sentry.init({
+                                        beforeSend(event) {
+                                          if (event.user) {
+                                            delete event.user.email;
+                                            delete event.user.id;
+                                          }
+                                          return event;
+                                        }
+                                      });
+                                    Verify: tail -f sentry-relay.log |
+                                      grep -v '"email"' | grep -v '"id"'
+
+  SEC-001  Security (CSP/WAF)       Harden CSP for all staging hosts:      [ ]
+           Evidence: NST-STG-0002   1. Replace 'unsafe-inline' with
+                                       per-request nonces (see CSP runbook)
+                                    2. Add 'strict-dynamic' to script-src
+                                    3. Set report-only header first,
+                                       validate zero violations, then
+                                       enforce.
+                                    Verify: curl -I https://nist-stg.example.gov
+                                      | grep Content-Security-Policy
+
+  ENG-002  Infra (Service Worker)   Remove credentials:include from SW      [ ]
+           Evidence: NST-STG-0004   fetch handler for analytics hostnames.
+                                    Replace with credentials:'omit'.
+                                    Redeploy /sw.js.
+                                    Bump SW version to 1.2.4.
+                                    Verify: Chrome DevTools > Application >
+                                      Service Workers > inspect fetch scope.
+
+  LEG-001  Legal (Disclosure)       Initiate disclosure assessment:         [ ]
+           Evidence: NST-STG-0003   Determine if Sentry PII exposure
+                                    constitutes a reportable incident per
+                                    FISMA / Privacy Act / GSA policy.
+                                    Produce incident report within 4 h.
+
+PRIORITY 2 — HIGH [AMBER] — SLA: < 24 hours
+──────────────────────────────────────────────
+  ID       Owner                    Action                                  Done
+  ───────  ───────────────────────  ──────────────────────────────────────  ────
+  SEC-002  Security (CSP/WAF)       Add WAF rule to block SW fetch with     [ ]
+           Evidence: NST-STG-0004   credentials to external analytics:
+                                    Rule: WAF-SW-001 (already triggered)
+                                    Action: block + log + alert
+                                    Config: waf-rules/sw-telemetry.conf
+
+  ENG-003  Engineering (Telemetry)  Audit all telemetry endpoints:          [ ]
+           Evidence: NST-STG-0001   Enumerate all analytics-staging calls.
+                                    Confirm consent mechanism is in place.
+                                    Add opt-out flag to staging config.
+                                    Document in data-flow inventory.
+
+  INF-001  Infra (Service Worker)   Enforce Service-Worker-Allowed header   [ ]
+           Evidence: NST-STG-0004   scope restriction to /app/ path only.
+                                    SW must not intercept /collect or
+                                    third-party hostnames.
+
+  SEC-003  Security (CSP/WAF)       Review WAF ruleset for CSP-adjacent     [ ]
+           Evidence: NST-STG-0002   blocking gaps. Confirm report-uri
+                                    endpoint is receiving all violations.
+                                    Check truncation handling (IsTruncated).
+
+PRIORITY 3 — MEDIUM [YELLOW] — SLA: < 72 hours
+─────────────────────────────────────────────────
+  ID       Owner                    Action                                  Done
+  ───────  ───────────────────────  ──────────────────────────────────────  ────
+  ENG-004  Engineering (Telemetry)  Implement CID rotation policy:          [ ]
+           Evidence: NST-STG-0001   Rotate cid per session (not persistent)
+                                    Store only hashed form in logs.
+                                    Remove raw cid from all log sinks.
+
+  ENG-005  Engineering (Telemetry)  Add CSP nonce injection middleware:     [ ]
+           Evidence: NST-STG-0002   Per-request nonce generated server-side.
+                                    Injected into all inline scripts.
+                                    Nonce rotated on each response.
+
+  LEG-002  Legal (Disclosure)       Update staging data-flow inventory:     [ ]
+           Evidence: ALL            Add Sentry (o123456.ingest.sentry.io)
+                                    as third-party processor.
+                                    Confirm DPA / BAA in place.
+
+PRIORITY 4 — LOW [GREEN] — SLA: Next Sprint
+────────────────────────────────────────────
+  ID       Owner                    Action                                  Done
+  ───────  ───────────────────────  ──────────────────────────────────────  ────
+  ENG-006  Engineering (Telemetry)  Add CSP lint rule to CI pipeline:       [ ]
+                                    Reject PRs with 'unsafe-inline' in CSP.
+                                    Tooling: csp-evaluator CLI or
+                                    @nicolo-ribaudo/csp-lint
+
+  ENG-007  Infra (Service Worker)   Add SW regression test to test suite:   [ ]
+           Evidence: NST-STG-0004   Assert credentials:'omit' on all
+                                    third-party fetch calls in sw.js.
+
+  SEC-004  Security (CSP/WAF)       Schedule quarterly WAF rule review:     [ ]
+                                    Include SW intercept patterns.
+                                    Add to security calendar.
+
+  DOC-001  ALL                      Document incident post-mortem:          [ ]
+           Evidence: ALL            Root cause, timeline, remediation,
+                                    lessons learned. Distribute to all
+                                    owners within 30 days.
+
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                    CHK-2026-0512-001

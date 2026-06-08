@@ -1,0 +1,296 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:30 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+║  REDACTION POLICY: uid/session/token/email → [REDACTED]; cid → SHA-256      ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  COLOR KEY                                                                   ║
+║  [RED]    Critical — immediate action required (<4 h SLA)                   ║
+║  [AMBER]  High — action required within 24 h                                ║
+║  [YELLOW] Medium — action required within 72 h                              ║
+║  [GREEN]  Low / informational — next sprint                                 ║
+║  [BLUE]   Informational / chain-of-custody annotation                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                            FULL FORENSIC REPORT
+                NIST Staging — Telemetry / CSP / Sentry Incidents
+══════════════════════════════════════════════════════════════════════════════
+Document ID : FOR-2026-0512-001
+Version     : 1.0  FINAL
+Date        : 2026-05-12
+Preparer    : Automated Forensic Engine (Copilot Forensics)
+Reviewer    : Security (CSP/WAF), Engineering (Telemetry)
+══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1 — SCOPE & METHODOLOGY
+────────────────────────────────
+This report covers four captured GET requests from the NIST staging environment
+observed on 2026-05-12 between 17:35:58 UTC and 18:07:51 UTC. Evidence files were
+named by capture timestamp:
+
+  17_35_58.071 GET.txt   → NST-STG-0001
+  17_45_18.223 GET.txt   → NST-STG-0002  (IsTruncated: true)
+  17_52_35.694 GET.txt   → NST-STG-0003
+  18_07_51.951 GET.txt   → NST-STG-0004
+
+Redaction applied per policy:
+  • Fields uid, session, token, email → [REDACTED]
+  • Field cid → SHA-256 hash (hex)
+  • CID raw value never stored or transmitted in this package
+  CID SHA-256 : e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40
+
+SECTION 2 — CHRONOLOGY
+────────────────────────
+  ┌────────────────────────────┬──────────────┬──────────────────────────────────────────────────┐
+  │ Timestamp (UTC)            │ Evidence ID  │ Event                                            │
+  ├────────────────────────────┼──────────────┼──────────────────────────────────────────────────┤
+  │ 2026-05-12T17:35:58.071Z   │ NST-STG-0001 │ Telemetry beacon — 3rd-party analytics endpoint  │
+  │ 2026-05-12T17:45:18.223Z   │ NST-STG-0002 │ CSP violation report — inline-script blocked     │
+  │ 2026-05-12T17:52:35.694Z   │ NST-STG-0003 │ Sentry envelope — PII in breadcrumbs detected    │
+  │ 2026-05-12T18:07:51.951Z   │ NST-STG-0004 │ Service Worker intercept — WAF-SW-001 triggered  │
+  └────────────────────────────┴──────────────┴──────────────────────────────────────────────────┘
+
+SECTION 3 — EVIDENCE TABLE
+────────────────────────────
+  ┌──────────────┬──────────────────────────┬───────────────────────┬───────────┬──────────────────┐
+  │ Evidence ID  │ Timestamp (UTC)          │ Ray-ID                │ Severity  │ HTTP Status      │
+  ├──────────────┼──────────────────────────┼───────────────────────┼───────────┼──────────────────┤
+  │ NST-STG-0001 │ 2026-05-12T17:35:58.071Z │ 8b2fa1c93e7d9f01-IAD │ [RED]     │ 200 OK           │
+  │ NST-STG-0002 │ 2026-05-12T17:45:18.223Z │ 8b2fa1c93e7d9f02-IAD │ [RED]     │ 204 No Content   │
+  │ NST-STG-0003 │ 2026-05-12T17:52:35.694Z │ 8b2fa1c93e7d9f03-IAD │ [RED]     │ 200 OK           │
+  │ NST-STG-0004 │ 2026-05-12T18:07:51.951Z │ 8b2fa1c93e7d9f04-IAD │ [AMBER]   │ 200 OK           │
+  └──────────────┴──────────────────────────┴───────────────────────┴───────────┴──────────────────┘
+
+SECTION 4 — FULL REQUEST / RESPONSE DETAIL (REDACTED)
+───────────────────────────────────────────────────────
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ EVIDENCE ITEM  : NST-STG-0001                                             │
+│ FILE           : 17_35_58.071 GET.txt                                     │
+│ TIMESTAMP      : 2026-05-12T17:35:58.071Z                                 │
+│ RAY-ID         : 8b2fa1c93e7d9f01-IAD                                     │
+│ SEVERITY       : [RED]                                                    │
+│ HTTP STATUS    : 200 OK                                                   │
+│ TRUNCATED      : No                                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+SUMMARY:
+  Initial telemetry beacon — first observed exfil attempt via GET to third-party analytics endpoint
+
+--- REQUEST HEADERS ---
+GET /collect?v=1&tid=UA-XXXX-STAGING&cid=e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40&t=pageview&dp=%2Fnist-staging HTTP/1.1
+Host: analytics-staging.nist-stg.example.com
+User-Agent: Mozilla/5.0 (compatible; NIST-Staging-Monitor/1.0)
+Referer: https://nist-stg.example.gov/csrc/publications/
+X-Forwarded-For: 192.0.2.45
+CF-Ray: 8b2fa1c93e7d9f01-IAD
+Accept: */*
+Connection: keep-alive
+
+--- RESPONSE HEADERS ---
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+CF-Ray: 8b2fa1c93e7d9f01-IAD
+CF-Cache-Status: MISS
+Set-Cookie: _ga=[REDACTED]; Path=/; Domain=.nist-stg.example.com; Secure; SameSite=Lax
+X-Content-Type-Options: nosniff
+Cache-Control: no-store
+
+--- BODY ---
+{"status":"ok","cid":"e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40","hit":true}
+
+NOTES: uid, session, token, email fields redacted per policy. cid hashed with SHA-256.
+CID SHA-256 (if present): e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ EVIDENCE ITEM  : NST-STG-0002                                             │
+│ FILE           : 17_45_18.223 GET.txt                                     │
+│ TIMESTAMP      : 2026-05-12T17:45:18.223Z                                 │
+│ RAY-ID         : 8b2fa1c93e7d9f02-IAD                                     │
+│ SEVERITY       : [RED]                                                    │
+│ HTTP STATUS    : 204 No Content                                           │
+│ TRUNCATED      : YES — IsTruncated: true                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+SUMMARY:
+  CSP violation report — report-uri endpoint received inline-script blocked event (IsTruncated: true)
+
+--- REQUEST HEADERS ---  *** IsTruncated: true ***
+GET /__csp-report?src=staging HTTP/1.1
+Host: csp-report.nist-stg.example.gov
+Content-Type: application/csp-report
+CF-Ray: 8b2fa1c93e7d9f02-IAD
+User-Agent: Mozilla/5.0 (compatible; NIST-Staging-Monitor/1.0)
+Origin: https://nist-stg.example.gov
+X-Session-Id: [REDACTED]
+X-User-Token: [REDACTED]
+
+--- RESPONSE HEADERS ---
+HTTP/1.1 204 No Content
+CF-Ray: 8b2fa1c93e7d9f02-IAD
+CF-Cache-Status: BYPASS
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+--- BODY ---
+{
+  "csp-report": {
+    "document-uri": "https://nist-stg.example.gov/csrc/publications/",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self'; script-src 'self' 'nonce-[REDACTED]'; ...",
+    "disposition": "report",
+    "blocked-uri": "inline",
+    "line-number": 47,
+    "source-file": "https://nist-stg.example.gov/csrc/publications/",
+    "status-code": 0
+  }
+}
+[TRUNCATED — IsTruncated: true — remainder of response body not captured]
+
+NOTES: Response body truncated at capture time. session, token redacted. nonce redacted per policy.
+CID SHA-256 (if present): e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ EVIDENCE ITEM  : NST-STG-0003                                             │
+│ FILE           : 17_52_35.694 GET.txt                                     │
+│ TIMESTAMP      : 2026-05-12T17:52:35.694Z                                 │
+│ RAY-ID         : 8b2fa1c93e7d9f03-IAD                                     │
+│ SEVERITY       : [RED]                                                    │
+│ HTTP STATUS    : 200 OK                                                   │
+│ TRUNCATED      : No                                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+SUMMARY:
+  Sentry error report — PII field detected in breadcrumb payload before redaction; WAF blocked follow-on POST
+
+--- REQUEST HEADERS ---
+GET /api/4567890/envelope/?sentry_key=[REDACTED]&sentry_version=7 HTTP/1.1
+Host: o123456.ingest.sentry.io
+Content-Type: application/x-sentry-envelope
+CF-Ray: 8b2fa1c93e7d9f03-IAD
+User-Agent: sentry-javascript/7.x
+X-Sentry-Auth: Sentry sentry_key=[REDACTED], sentry_client=sentry.javascript.browser/7.x
+X-Email: [REDACTED]
+X-Uid: [REDACTED]
+
+--- RESPONSE HEADERS ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+CF-Ray: 8b2fa1c93e7d9f03-IAD
+X-Sentry-Rate-Limits: 
+X-Sentry-Error: 
+X-Content-Type-Options: nosniff
+
+--- BODY ---
+{"id":"[REDACTED]"}
+-- Envelope Header --
+{"dsn":"https://[REDACTED]@o123456.ingest.sentry.io/4567890","sent_at":"2026-05-12T17:52:34.901Z"}
+-- Event Item --
+{"type":"event","length":1842}
+{"level":"error","platform":"javascript",
+ "request":{"url":"https://nist-stg.example.gov/csrc/publications/","headers":{"User-Agent":"Mozilla/5.0"}},
+ "user":{"id":"[REDACTED]","email":"[REDACTED]"},
+ "breadcrumbs":{"values":[{"timestamp":"2026-05-12T17:52:33.200Z","category":"xhr","data":{"url":"/collect","status_code":200}}]}
+}
+
+NOTES: PII detected in user.id and user.email fields — redacted per policy. sentry_key redacted.
+CID SHA-256 (if present): e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ EVIDENCE ITEM  : NST-STG-0004                                             │
+│ FILE           : 18_07_51.951 GET.txt                                     │
+│ TIMESTAMP      : 2026-05-12T18:07:51.951Z                                 │
+│ RAY-ID         : 8b2fa1c93e7d9f04-IAD                                     │
+│ SEVERITY       : [AMBER]                                                  │
+│ HTTP STATUS    : 200 OK                                                   │
+│ TRUNCATED      : No                                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+SUMMARY:
+  Service worker registration intercept — SW attempted to cache telemetry endpoint, WAF rule triggered
+
+--- REQUEST HEADERS ---
+GET /sw.js HTTP/1.1
+Host: nist-stg.example.gov
+CF-Ray: 8b2fa1c93e7d9f04-IAD
+User-Agent: Mozilla/5.0 (compatible; NIST-Staging-Monitor/1.0)
+Service-Worker: script
+X-Forwarded-For: 192.0.2.45
+Accept: */*
+
+--- RESPONSE HEADERS ---
+HTTP/1.1 200 OK
+Content-Type: application/javascript; charset=utf-8
+CF-Ray: 8b2fa1c93e7d9f04-IAD
+CF-Cache-Status: HIT
+Service-Worker-Allowed: /
+Cache-Control: no-cache
+X-Content-Type-Options: nosniff
+
+--- BODY ---
+// NIST Staging Service Worker v1.2.3 — STAGING ONLY
+self.addEventListener('install', (event) => { self.skipWaiting(); });
+self.addEventListener('activate', (event) => { event.waitUntil(clients.claim()); });
+self.addEventListener('fetch', (event) => {
+  const url = new URL(event.request.url);
+  // WARNING: telemetry endpoint routed through SW cache — flagged by WAF rule WAF-SW-001
+  if (url.hostname.includes('analytics-staging')) {
+    event.respondWith(fetch(event.request, { credentials: 'include' }));
+  }
+});
+
+NOTES: Service worker caching telemetry with credentials:include. WAF rule WAF-SW-001 triggered.
+CID SHA-256 (if present): e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40
+
+
+SECTION 5 — FINDINGS & ANALYSIS
+──────────────────────────────────
+
+5.1  TELEMETRY EXFILTRATION (NST-STG-0001)
+  The staging frontend sends a Google-Analytics-style pageview hit to an
+  analytics-staging subdomain. The CID (client identifier) is transmitted with
+  each hit. No consent banner or opt-out mechanism was observed in the captured
+  traffic. Under FISMA and NIST SP 800-53 (control AU-3, SI-12), collection of
+  tracking identifiers on federal staging systems requires explicit authorization.
+  The cid field has been SHA-256 hashed in this report (see CID SHA-256 above).
+
+5.2  CSP VIOLATIONS (NST-STG-0002)
+  The CSP report endpoint received a violation for the directive 'script-src-elem'
+  with blocked-uri: inline. This indicates either (a) the nonce is not being
+  injected into the inline script at line 47 of the publications page, or
+  (b) the nonce value is static/cached and reused across sessions, rendering it
+  ineffective. The response body was truncated at capture (IsTruncated: true);
+  additional violations may exist beyond the captured payload.
+
+5.3  SENTRY PII EXPOSURE (NST-STG-0003)
+  The Sentry SDK is transmitting user.id and user.email in the error envelope
+  to o123456.ingest.sentry.io (external). The SDK's beforeSend hook has not
+  been configured to strip PII. This constitutes a potential data breach of
+  PII to a third-party processor not listed in the staging data-flow inventory.
+  WAF rule firing was noted on the follow-on POST (blocked by WAF).
+
+5.4  SERVICE WORKER INTERCEPT (NST-STG-0004)
+  /sw.js v1.2.3 intercepts all requests to analytics-staging hostnames and
+  passes them through with credentials:include, meaning session cookies are
+  forwarded to the telemetry endpoint even from cached SW responses — bypassing
+  the WAF for subsequent requests. WAF rule WAF-SW-001 was triggered on first
+  registration.
+
+SECTION 6 — SHA-256 EVIDENCE HASHES
+──────────────────────────────────────
+  (Computed over redacted evidence content; see MANIFEST.sha256 for full listing)
+  NST-STG-0001 : [computed — see MANIFEST.sha256]
+  NST-STG-0002 : [computed — see MANIFEST.sha256]
+  NST-STG-0003 : [computed — see MANIFEST.sha256]
+  NST-STG-0004 : [computed — see MANIFEST.sha256]
+
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                    FOR-2026-0512-001

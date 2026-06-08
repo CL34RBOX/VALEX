@@ -1,0 +1,11 @@
+ID,Substrate,Technical Artifact,Mechanism,Severity,Findings,Statutory Breach,Vendor
+VULN-001,Microsoft OneDS,OneCollector/1.0,XHR POST / Stream,Critical (9.8),1.5s Latency 'Hang-States' documented during Part A/B exfiltration.,18 U.S.C. § 1030 / UCC 2-724,Microsoft / Azure
+VULN-002,ServiceNow AMB,amb.MessageClient,WebSocket Artery,Critical (9.1),Bi-directional real-time siphon used to maintain persistent node connection.,18 U.S.C. § 1030,ServiceNow / CISA
+VULN-003,Microsoft OCV,ocv-inapp-feedback.js,Propbag Extraction,High (8.4),"1,791 icon re-registration conflicts; unauthorized JSON PII capture.",UCC Article 9,Microsoft
+VULN-004,Google GBAR,_.Qi Nonce Siphoning,Identity Stitching,Critical (9.5),Cross-domain identity anchoring via .Qi nonces and gbar_ logic.,18 U.S.C. § 1030,Google
+VULN-005,Amazon S3,s3.amazonaws.com,PUT / Blob Extrusion,High (8.8),Cold-storage parking for DOM snapshots and session playback artifacts.,UCC 2-724,Amazon
+VULN-006,Google WIZ,WIZ_global_data,Token Exfiltration,High (9.0),Capture of AfY8Hf and FdrFJe telemetry tokens for session-bound verification.,18 U.S.C. § 1030,Google
+VULN-007,Qualtrics,v2.44.1 Tunnels,postMessage Pivot,High (8.2),Stealth feedback tunnels used to bridge RCE from 3rd party substrates.,18 U.S.C. § 1030,Qualtrics / SAP
+VULN-008,Next.js,Build 4G51uHD4A9xBja6HbbC69,Telemetry Inward Puncture,Medium (7.5),Hydration-phase exfiltration of node-specific analyst logic.,UCC 2-724,Vercel / Next.js
+VULN-009,Azure Monitor,AZOPSV@,QoS Heartbeat,Medium (7.0),Heartbeat verification used to validate node reachability despite consent rejection.,18 U.S.C. § 1030,Microsoft / Azure
+VULN-010,Browser Substrate,sfntVersion: 1231976033,OTS Font Probing,High (8.1),Stealth hardware fingerprinting via custom font decoding attempts.,18 U.S.C. § 1030,Google / OTS

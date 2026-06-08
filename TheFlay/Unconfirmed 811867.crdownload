@@ -1,0 +1,53 @@
+#!/bin/bash
+# [962471] XIPE_TOTEC_EXEC_PROTOCOL — PARALLEL EDITION
+
+export MASTER_PASS=$(cat /proc/sys/kernel/random/uuid)
+
+# Locate flay engine
+FLAY_BIN=$(find \
+    /usr/bin \
+    /usr/local/bin \
+    /usr/bin/XIPE-TOTECH \
+    /XIPE-TOTECH \
+    -type f -name "xipe_totec_flay.sh" 2>/dev/null | head -n 1)
+
+if [ -z "$FLAY_BIN" ]; then
+    echo "[!] xipe_totec_flay.sh could not be located"
+    exit 1
+fi
+
+ENGINE_DIR="$(dirname "$FLAY_BIN")"
+
+# Discover logs and asc files
+LOG_FILES=$(find "$ENGINE_DIR" /XIPE-TOTECH /usr/bin/XIPE-TOTECH -type f -name "*.log" 2>/dev/null)
+
+if [ -z "$LOG_FILES" ]; then
+    echo "[!] No .log files found"
+    exit 1
+fi
+
+echo "[*] Found log files:"
+echo "$LOG_FILES"
+echo
+
+# --- PARALLEL EXECUTION LOGIC ---
+
+# If GNU parallel exists, use it
+if command -v parallel >/dev/null 2>&1; then
+    echo "[*] GNU parallel detected — engaging multi-core flay protocol"
+    echo "$LOG_FILES" | parallel -j "$(nproc)" bash "$FLAY_BIN" {} {.}.reborn.asc
+
+else
+    # Fallback: native bash background jobs
+    echo "[*] GNU parallel not found — using background job parallelism"
+    for LOG in $LOG_FILES; do
+        OUTPUT="${LOG%.log}.reborn.asc"
+        echo "[*] Processing $LOG → $OUTPUT"
+        bash "$FLAY_BIN" "$LOG" "$OUTPUT" &
+    done
+
+    # Wait for all background jobs
+    wait
+fi
+
+echo "[*] THE SINIST HAS BEEN SINED. ARTIFACTS ARE REBORN."

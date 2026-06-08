@@ -1,0 +1,119 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:32 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                        CSS COMPATIBILITY REPORT
+              NIST Staging — Dropped Rules, Fixes & CI Lint Config
+══════════════════════════════════════════════════════════════════════════════
+Document ID : CSS-COMPAT-2026-0512-001
+Source      : Static analysis of nist-stg.example.gov staging assets
+Tool        : stylelint 15.x + browserslist (IE11, last 2 Chrome, FF, Safari)
+══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1 — TOP DROPPED / FLAGGED RULES
+─────────────────────────────────────────
+  #  │ Rule / Property              │ File                           │ Line  │ Browser Impact           │ Severity
+  ───┼──────────────────────────────┼────────────────────────────────┼───────┼──────────────────────────┼──────────
+  1  │ color: oklch(...)            │ /css/nist-theme.css            │  142  │ Safari <16.4, FF <113    │ [AMBER]
+  2  │ container-type: inline-size  │ /css/layout.css                │   89  │ IE11, Safari <16         │ [AMBER]
+  3  │ @layer (cascade layers)      │ /css/base.css                  │    1  │ IE11, Chrome <99         │ [AMBER]
+  4  │ :has() selector              │ /css/components/nav.css        │   55  │ FF <121, IE11            │ [YELLOW]
+  5  │ accent-color                 │ /css/forms.css                 │  203  │ IE11, Safari <15.4       │ [YELLOW]
+  6  │ aspect-ratio                 │ /css/media.css                 │   17  │ IE11                     │ [YELLOW]
+  7  │ gap (flexbox shorthand)      │ /css/grid.css                  │   44  │ IE11, Safari <14         │ [YELLOW]
+  8  │ inset shorthand              │ /css/layout.css                │  122  │ IE11                     │ [GREEN]
+  9  │ scroll-behavior: smooth      │ /css/global.css                │   78  │ IE11, Safari <15.4       │ [GREEN]
+  10 │ -webkit- prefix missing      │ /css/animations.css            │  201  │ Safari older             │ [GREEN]
+
+SECTION 2 — SUGGESTED FIXES
+──────────────────────────────
+  Rule 1 — oklch() colors
+    Problem : oklch() unsupported in Safari < 16.4 and Firefox < 113.
+    Fix     : Add @supports fallback:
+      /* Fallback */
+      color: #1a6faf;
+      /* Modern */
+      @supports (color: oklch(0% 0 0)) {
+        color: oklch(36% 0.12 240);
+      }
+    File: /css/nist-theme.css:142
+
+  Rule 2 — container-type: inline-size
+    Problem : Container queries unsupported in IE11 and Safari < 16.
+    Fix     : Use @supports guard:
+      @supports (container-type: inline-size) {
+        .card { container-type: inline-size; }
+      }
+      /* Fallback: use media queries for IE11 */
+      @media (min-width: 600px) { .card { width: 100%; } }
+    File: /css/layout.css:89
+
+  Rule 3 — @layer cascade layers
+    Problem : Not supported in IE11 / Chrome < 99. Entire file may fail.
+    Fix     : Avoid @layer for any file that must support IE11.
+              Use CSS custom properties + specificity instead.
+              Or: build-time polyfill via postcss-cascade-layers.
+    File: /css/base.css:1
+
+  Rule 4 — :has() selector
+    Problem : FF < 121 (released Dec 2023). IE11 unsupported.
+    Fix     : Add @supports guard or use JS-based class toggling fallback.
+      @supports selector(:has(*)) {
+        nav:has(.active) { background: #005a8e; }
+      }
+    File: /css/components/nav.css:55
+
+  Rule 5-10 — See inline comments in suggested-fixes.css (test harness package)
+
+SECTION 3 — CI LINT RULES
+───────────────────────────
+  Add to .stylelintrc.json:
+  {
+    "extends": ["stylelint-config-standard"],
+    "plugins": ["stylelint-no-unsupported-browser-features"],
+    "rules": {
+      "plugin/no-unsupported-browser-features": [true, {
+        "severity": "warning",
+        "ignore": ["css-transitions"],
+        "browsers": ["last 2 Chrome versions", "last 2 Firefox versions",
+                     "last 2 Safari versions", "IE 11"]
+      }],
+      "color-no-invalid-hex": true,
+      "declaration-no-important": [true, {"severity": "warning"}],
+      "no-unknown-at-rules": true,
+      "selector-pseudo-class-no-unknown": [true, {
+        "ignorePseudoClasses": ["has"]
+      }]
+    }
+  }
+
+  Add to package.json scripts:
+    "lint:css": "stylelint 'src/**/*.css' --config .stylelintrc.json",
+    "lint:css:fix": "stylelint 'src/**/*.css' --fix",
+
+  Add to CI (GitHub Actions example):
+    - name: CSS Lint
+      run: npm run lint:css
+      # Fail PR if any [AMBER] or higher severity rule is violated
+
+SECTION 4 — BROWSERSLIST CONFIG
+─────────────────────────────────
+  .browserslistrc:
+    last 2 Chrome versions
+    last 2 Firefox versions
+    last 2 Safari versions
+    IE 11
+    > 0.5%
+    not dead
+
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING          CSS-COMPAT-2026-0512-001

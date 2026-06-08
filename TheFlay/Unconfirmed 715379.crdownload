@@ -1,0 +1,245 @@
+#!/usr/bin/env bash
+# obsidian_rights_pack.sh
+# Install rights package into an Obsidian vault and operate on notes.
+# Usage examples:
+#   ./obsidian_rights_pack.sh -v ~/NotesVault            # install package into vault
+#   ./obsidian_rights_pack.sh -v ~/NotesVault -o rights.md
+#   ./obsidian_rights_pack.sh -v ~/NotesVault -p "Notes/README.md"
+#   ./obsidian_rights_pack.sh -v ~/NotesVault -a "Notes/README.md"
+#   ./obsidian_rights_pack.sh -v ~/NotesVault -w watermark.txt
+set -euo pipefail
+
+# Defaults
+VAULT_PATH="${VAULT_PATH:-$*}"
+ORIGINATOR="Enrique"
+
+# Text blocks
+SIGNATURE_BLOCK="— ${ORIGINATOR}
+All rights reserved.
+No liability assumed.
+All value, assets, and proceeds reserved by the originator."
+
+WATERMARK_TEXT="© ${ORIGINATOR} — All Rights Reserved • Zero Liability • Value Reserved"
+
+HEADER_TEXT="© ${ORIGINATOR} — All Rights Reserved • Zero Liability"
+FOOTER_TEXT="All rights reserved. No liability assumed. All value reserved by the originator."
+
+TAGLINE_90247="90247 Corpus — Rights Reserved. Liability Zero. Value Retained."
+
+RIGHTS_CLAUSE="All rights to this work are fully reserved by the originator.
+No permissions, licenses, or transfers are granted or implied.
+All creative value, derivative value, and associated proceeds remain reserved."
+
+NON_LIABILITY_DECL="The originator assumes zero liability for any use, misuse, interpretation, or outcome derived from this material.
+All responsibility remains solely with the user or implementer."
+
+FULL_PACKAGE="$(cat <<EOF
+# Rights Package — ${ORIGINATOR}
+
+## Signature
+${SIGNATURE_BLOCK}
+
+## Watermark (single-line)
+${WATERMARK_TEXT}
+
+## Header
+${HEADER_TEXT}
+
+## Footer
+${FOOTER_TEXT}
+
+## Tagline (90247)
+${TAGLINE_90247}
+
+## Rights-reservation clause (Creative Work)
+${RIGHTS_CLAUSE}
+
+## Non-liability declaration (Documentation)
+${NON_LIABILITY_DECL}
+EOF
+)"
+
+# CSS watermark snippet (minimal, enable in Obsidian Appearance -> CSS snippets)
+WATERMARK_CSS="/* rights watermark snippet */
+.rights-watermark::after {
+  content: \"${WATERMARK_TEXT}\";
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  opacity: 0.08;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 9999;
+  white-space: nowrap;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+.markdown-preview-view .rights-watermark,
+.markdown-source-view .rights-watermark {
+  /* attach to body via adding class to workspace or use snippet to show globally */
+}
+"
+
+usage() {
+  cat <<USAGE
+Usage: $0 -v VAULT_PATH [options]
+
+Options:
+  -v VAULT_PATH    Path to your Obsidian vault (required)
+  -o OUTFILE       Write full package to OUTFILE inside vault (relative path)
+  -p NOTE_PATH     Prepend header to NOTE_PATH (relative to vault)
+  -a NOTE_PATH     Append footer to NOTE_PATH (relative to vault)
+  -w FILE          Write single-line watermark to FILE (relative to vault)
+  -n NAME          Set originator name (default: ${ORIGINATOR})
+  -h               Show this help
+USAGE
+  exit 1
+}
+
+# Parse args
+OUTFILE=""
+PREPEND=""
+APPEND=""
+WATERMARK_FILE=""
+while getopts ":v:o:p:a:w:n:h" opt; do
+  case ${opt} in
+    v) VAULT_PATH="$OPTARG" ;;
+    o) OUTFILE="$OPTARG" ;;
+    p) PREPEND="$OPTARG" ;;
+    a) APPEND="$OPTARG" ;;
+    w) WATERMARK_FILE="$OPTARG" ;;
+    n) ORIGINATOR="$OPTARG"
+       # update dependent strings
+       SIGNATURE_BLOCK="— ${ORIGINATOR}
+All rights reserved.
+No liability assumed.
+All value, assets, and proceeds reserved by the originator."
+       WATERMARK_TEXT="© ${ORIGINATOR} — All Rights Reserved • Zero Liability • Value Reserved"
+       HEADER_TEXT="© ${ORIGINATOR} — All Rights Reserved • Zero Liability"
+       FULL_PACKAGE="$(cat <<EOF
+# Rights Package — ${ORIGINATOR}
+
+## Signature
+${SIGNATURE_BLOCK}
+
+## Watermark (single-line)
+${WATERMARK_TEXT}
+
+## Header
+${HEADER_TEXT}
+
+## Footer
+${FOOTER_TEXT}
+
+## Tagline (90247)
+${TAGLINE_90247}
+
+## Rights-reservation clause (Creative Work)
+${RIGHTS_CLAUSE}
+
+## Non-liability declaration (Documentation)
+${NON_LIABILITY_DECL}
+EOF
+)"
+       WATERMARK_CSS="/* rights watermark snippet */
+.rights-watermark::after {
+  content: \"${WATERMARK_TEXT}\";
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  opacity: 0.08;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 9999;
+  white-space: nowrap;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+"
+       ;;
+    h) usage ;;
+    \?) echo "Invalid option -$OPTARG" >&2; usage ;;
+    :) echo "Option -$OPTARG requires an argument." >&2; usage ;;
+  esac
+done
+
+# Validate vault
+if [ -z "${VAULT_PATH:-}" ]; then
+  echo "Error: vault path required (-v)." >&2
+  usage
+fi
+if [ ! -d "$VAULT_PATH" ]; then
+  echo "Error: vault path '$VAULT_PATH' does not exist." >&2
+  exit 2
+fi
+
+# Ensure .obsidian directories
+TEMPLATES_DIR="$VAULT_PATH/.obsidian/templates"
+SNIPPETS_DIR="$VAULT_PATH/.obsidian/snippets"
+mkdir -p "$TEMPLATES_DIR" "$SNIPPETS_DIR"
+
+# Write template
+TEMPLATE_FILE="$TEMPLATES_DIR/rights_template.md"
+cat > "$TEMPLATE_FILE" <<EOF
+---
+title: Rights Package Template
+---
+
+${FULL_PACKAGE}
+
+<!-- Add the class 'rights-watermark' to a note's YAML or body to show watermark when snippet enabled -->
+EOF
+echo "Wrote template: $TEMPLATE_FILE"
+
+# Write full package file if requested
+if [ -n "$OUTFILE" ]; then
+  TARGET="$VAULT_PATH/$OUTFILE"
+  mkdir -p "$(dirname "$TARGET")"
+  printf "%s\n" "$FULL_PACKAGE" > "$TARGET"
+  echo "Wrote full package to $TARGET"
+fi
+
+# Write watermark CSS snippet
+SNIPPET_FILE="$SNIPPETS_DIR/rights_watermark.css"
+printf "%s\n" "$WATERMARK_CSS" > "$SNIPPET_FILE"
+echo "Wrote CSS snippet: $SNIPPET_FILE"
+echo "Enable this snippet in Obsidian Settings → Appearance → CSS snippets → toggle 'rights_watermark'"
+
+# Prepend header to a note
+if [ -n "$PREPEND" ]; then
+  TARGET="$VAULT_PATH/$PREPEND"
+  if [ ! -f "$TARGET" ]; then
+    echo "Error: target note '$TARGET' not found." >&2
+  else
+    TMP="$(mktemp "${TARGET}.tmp.XXXX")"
+    {
+      echo "$HEADER_TEXT"
+      echo
+      cat "$TARGET"
+    } > "$TMP" && mv "$TMP" "$TARGET"
+    echo "Prepended header to $TARGET"
+  fi
+fi
+
+# Append footer to a note
+if [ -n "$APPEND" ]; then
+  TARGET="$VAULT_PATH/$APPEND"
+  if [ ! -f "$TARGET" ]; then
+    echo "Error: target note '$TARGET' not found." >&2
+  else
+    {
+      echo
+      echo "$FOOTER_TEXT"
+    } >> "$TARGET"
+    echo "Appended footer to $TARGET"
+  fi
+fi
+
+# Write watermark text file if requested
+if [ -n "$WATERMARK_FILE" ]; then
+  TARGET="$VAULT_PATH/$WATERMARK_FILE"
+  mkdir -p "$(dirname "$TARGET")"
+  printf "%s\n" "$WATERMARK_TEXT" > "$TARGET"
+  echo "Wrote watermark text to $TARGET"
+fi
+
+echo "Done. To use the template in Obsidian: enable Templates or Templater plugin and select 'rights_template.md'."
+exit 0

@@ -1,0 +1,45 @@
+# --- PANTHEON SCRIPT REGISTRY ---
+
+# Helper function to invoke scripts
+function Invoke-PantheonScript {
+    param([string]$ScriptName, [Parameter(ValueFromRemainingArguments=$true)]$Args)
+    $ScriptPath = "$env:USERPROFILE\Scripts\$ScriptName.ps1"
+    if (Test-Path $ScriptPath) { & $ScriptPath @Args } else { Write-Error "Script $ScriptName not found." }
+}
+
+# 1. WILDLIFE (Early-Stage/Recon)
+function Invoke-XipeTotec { Invoke-PantheonScript "xipe_totec" @Args }
+Set-Alias -Name xipetotec -Value Invoke-XipeTotec
+
+function Invoke-ObsidianSnake { Invoke-PantheonScript "obsidian_snake" @Args }
+Set-Alias -Name snake -Value Invoke-ObsidianSnake
+
+function Invoke-Butterfly { Invoke-PantheonScript "butterfly" @Args }
+Set-Alias -Name butterfly -Value Invoke-Butterfly
+
+function Invoke-Jaguars { Invoke-PantheonScript "jaguars" @Args }
+Set-Alias -Name jaguars -Value Invoke-Jaguars
+
+function Invoke-Eagle { Invoke-PantheonScript "eagle" @Args }
+Set-Alias -Name eagle -Value Invoke-Eagle
+
+function Invoke-Rabbits { Invoke-PantheonScript "rabbits" @Args }
+Set-Alias -Name rabbits -Value Invoke-Rabbits
+
+# 2. UNDERWORLD (Core/Stabilization)
+function Invoke-Tlaloc { Invoke-PantheonScript "tlaloc" @Args }
+Set-Alias -Name tlaloc -Value Invoke-Tlaloc
+
+function Invoke-Quetzalcoatl { Invoke-PantheonScript "quetzalcoatl" @Args }
+Set-Alias -Name quetzalcoatl -Value Invoke-Quetzalcoatl
+
+function Invoke-Tezcatlipoca { Invoke-PantheonScript "tezcatlipoca" @Args }
+Set-Alias -Name tezcatlipoca -Value Invoke-Tezcatlipoca
+
+# 3. CLOUD & FIBER (Architecture/Connectivity)
+# Placeholder patterns for your additional architecture tiers
+function Invoke-CloudSync { Invoke-PantheonScript "cloud_sync" @Args }
+Set-Alias -Name cloud -Value Invoke-CloudSync
+
+function Invoke-FiberProbe { Invoke-PantheonScript "fiber_probe" @Args }
+Set-Alias -Name fiber -Value Invoke-FiberProbe

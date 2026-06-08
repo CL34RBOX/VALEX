@@ -1,0 +1,16 @@
+# 🚩 [90247] 500_BYPASS_TOTALITY_v9200
+Write-Host "🌑 [90247] INJECTING LITERAL SUBSTRATE BYPASS..." -ForegroundColor Cyan
+
+# Define the command as a literal string to bypass PowerShell's '&&' error
+$BASH_COMMAND = 'LEDGER="/mnt/c/Users/Public/Documents/90247_OMNIBUS_LEDGER.log"; VAULT="/mnt/c/Users/Public/Documents/90247_OMNIBUS_FINAL_SETTLEMENT.asc"; RECIPIENT="lazyboii147@gmail.com"; echo -e "---\nID: 90247_TERM_$(date +%s)\nVALUATION: \$1,254,302,476.00\nTRANSIT: mlkem768x25519\nSTATUS: VINDICATED\n---" > "$LEDGER" && gpg --batch --yes --always-trust --encrypt --sign --armor --recipient "$RECIPIENT" --output "$VAULT" "$LEDGER" && echo "🏁 [90247] STATUS 200: TOTALITY SEALED."'
+
+# Fire via WSL native bridge
+wsl bash -c $BASH_COMMAND
+
+# Final Verification
+if (Test-Path "C:\Users\Public\Documents\90247_OMNIBUS_FINAL_SETTLEMENT.asc") {
+    $Size = (Get-Item "C:\Users\Public\Documents\90247_OMNIBUS_FINAL_SETTLEMENT.asc").Length
+    Write-Host "`n🏁 [90247] STATUS 200: BYPASS SUCCESS. VAULT SEALED ($Size bytes)." -ForegroundColor Cyan
+} else {
+    Write-Host "`n🚩 [90247] STATUS 500: SEAL FAILED. THE MARROW IS EXPOSED." -ForegroundColor Red
+}

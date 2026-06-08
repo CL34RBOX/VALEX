@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:30 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+║  REDACTION POLICY: uid/session/token/email → [REDACTED]; cid → SHA-256      ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  COLOR KEY                                                                   ║
+║  [RED]    Critical — immediate action required (<4 h SLA)                   ║
+║  [AMBER]  High — action required within 24 h                                ║
+║  [YELLOW] Medium — action required within 72 h                              ║
+║  [GREEN]  Low / informational — next sprint                                 ║
+║  [BLUE]   Informational / chain-of-custody annotation                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                        ONE-PAGE EXECUTIVE SUMMARY
+                NIST Staging — Telemetry / CSP / Sentry Incidents
+          Package Date: 2026-05-12  |  Assembled: 18:30 PDT  |  Preparer: Automated Forensic Engine
+════════════════════════════════════════════════════════════════════════════════
+
+INCIDENT OVERVIEW
+─────────────────
+Between 17:35 and 18:08 UTC on 2026-05-12, four (4) GET requests were observed
+against the NIST staging environment that constitute three overlapping security
+incidents: (1) unauthorized telemetry exfiltration, (2) Content Security Policy
+(CSP) violations, and (3) Sentry SDK transmitting PII in error envelopes. A
+fourth event revealed a Service Worker caching telemetry with credentials.
+
+TIMELINE SUMMARY
+─────────────────
+  17:35:58.071Z  [NST-STG-0001] [RED]    Telemetry beacon to third-party endpoint
+  17:45:18.223Z  [NST-STG-0002] [RED]    CSP violation — inline-script blocked (truncated)
+  17:52:35.694Z  [NST-STG-0003] [RED]    Sentry PII exposure — WAF fired
+  18:07:51.951Z  [NST-STG-0004] [AMBER]  Service Worker telemetry intercept (WAF-SW-001)
+
+KEY FINDINGS
+─────────────
+  1. [RED]   Telemetry endpoint receives hashed CID & staging analytics hits without
+             explicit user consent mechanism — potential FISMA/privacy control gap.
+  2. [RED]   CSP policy missing 'strict-dynamic'; nonce rotation not enforced per request;
+             inline-script blocks indicate mis-configured or absent per-host nonces.
+  3. [RED]   Sentry SDK configured without beforeSend scrubbing — user.id and user.email
+             transmitted in plaintext to third-party ingest endpoint.
+  4. [AMBER] Service Worker routes analytics through fetch with credentials:include,
+             bypassing WAF inspection on subsequent requests.
+
+AFFECTED SYSTEMS
+─────────────────
+  • nist-stg.example.gov (Staging Web Frontend)
+  • analytics-staging.nist-stg.example.com (Telemetry Collector)
+  • csp-report.nist-stg.example.gov (CSP Report Endpoint)
+  • o123456.ingest.sentry.io (Sentry — External)
+  • Service Worker: /sw.js v1.2.3
+
+IMMEDIATE ACTIONS (< 4 h)
+───────────────────────────
+  ► Engineering:  Deploy Sentry beforeSend scrubber — remove user.id, user.email [ENG-001]
+  ► Security:     Tighten CSP: add 'strict-dynamic', rotate nonces, remove 'unsafe-inline' [SEC-001]
+  ► Engineering:  Remove credentials:include from Service Worker fetch [ENG-002]
+  ► Legal:        Review telemetry consent mechanism per FISMA / Privacy Act [LEG-001]
+
+EVIDENCE PACKAGE
+─────────────────
+  4 evidence items | 4 chain-of-custody entries | All PII redacted per policy
+  CUSIP-style IDs: NST-STG-0001 — NST-STG-0004
+  All SHA-256 hashes recorded in MANIFEST.sha256
+
+DISTRIBUTION
+─────────────
+  Engineering (Telemetry) | Security (CSP/WAF) | Infra (Service Worker) | Legal (Disclosure)
+  Retention: 90 days — expires 2026-08-10. Do not transmit outside staging boundary.
+
+════════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                         Page 1 of 1

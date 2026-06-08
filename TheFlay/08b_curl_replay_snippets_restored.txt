@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# =============================================================================
+# FILE: test_harness/02_curl_replay_snippets.sh
+# PURPOSE: Exact curl replays for each evidence item (headers redacted)
+# CLASSIFICATION: CONFIDENTIAL — STAGING
+# =============================================================================
+
+CID_HASH="$(echo -n 'cid-8f3a21bc904d' | sha256sum | awk '{print $1}')"
+
+echo "--- NST-STG-0001: Telemetry Beacon Replay ---"
+curl -v \
+  "https://analytics-staging.nist-stg.example.com/collect?v=1&tid=UA-XXXX-STAGING&cid=${CID_HASH}&t=pageview&dp=%2Fnist-staging" \
+  -H "User-Agent: Mozilla/5.0 (compatible; NIST-Staging-Monitor/1.0)" \
+  -H "Referer: https://nist-stg.example.gov/csrc/publications/" \
+  -H "CF-Ray: 8b2fa1c93e7d9f01-IAD" \
+  --max-time 10
+
+echo ""
+echo "--- NST-STG-0002: CSP Report Replay (IsTruncated: true — partial body) ---"
+curl -v -X POST \
+  "https://csp-report.nist-stg.example.gov/__csp-report?src=staging" \
+  -H "Content-Type: application/csp-report" \
+  -H "CF-Ray: 8b2fa1c93e7d9f02-IAD" \
+  -H "Origin: https://nist-stg.example.gov" \
+  -d '{
+    "csp-report": {
+      "document-uri": "https://nist-stg.example.gov/csrc/publications/",
+      "referrer": "",
+      "violated-directive": "script-src-elem",
+      "effective-directive": "script-src-elem",
+      "original-policy": "default-src '\''self'\''; script-src '\''self'\'' '\''nonce-[REDACTED]'\''",
+      "disposition": "report",
+      "blocked-uri": "inline",
+      "line-number": 47,
+      "source-file": "https://nist-stg.example.gov/csrc/publications/",
+      "status-code": 0
+    }
+  }' \
+  --max-time 10
+
+echo ""
+echo "--- NST-STG-0003: Sentry Envelope Replay (PII scrubbed) ---"
+curl -v \
+  "https://o123456.ingest.sentry.io/api/4567890/envelope/?sentry_key=[REDACTED]&sentry_version=7" \
+  -H "Content-Type: application/x-sentry-envelope" \
+  -H "CF-Ray: 8b2fa1c93e7d9f03-IAD" \
+  -H "X-Sentry-Auth: Sentry sentry_key=[REDACTED], sentry_client=sentry.javascript.browser/7.x" \
+  --data-binary $'{"dsn":"https://[REDACTED]@o123456.ingest.sentry.io/4567890","sent_at":"2026-05-12T17:52:34.901Z"}\n{"type":"event","length":512}\n{"level":"error","platform":"javascript","user":{"id":"[REDACTED]","email":"[REDACTED]"},"request":{"url":"https://nist-stg.example.gov/csrc/publications/"}}' \
+  --max-time 10
+
+echo ""
+echo "--- NST-STG-0004: Service Worker /sw.js Replay ---"
+curl -v \
+  "https://nist-stg.example.gov/sw.js" \
+  -H "Service-Worker: script" \
+  -H "CF-Ray: 8b2fa1c93e7d9f04-IAD" \
+  -H "User-Agent: Mozilla/5.0 (compatible; NIST-Staging-Monitor/1.0)" \
+  --max-time 10

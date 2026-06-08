@@ -1,0 +1,28 @@
+﻿#,Field,Purpose
+1,finding_id,"Unique finding identifier (e.g., DX-2026-0001)"
+2,audit_session,Session grouping ID for batch runs
+3,timestamp_detected,ISO 8601 time of initial detection
+4,timestamp_reported,ISO 8601 time of vendor/platform submission
+5,severity,CRITICAL · HIGH · MEDIUM · LOW · INFO
+6,confidence,CONFIRMED · SUSPECTED · OBSERVED
+7,category,Primary class: Telemetry Leak; DOM Mutation; Vendor Script; Privacy Violation; Attack Surface
+8,subcategory,Specific finding type (PII Exfiltration; Unauthorized Injection; Misconfiguration; Consent Bypass; Exposed Endpoint)
+9,target_domain,Root domain under audit
+10,target_url,Full URL where finding was observed
+11,vendor_name,Third-party vendor (Adobe Launch; Innovid; Jivox; Pinterest; etc.)
+12,script_source,URL of the offending script
+13,script_hash_sha256,SHA-256 hash of the script at time of capture
+14,dom_element_selector,CSS selector of the affected DOM node
+15,mutation_type,DOM mutation class: childList · attributes · characterData · subtree
+16,beacon_endpoint,Telemetry beacon destination URL
+17,data_leaked,Description of exfiltrated data fields
+18,impact_summary,Reviewer-ready impact statement
+19,reproduction_steps,Step-by-step repro for the finding
+20,evidence_artifact,Path or reference to screenshot/HAR/log artifact
+21,chain_of_custody_seal,Seal hash or signature block reference
+22,remediation_recommendation,Suggested fix for the target
+23,cvss_score,CVSS v3.1 base score (0.0–10.0)
+24,cwe_id,"CWE identifier (e.g., CWE-200; CWE-79)"
+25,status,OPEN · REPORTED · TRIAGED · RESOLVED · DISPUTED
+26,analyst,Reporting analyst handle
+27,notes,Free-form notes or cross-references

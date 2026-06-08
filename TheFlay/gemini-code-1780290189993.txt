@@ -1,0 +1,35 @@
+<#.SYNOPSIS
+    MICTLANTECUHTLI: Identity Governance and Stale Account Grim-Reaping.
+#>
+param (
+    [int]$InactivityDays = 90,
+    [switch]$AuditOnly = $true
+)
+
+Write-Host "[MICTLANTECUHTLI] Scanning domain boundaries for departed identities..." -ForegroundColor Cyan
+
+# Calculate threshold date
+$CutoffDate = (Get-Date).AddDays(-$InactivityDays)
+
+# Note: Requires local Admin or ActiveDirectory module depending on scope. 
+# This example targets Local Accounts for universal baseline compatibility.
+try {
+    $StaleAccounts = Get-LocalUser | Where-Object { $_.LastLogon -lt $CutoffDate -and $_.Enabled -eq $true }
+
+    if ($StaleAccounts) {
+        foreach ($Account in $StaleAccounts) {
+            if ($AuditOnly) {
+                Write-Warning "[MICTLANTECUHTLI] Idle identity detected: $($Account.Name) (Last Logon: $($Account.LastLogon))"
+            } else {
+                Disable-LocalUser -Name $Account.Name
+                Write-Host "[MICTLANTECUHTLI] Consumed: Local account $($Account.Name) has been disabled." -ForegroundColor Yellow
+            }
+        }
+    } else {
+        Write-Host "[MICTLANTECUHTLI] No stagnant identities found exceeding threshold." -ForegroundColor Green
+    }
+} catch {
+    Write-Error "[MICTLANTECUHTLI] Governance check failed. Ensure administrative context."
+}
+
+Write-Host "[MICTLANTECUHTLI] Identity cycle assessment finalized." -ForegroundColor Green

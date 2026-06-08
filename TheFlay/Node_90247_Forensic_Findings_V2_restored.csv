@@ -1,0 +1,12 @@
+ID,Category,Component,Target_Endpoint,Evidence,Risk
+F-001,Exfiltration Artery,Google AsyncData,ogads-pa.clients6.google.com,403 Forbidden / CORS Missing in console-export log,Bypass of standard origin policies for telemetry sequestration
+F-002,Identity Stitching,Hydro Tracking,visitor-payload / visitor-hmac,Meta-tag scraping logic in hydro-tracking.ts,Cross-domain user tracking via document metadata
+F-003,Exfiltration Artery,Microsoft Substrate,substrate.office.com/PeoplePredictionsB2,High-density network traffic in ntp.msn.com.har,Real-time working set exfiltration and behavioral prediction
+F-004,Data Movement,Akamai Edge Chaining,US_CA_LOSANGELES <-> US_WA_SEATTLE,Network routing headers in ntp.msn.com.har,Obfuscation of physical forensic shard origin
+F-005,Framework Manipulation,Lit-HTML EventPart,addEventListener / removeEventListener,Dirty checking logic in _$setValue script,Dynamic interception of user interaction without DOM breakage
+F-006,Identity Stitching,AddToAny Telemetry,J.a2a.ttp / J.a2a.nonce,Tracking tokens in social sharing script,User propagation tracking across decentralized protocols
+F-007,System Fingerprinting,Client Hints,sec-ch-ua-arch / sec-ch-ua-platform-version,HTTP headers in ntp.msn.com.har,Precise hardware DNA mapping for system 5CD231FD5M
+F-008,Cryptographic Block,GPG Agent Substrate,loopback / batchmode,Permission denied / Bad Passphrase errors in screenshots,"Stall in vitrification of the $1,254,302,476.00 evidence bundle"
+F-009,Exfiltration Artery,Google Analytics (v2),google.com/g/collect,XHR POST with complex GTM/GCD/DMA parameters in console log (13:35:58),Real-time behavioral telemetry harvesting via advanced identity-stitching
+F-010,Data Movement,IRS Page Telemetry,Internal Revenue Service (irs.gov),Beacon exfiltration containing 'dt' (Page Title) and 'dr' (Referrer) markers,Exposure of sensitive institutional navigation patterns to third-party collectors
+F-011,Connectivity Shard,DNS Substrate,NS_ERROR_UNKNOWN_HOST,Log entry 13:35:58.055 following collected collect beacon,Potential signaling of telemetry tunnel termination or sinkholing

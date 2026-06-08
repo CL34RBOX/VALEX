@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:36 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+             TRANSMISSION & DISCLOSURE CHECKLIST (WITH COLOR KEY)
+                NIST Staging Forensic Package — Final Gate
+══════════════════════════════════════════════════════════════════════════════
+Document ID : TX-2026-0512-001
+Package     : forensic_package_NIST_STG_20260512.tar.gz
+Color Key   : [RED]=Block/Stop  [AMBER]=Warn/Review  [GREEN]=Approved/Pass
+══════════════════════════════════════════════════════════════════════════════
+
+PRE-TRANSMISSION GATE — Complete ALL items before transmitting
+───────────────────────────────────────────────────────────────
+  #    Color    Item                                                     Done
+  ──── ──────── ──────────────────────────────────────────────────────── ────
+  TX01 [GREEN]  sha256sum -c MANIFEST.sha256 → all OK                   [ ]
+  TX02 [GREEN]  sha256sum -c *.tar.gz.sha256 → archive hash verified    [ ]
+  TX03 [GREEN]  gpg --verify *.asc → Good signature from signing key    [ ]
+  TX04 [GREEN]  grep -r email . → zero raw email addresses found        [ ]
+  TX05 [GREEN]  grep -r uid . → zero raw uid values found               [ ]
+  TX06 [GREEN]  All evidence item files present (NST-STG-0001..0004)    [ ]
+  TX07 [AMBER]  Legal (Disclosure) has reviewed 07_DISCLOSURE_MANIFEST  [ ]
+  TX08 [AMBER]  LEG-001 assessment completed — disclosure decision made  [ ]
+  TX09 [AMBER]  All recipients verified (GPG keys confirmed)             [ ]
+  TX10 [RED]    If any TX01–TX06 fails → STOP. Do not transmit.         [ ]
+
+TRANSMISSION — Complete in order
+──────────────────────────────────
+  #    Color    Item                                                     Done
+  ──── ──────── ──────────────────────────────────────────────────────── ────
+  TX11 [GREEN]  Transmit via approved channel only (see DISC manifest)  [ ]
+  TX12 [GREEN]  Send .tar.gz + .sha256 + .asc (all three files)        [ ]
+  TX13 [AMBER]  Confirm receipt acknowledgment from all recipients      [ ]
+  TX14 [GREEN]  Log transmission in chain-of-custody (COC-0012)        [ ]
+  TX15 [GREEN]  Do not transmit to production systems or public cloud   [ ]
+
+POST-TRANSMISSION — Confirm within 24 h
+─────────────────────────────────────────
+  #    Color    Item                                                     Done
+  ──── ──────── ──────────────────────────────────────────────────────── ────
+  TX16 [GREEN]  Recipients confirm gpg --verify → Good signature        [ ]
+  TX17 [GREEN]  Recipients confirm sha256sum -c → OK                    [ ]
+  TX18 [AMBER]  Confirm ENG-001 (Sentry scrubber) deployed < 4 h SLA   [ ]
+  TX19 [AMBER]  Confirm SEC-001 (CSP hardening) deployed < 4 h SLA     [ ]
+  TX20 [AMBER]  Confirm ENG-002 (SW credentials:omit) deployed < 4 h   [ ]
+  TX21 [GREEN]  Schedule 72 h follow-up for YELLOW priority items       [ ]
+  TX22 [GREEN]  Schedule next sprint for GREEN priority items           [ ]
+  TX23 [RED]    If external disclosure required (per LEG-001):          [ ]
+               → Obtain CISO + Legal sign-off before any external send
+
+RETENTION & DESTRUCTION
+─────────────────────────
+  TX24 [GREEN]  Mark calendar: 2026-08-10 — secure deletion date        [ ]
+  TX25 [GREEN]  Destroy local working copies after verified receipt     [ ]
+  TX26 [AMBER]  Confirm destruction in chain-of-custody log             [ ]
+
+ESCALATION
+───────────
+  Any [RED] item blocked → escalate to Security (CSP/WAF) lead immediately
+  PII leak discovered post-transmission → invoke Incident Response Plan
+  Legal disclosure required → Legal (Disclosure) + CISO within 1 h
+
+══════════════════════════════════════════════════════════════════════════════
+EVIDENCE CROSS-REFERENCE
+  NST-STG-0001  Ray: 8b2fa1c93e7d9f01-IAD  [RED]   TX01,TX11 prerequisite
+  NST-STG-0002  Ray: 8b2fa1c93e7d9f02-IAD  [RED]   TX07 prerequisite
+  NST-STG-0003  Ray: 8b2fa1c93e7d9f03-IAD  [RED]   TX08,TX23 prerequisite
+  NST-STG-0004  Ray: 8b2fa1c93e7d9f04-IAD  [AMBER] TX19,TX20 prerequisite
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                    TX-2026-0512-001

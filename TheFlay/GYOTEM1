@@ -1,0 +1,880 @@
+16:40:26.956 GET
+https://gemini.google.com/app/f14bdd4bf90b8be8
+[HTTP/2 200  278ms]
+
+16:40:26.958 XHRGET
+https://signaler-pa.clients6.google.com/punctual/multi-watch/channel?VER=8&gsessionid=0CUdoZkL7f9jIFZHqRfEQIEeV6wDT8r8cWjZu2cSqYg&key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4&RID=rpc&SID=-vpZ17ucuk5qrprx_RDfNA&AID=5&CI=0&TYPE=xmlhttp&zx=j8wvd6y4g3a&t=2
+NS_BINDING_ABORTED
+
+16:40:26.962 XHROPTIONS
+https://signaler-pa.clients6.google.com/punctual/multi-watch/channel?VER=8&gsessionid=0CUdoZkL7f9jIFZHqRfEQIEeV6wDT8r8cWjZu2cSqYg&key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4&RID=rpc&SID=-vpZ17ucuk5qrprx_RDfNA&AID=5&CI=0&TYPE=xmlhttp&zx=j8wvd6y4g3a&t=2
+[HTTP/2 200  57ms]
+
+16:40:26.984 XHRPOST
+https://www.google-analytics.com/g/collect?v=2&tid=G-WC57KJ50ZZ&gtm=45je6562v9134258191z89113054662za20gzb9113054662zd9113054662&_p=1778370020766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1886948499.1778042852&frm=0&lps=1&pscdl=noapi&rcb=6&sr=1525x858&ul=en-us&tag_exp=0~115616986~115938465~115938468~118463261~118494633&dr=https://www.google.com/&dl=https://gemini.google-b197145817.com/app/f14bdd4bf90b8be8/&dt=Google Gemini&sid=1778367594&sct=17&seg=1&_s=1&tfd=6700
+NS_ERROR_UNKNOWN_HOST
+
+16:40:26.991 XHRPOST
+https://www.google.com/g/collect?v=2&tid=G-WC57KJ50ZZ&gtm=45je6562v9134258191z89113054662za20gzb9113054662zd9113054662&_p=1778370020766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1886948499.1778042852&frm=0&lps=1&pscdl=noapi&rcb=6&sr=1525x858&ul=en-us&tag_exp=0~115616986~115938465~115938468~118463261~118494633&dr=https://www.google.com/&dl=https://gemini.google-b197145817.com/app/f14bdd4bf90b8be8/&dt=Google+Gemini&sid=1778367594&sct=17&seg=1&_s=1&tfd=6700&gaf=1
+[HTTP/3 204  62ms]
+
+16:40:27.191 Content-Security-Policy warnings 5
+16:40:27.199 POST
+https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID1PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID3PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c&authuser=0&format=json
+NS_ERROR_FAILURE
+
+16:40:27.200 POST
+https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID1PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID3PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c&authuser=0&format=json
+NS_ERROR_FAILURE
+
+16:40:27.202 POST
+https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID1PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID3PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c&authuser=0&format=json
+NS_ERROR_FAILURE
+
+16:40:27.203 POST
+https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID1PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID3PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c&authuser=0&format=json
+NS_ERROR_FAILURE
+
+16:40:27.208 POST
+https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID1PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID3PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c&authuser=0&format=json
+NS_ERROR_FAILURE
+
+16:40:27.238 Content-Security-Policy: (Report-Only policy) The page’s settings would block a script (script-src-elem) at https://www.googletagmanager.com/gtm.js?id=GTM-KKRLL9S from being executed because it violates the following directive: “script-src 'unsafe-inline' 'unsafe-eval' blob: data: https://www.googleadservices.com/pagead/conversion/ https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtag/destination https://www.google.com/js/bg/ https://www.gstatic.com/external_hosted/highlightjs/highlight.pack.js https://www.gstatic.com/monaco_editor/ https://fonts.gstatic.com/s/e/notoemoji/search/wrapper.js https://www.youtube.com/iframe_api https://translate.google.com/translate_a/element.js https://www-onepick-opensocial.googleusercontent.com/gadgets/js/rpc.js https://www.gstatic.com/_/mss/boq-one-google/_/ https://www.gstatic.com/og/_/js/ https://apis.google.com/js/api.js https://apis.google.com/js/client.js https://www.google.com/tools/feedback/chat_load.js https://www.google.com/tools/feedback/help_api.js https://www.google.com/tools/feedback/load.js https://www.google.com/tools/feedback/open.js https://www.google.com/tools/feedback/open_to_help_guide_lazy.js https://www.gstatic.com/feedback/js/ https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js https://www.gstatic.com/inproduct_help/api/main.min.js https://www.gstatic.com/inproduct_help/chatsupport/chatsupport_button_v2.js https://www.gstatic.com/inproduct_help/service/lazy.min.js https://www.gstatic.com/uservoice/feedback/client/web/live/ https://www.gstatic.com/uservoice/surveys/resources/prod/js/survey/ https://maps.googleapis.com/maps/api/js https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ https://apis.google.com/_/scs/abc-static/_/js/ https://maps.googleapis.com/maps-api-v3/api/js/ https://maps.googleapis.com/maps/vt https://maps.googleapis.com/maps/api/js/ https://maps.googleapis.com/maps/api/place/js/ https://www.youtube.com/s/player/ https://translate.googleapis.com/_/translate_http/_/js/” f14bdd4bf90b8be8
+16:40:27.251 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/excm=_b/ed=1/dg=0/br=1/wt=2/ujg=1/rs=AL3bBk1PMZ3fQK-K-jK3zyB1iYBHT68kvg/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=_b?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/2 200  85ms]
+
+16:40:27.255 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=LQaXg?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/2 200  124ms]
+
+16:40:27.259 POST
+https://gemini.google.com/_/BardChatUi/cspreport/fine-allowlist
+[HTTP/3 204  125ms]
+
+16:40:27.266 GET
+https://www.googletagmanager.com/gtm.js?id=GTM-KKRLL9S
+[HTTP/2 200  166ms]
+
+16:40:27.434 GET
+https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCIhMl07v0x.woff2
+[HTTP/2 200  193ms]
+
+16:40:27.435 GET
+https://lh3.googleusercontent.com/ogw/AF2bZyi1Hj1TtqTKlhWv-RZu06GBH7btwIKEHdahvSl-Fp_gSyI=s32-c-mo
+[HTTP/2 200  13ms]
+
+16:40:27.459 GET
+https://www.gstatic.com/og/_/js/k=og.qtm.en_US.6OjOwPAlFdQ.2019.O/rt=j/m=qabr,q_dnp,qcwid,qbd,qapid,qads,qrcd/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTv8wYybEpvUEjt3SHn7JfTjQMRKXw
+[HTTP/2 200  62ms]
+
+16:40:27.461 GET
+https://www.gstatic.com/og/_/ss/k=og.qtm.xtOXw-mW0xU.L.F4.O/m=qcwid,qba,d_b_gm3,d_wi_gm3,d_lo_gm3/excm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/ct=zgms/rs=AA2YrTv7r3JqSe2GxSNutQVhLToNRUQMQg
+[HTTP/2 200  33ms]
+
+16:40:27.676 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=LQaXg,_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=AdpaDf?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  26ms]
+
+16:40:27.718 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=otAQ7b&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=60028&rt=c
+[HTTP/3 200  275ms]
+
+16:40:27.721 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=sJBwce&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=160028&rt=c
+[HTTP/3 200  668ms]
+
+16:40:27.725 XHRPOST
+https://waa-pa.clients6.google.com/$rpc/google.internal.waa.v1.Waa/Create
+[HTTP/2 200  55ms]
+
+16:40:27.739 XHROPTIONS
+https://waa-pa.clients6.google.com/$rpc/google.internal.waa.v1.Waa/Create
+[HTTP/2 200  57ms]
+
+16:40:27.740 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=AdpaDf,LQaXg,_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=Z8wCif?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  23ms]
+
+16:40:27.773 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=DYBcR&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=260028&rt=c
+[HTTP/3 200  217ms]
+
+16:40:27.820 Expected media feature name but found ‘-ms-high-contrast’. rs=AA2YrTv7r3JqSe2GxSNutQVhLToNRUQMQg:1:1797
+16:40:27.820 Expected media feature name but found ‘-ms-high-contrast’. rs=AA2YrTv7r3JqSe2GxSNutQVhLToNRUQMQg:1:1994
+16:40:27.821 Unrecognized at-rule or error parsing at-rule ‘@if’. rs=AA2YrTv7r3JqSe2GxSNutQVhLToNRUQMQg:1:2721
+16:40:27.821 Unknown pseudo-class or pseudo-element ‘-o-prefocus’.  Ruleset ignored due to bad selector. rs=AA2YrTv7r3JqSe2GxSNutQVhLToNRUQMQg:1:3049
+16:40:27.821 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. rs=AA2YrTv7r3JqSe2GxSNutQVhLToNRUQMQg:1:4492
+16:40:27.942 XHRPOST
+https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+[HTTP/2 200  179ms]
+
+16:40:27.949 GET
+https://accounts.google.com/RotateCookiesPage?og_pid=658&rot=3&origin=https://gemini.google.com&exp_id=0
+[HTTP/2 200  315ms]
+
+16:40:27.951 GET
+https://www.google.com/js/bg/peRFAbSgGIHMruVmLda33M4vbilZD1jorRMOIZ-XP3w.js
+[HTTP/3 200  0ms]
+
+16:40:27.966 XHRPOST
+https://signaler-pa.clients6.google.com/punctual/v1/chooseServer?key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4
+[HTTP/2 200  52ms]
+
+16:40:27.967 GET
+https://www.googletagmanager.com/gtag/js?id=G-WC57KJ50ZZ&cx=c&gtm=4e6570h2
+[HTTP/3 200  143ms]
+
+16:40:27.968 XHRGET
+https://www.google.com/pagead/set_partitioned_cookie?rcb=6&frm=0&apvc=1&ae=g&en=page_view&ref=www.google.com&url=https://gemini.google.com/app/f14bdd4bf90b8be8&scrsrc=www.googletagmanager.com&lps=1&rnd=1987777252.1778370028&dt=‎Google Gemini&auid=1087960951.1778042851&navt=r&npa=0&ep.ads_data_redaction=0&gtm=45He6570h2v9113054662za200zd9113054662xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118494634~118694324~118719171&tft=1778370027920&tfd=996&apve=1&apvf=f
+[HTTP/2 200  199ms]
+
+16:40:27.972 XHRPOST
+https://www.google.com/ccm/collect?rcb=6&frm=0&ae=g&en=page_view&dr=www.google.com&dl=https://gemini.google.com/app/f14bdd4bf90b8be8&scrsrc=www.googletagmanager.com&lps=1&rnd=1987777252.1778370028&dt=‎Google Gemini&auid=1087960951.1778042851&navt=r&npa=0&ep.ads_data_redaction=0&gtm=45He6570h2v9113054662za200zd9113054662xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118494634~118694324~118719171&apve=1&apvf=f&apvc=1&tft=1778370027924&tfd=1000
+[HTTP/2 200  135ms]
+
+16:40:27.980 XHROPTIONS
+https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+[HTTP/2 200  78ms]
+
+16:40:28.008 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=AdpaDf,LQaXg,Z8wCif,_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=Wg2iZc?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.013 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=AdpaDf,LQaXg,Wg2iZc,Z8wCif,_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=UE0P2d?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.014 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=AdpaDf,LQaXg,UE0P2d,Wg2iZc,Z8wCif,_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=ABELSd?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.015 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,LQaXg,UE0P2d,Wg2iZc,Z8wCif,_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=PzWdsc?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.025 GET
+https://gemini.google.com/_/bscframe
+[HTTP/3 200  203ms]
+
+16:40:28.065 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,LQaXg,PzWdsc,UE0P2d,Wg2iZc,Z8wCif,_b/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=v9r4Te?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.102 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=ESY5D&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=360028&rt=c
+[HTTP/3 200  253ms]
+
+16:40:28.105 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=ESY5D&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=460028&rt=c
+[HTTP/3 200  352ms]
+
+16:40:28.106 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=MaZiqc&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=560028&rt=c
+[HTTP/3 200  426ms]
+
+16:40:28.108 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=MaZiqc&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=660028&rt=c
+[HTTP/3 200  1113ms]
+
+16:40:28.115 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=aPya6c&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=760028&rt=c
+[HTTP/3 200  229ms]
+
+16:40:28.117 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=cYRIkd&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=860028&rt=c
+[HTTP/3 200  364ms]
+
+16:40:28.155 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,LQaXg,PzWdsc,UE0P2d,Wg2iZc,Z8wCif,_b,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=HwBxOc?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.176 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,HwBxOc,LQaXg,PzWdsc,UE0P2d,Wg2iZc,Z8wCif,_b,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=ZQlXXb?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.199 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,HwBxOc,LQaXg,PzWdsc,UE0P2d,Wg2iZc,Z8wCif,ZQlXXb,_b,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=OpU7Tc?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.225 XHRPOST
+https://signaler-pa.clients6.google.com/punctual/multi-watch/channel?VER=8&gsessionid=01Z8Muv-JHG7Z2_Hsguz5vhMuT7j7PWnumZQtLjp_SA&key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4&RID=42035&CVER=22&zx=yeql8laf0vgq&t=1
+[HTTP/2 200  48ms]
+
+16:40:28.236 GET
+https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js
+[HTTP/2 200  0ms]
+
+16:40:28.240 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=mhs1xe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=960028&rt=c
+[HTTP/3 200  294ms]
+
+16:40:28.242 XHROPTIONS
+https://signaler-pa.clients6.google.com/punctual/multi-watch/channel?VER=8&gsessionid=01Z8Muv-JHG7Z2_Hsguz5vhMuT7j7PWnumZQtLjp_SA&key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4&RID=42035&CVER=22&zx=yeql8laf0vgq&t=1
+[HTTP/2 200  43ms]
+
+16:40:28.272 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=GPRiHf&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1060028&rt=c
+[HTTP/3 200  194ms]
+
+16:40:28.273 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=maGuAc&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1160028&rt=c
+[HTTP/3 200  696ms]
+
+16:40:28.307 GET
+https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCIhMl07v0x.woff2
+[HTTP/2 200  0ms]
+
+16:40:28.463 No ID or name found in config. m=LQaXg:1417:231
+16:40:28.472 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,HwBxOc,LQaXg,OpU7Tc,PzWdsc,UE0P2d,Wg2iZc,Z8wCif,ZQlXXb,_b,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=eK0zfd?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.500 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,HwBxOc,LQaXg,OpU7Tc,PzWdsc,UE0P2d,Wg2iZc,Z8wCif,ZQlXXb,_b,eK0zfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=TRJwtb?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.517 GET
+https://fonts.gstatic.com/l/font?kit=HhzZU5Ak9u-oMExPeInvcuEmPosC9zS3FYkFU68cPrjdKM1XMoDZlWmzc_IiWvF1SbxVhQidBnufC_ar1J9g0sLBUv3G8taXmAJhwC0dhA-DR3Ww92hODHP60bW3CW-w_9M4Fz_N0HhFJe7DLWDNXP2PpJAOVsUQ_vbW4Ha7L1inYvFXXDcuNkOqbomdD23RVDbvRG9gnImIrycVsIdWP-F7NFv-TgWbrvnoH2ExbQHnYnsxBMgyT4LkU_CS_0vzeRKgl3n5hawHLUKpTNXmbaAZFHBqv6Cb1S1ZUu_JurDFuO6D_oI4UKeD2o06eOGr-0qEFQgofwps2TxUUhySvu3TiheCRWruKujd3qLLpPHw5-nsS2xk2MiwYIJ6pgq_5WkIfnFPLaGQPAHENJIMJrGbqE-XYWpWgmo5BX6d9YLQAUnXz7_wCWDVTUL3y7e3-_CpLR2XooGLQ7RFGZecxXNXs00MmIRBV5NzDPhn9dWHnrPG-7toZGv9GTJxBedJaBwCXfFXu6BBg-cVjutfQAw5elrLLvyFnA0NFC-8jCcqgJnoN5wu6t-0Lr8CdOu_V3iLNQV-dF3g8ucX2e5-MNgKHGXyb54_6ycgvVuvyg80y4fAdF4n7W5gvUkofWDa3glelsGXMKcUvPY-GYxQ2awdl0M&skey=f8ec4d50247dc1c1&v=v423
+[HTTP/3 200  0ms]
+
+16:40:28.523 GET
+https://lh3.googleusercontent.com/a/default-user=s64-c
+[HTTP/2 200  149ms]
+
+16:40:28.554 GET
+https://www.googletagmanager.com/gtag/destination?id=G-BF8Q35BMLM&cx=c&gtm=4e6570h2
+[HTTP/3 200  110ms]
+
+16:40:28.566 Cookie warnings 4
+16:40:28.613 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,HwBxOc,LQaXg,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,Z8wCif,ZQlXXb,_b,eK0zfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=XVyMsc?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.617 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,HwBxOc,LQaXg,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,eK0zfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=NhhJOe?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.655 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,eK0zfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=C3yBDb?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.656 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,eK0zfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=cteZTb?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:28.715 Reporting Header: invalid JSON value received. destination
+16:40:28.724 XHRGET
+https://signaler-pa.clients6.google.com/punctual/multi-watch/channel?VER=8&gsessionid=01Z8Muv-JHG7Z2_Hsguz5vhMuT7j7PWnumZQtLjp_SA&key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4&RID=rpc&SID=PcYF25NWvtB9F16fGV3wNQ&AID=0&CI=0&TYPE=xmlhttp&zx=x3d0p4s6cfbd&t=1
+[HTTP/2 200  nullms]
+
+16:40:28.730 XHROPTIONS
+https://signaler-pa.clients6.google.com/punctual/multi-watch/channel?VER=8&gsessionid=01Z8Muv-JHG7Z2_Hsguz5vhMuT7j7PWnumZQtLjp_SA&key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4&RID=rpc&SID=PcYF25NWvtB9F16fGV3wNQ&AID=0&CI=0&TYPE=xmlhttp&zx=x3d0p4s6cfbd&t=1
+[HTTP/2 200  48ms]
+
+16:40:28.752 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=Te6DCf&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1260028&rt=c
+[HTTP/3 200  221ms]
+
+16:40:28.784 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=ozz5Z&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1360028&rt=c
+[HTTP/3 200  162ms]
+
+16:40:28.786 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=qpEbW&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1460028&rt=c
+[HTTP/3 200  194ms]
+
+16:40:28.787 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=hNvQHb&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1560028&rt=c
+[HTTP/3 200  1287ms]
+
+16:40:28.788 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=o30O0e&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1660028&rt=c
+[HTTP/3 200  133ms]
+
+16:40:28.790 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=K4WWud&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1760028&rt=c
+[HTTP/3 200  130ms]
+
+16:40:28.815 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=CNgdBe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1860028&rt=c
+[HTTP/3 200  340ms]
+
+16:40:28.842 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=CNgdBe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=1960028&rt=c
+[HTTP/3 200  256ms]
+
+16:40:28.847 Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified RotateCookiesPage
+16:40:28.886 GET
+https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.IdentityRotateCookiesHttp.en_US.2e1M9lLXSSE.2018.O/am=BBA4/d=1/rs=AOaEmlFWDDF5oOLuUTIu6GULsO-TJImBHg/m=hfcr
+[HTTP/3 200  17ms]
+
+16:40:29.039 unreachable code after return statement peRFAbSgGIHMruVmLda33M4vbilZD1jorRMOIZ-XP3w.js:666:24533
+16:40:29.039 unreachable code after return statement peRFAbSgGIHMruVmLda33M4vbilZD1jorRMOIZ-XP3w.js:666:39069
+16:40:29.047 unreachable code after return statement peRFAbSgGIHMruVmLda33M4vbilZD1jorRMOIZ-XP3w.js line 2 > eval:666:24533
+16:40:29.085 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=L5adhe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2060028&rt=c
+[HTTP/3 200  176ms]
+
+16:40:29.120 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=Bsxleb&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2160028&rt=c
+[HTTP/3 200  202ms]
+
+16:40:29.125 Source map error: Error: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Stack in the worker:parseSourceMapInput@resource://devtools/client/shared/vendor/source-map/lib/util.js:163:15
+_factory@resource://devtools/client/shared/vendor/source-map/lib/source-map-consumer.js:1069:22
+SourceMapConsumer@resource://devtools/client/shared/vendor/source-map/lib/source-map-consumer.js:26:12
+_fetch@resource://devtools/client/shared/source-map-loader/utils/fetchSourceMap.js:83:19
+
+Resource URL: https://gemini.google.com/app/f14bdd4bf90b8be8
+Source Map URL: side_navigation_content.css.map
+16:40:29.136 GET
+https://lh3.googleusercontent.com/a/ACg8ocLgy8tamu-6Bkmg1nKBBRE5rZoxBFDDuE2Q75ZhQdtar_-yVGdv=s64-c-v1-rj
+[HTTP/2 200  11ms]
+
+16:40:29.139 XHRPOST
+https://play.google.com/log?format=json&hasfast=true&authuser=0
+[HTTP/3 200  47ms]
+
+16:40:29.142 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=ku4Jyf&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2260028&rt=c
+[HTTP/3 200  223ms]
+
+16:40:29.145 unreachable code after return statement peRFAbSgGIHMruVmLda33M4vbilZD1jorRMOIZ-XP3w.js line 2 > eval:666:39069
+16:40:29.161 unreachable code after return statement peRFAbSgGIHMruVmLda33M4vbilZD1jorRMOIZ-XP3w.js line 2 > eval line 666 > eval line 1 > eval:1:419
+16:40:29.168 unreachable code after return statement peRFAbSgGIHMruVmLda33M4vbilZD1jorRMOIZ-XP3w.js line 2 > eval line 666 > eval line 1 > eval line 1 > eval:1:419
+16:40:29.284 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,cteZTb,eK0zfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=HbEaCf?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.286 GET
+https://gemini.google.com/generate_204?XVYpzg
+[HTTP/3 204  20ms]
+
+16:40:29.287 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,HbEaCf,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,cteZTb,eK0zfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=uEAQfd?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.288 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,HbEaCf,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,cteZTb,eK0zfd,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=CsakMb?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.289 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CsakMb,HbEaCf,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,cteZTb,eK0zfd,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=ponblb?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.290 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CsakMb,HbEaCf,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,cteZTb,eK0zfd,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=o2nH0b?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.291 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CsakMb,HbEaCf,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,cteZTb,eK0zfd,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=bNyBZd?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.302 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CsakMb,HbEaCf,HwBxOc,LQaXg,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=N9BqIf?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.303 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CsakMb,E3fsbf,HbEaCf,HwBxOc,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=Qvy4Bd?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.303 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CsakMb,HbEaCf,HwBxOc,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=E3fsbf?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.304 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CsakMb,E3fsbf,HbEaCf,HwBxOc,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=CK6Z6b?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.305 POST
+https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID1PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID3PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c&authuser=0&format=json
+NS_ERROR_FAILURE
+
+16:40:29.306 POST
+https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID1PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c+SAPISID3PHASH+b9b05a01254c9e81315ae632fdbf57e711e1ed9c&authuser=0&format=json
+NS_ERROR_FAILURE
+
+16:40:29.321 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=aPya6c&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2360028&rt=c
+[HTTP/3 200  325ms]
+
+16:40:29.398 Source map error: Error: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Stack in the worker:parseSourceMapInput@resource://devtools/client/shared/vendor/source-map/lib/util.js:163:15
+_factory@resource://devtools/client/shared/vendor/source-map/lib/source-map-consumer.js:1069:22
+SourceMapConsumer@resource://devtools/client/shared/vendor/source-map/lib/source-map-consumer.js:26:12
+_fetch@resource://devtools/client/shared/source-map-loader/utils/fetchSourceMap.js:83:19
+
+Resource URL: https://gemini.google.com/app/f14bdd4bf90b8be8
+Source Map URL: import_hub_settings_button.css.map
+16:40:29.509 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=L5adhe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2460028&rt=c
+[HTTP/3 200  253ms]
+
+16:40:29.748 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CK6Z6b,CsakMb,E3fsbf,HbEaCf,HwBxOc,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=hd8pi?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.754 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CK6Z6b,CsakMb,E3fsbf,HbEaCf,HwBxOc,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,hd8pi,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=LBfWwb?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.755 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CK6Z6b,CsakMb,E3fsbf,HbEaCf,HwBxOc,LBfWwb,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,hd8pi,o2nH0b,ponblb,uEAQfd,v9r4Te/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=xrScke?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.757 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CK6Z6b,CsakMb,E3fsbf,HbEaCf,HwBxOc,LBfWwb,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,hd8pi,o2nH0b,ponblb,uEAQfd,v9r4Te,xrScke/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=euv2wd?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:29.821 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=L5adhe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2560028&rt=c
+[HTTP/3 200  201ms]
+
+16:40:29.898 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=CNgdBe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2660028&rt=c
+[HTTP/3 200  287ms]
+
+16:40:30.030 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=L5adhe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2760028&rt=c
+[HTTP/3 200  228ms]
+
+16:40:30.290 GET
+https://www.gstatic.com/external_hosted/highlightjs/highlight.pack.js
+[HTTP/3 304  33ms]
+
+16:40:30.296 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.309 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/_rliMuEXZOU.json
+[HTTP/3 200  0ms]
+
+16:40:30.343 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.375 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.407 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.432 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.464 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.468 GET
+https://www.gstatic.com/lamda/images/gemini_sparkle_4g_512_lt_f94943af3be039176192d.png
+[HTTP/3 200  41ms]
+
+16:40:30.470 GET
+https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg
+[HTTP/3 200  31ms]
+
+16:40:30.486 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.517 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.536 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.563 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.649 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.651 GET
+https://lh3.googleusercontent.com/gg/AEir0wLHJUW6g_nIQK_eg6-W4dyOOsUM2OW8r3e30UYTIWv3HnAlv0wB-c1T3j_v-_X9shRefnfsUD--ev37Z_cV9RqY6_YQoPd_JAWvq3p4Wzw7H91QRbiVeRoaFwqPOQva83nZg49PwNkUpIKV4hch5z7ncOm76ZO-J2-FMFnlA6zRF0n4B4PQLk3dLutwJhaQ4k0_g-QfIysM7_nK_4iVajPQID4bDX7cqe_JoRPsXjaUhL9LKgC87Oywon21_XKiSb6OZQjfLuLVk-XYyFThkUP7qTEKei2SLhI
+[HTTP/2 302  249ms]
+
+16:40:30.652 GET
+https://lh3.googleusercontent.com/gg/AEir0wIM6N_68EA2fQfYivEzClmBC_kDQEk--1dJBmJp51jBREchw7Ho5kDds_lNn2J9QMYlQBbBVR8dbGJsBBaJXEPnAYtahlKCiJ5OSNoJPELn4yuoikimXFZjgRgQ0oHWs6CF9AyJJeBRrYdR1njSEU_zESgufT-df_46KHSn9Jb1O1DsbYyQvkvx7-XvARZaXPhjQJsT1sZzmcW-zSM9KluVQBVgtokfwhk2b2sH1kVwH8Mfj2q9A1gmy8Q3YmVwxISsEbA80YOrwdRhcyZ_3rVu0pVh68sFt7Y
+[HTTP/2 302  226ms]
+
+16:40:30.653 GET
+https://lh3.googleusercontent.com/gg/AEir0wK0n7TuS5O8lgOv2_ZTJztdHU1yqgw8i782GQsEAkYvt0w8Oca1DMjJXY0LQBWtZmsB1sLGFeThmzJtBcGJXbxKbzZP9iGKOjZXEktArnKVmQdg0yhNEXCP1wKPQvxPiQmVLhec6KqVg4xMN-SkKVkeBiD8AQn1nrN5xhpG-N_d1TlRccDJvLorUlbwcVansVXXkZWYg9kyDe4rChBwWIyBU045JcPTKm0hlYl9P_9-Unt-qsXLHsF5j5--IDUsbBTaIgfyg_Gi8nJ9UoHzDLXpqhbwLJFHQmQ
+[HTTP/2 302  220ms]
+
+16:40:30.655 GET
+https://lh3.googleusercontent.com/gg/AEir0wLQ09dTdLChBlyBiCtPOhByFrD1k6cgzgxWPCvvQ4a9jOpwN_xh5Z4JoFFCZpDTDvZ1BNAuR9PECXEIXqodYTaOW7Yrhniio3_QJRA1cDaiWhUVBMd41Zeew4ea-A0PxfbnRRrwIh1FcV_nkgc4e3pHjZOrkBLwa7c6Uo55nlyp8uB3T4oOw1O85U4h5TbyMVbZg_j8KsysDCgwU0JXJhe4JteIoeTVjG-n4ih6IRJsPbF3hfeJ4GxsZkERdwen27xcAwME4d8-pjm6aUiCiP0aTdxgH_SGUw
+[HTTP/2 302  234ms]
+
+16:40:30.656 GET
+https://lh3.googleusercontent.com/gg/AEir0wKV6YfbaGMKXQy2rPpx2yF7ES4GVYn44G7RLDnzHBHIvo7ALOFDaqNCozdnKTW_k9q44HBW8j6AWxU14zacUDIY-jZcOzhjIqyF_nvyu6uX4TJe9HQzJ4boJNejGs8O4j1lIRQhUs6yjGsg1xPOFnVyh8nwxHbBauptMeKlWcq1phzyPfVyx6uc3ieYZmZSJZXvK0rzn4Waoe2G53wvTHQNxzYz8ElcA5-EGXMTltiyAnXl4V6sADhA2-a8SFy95tsMYPFBK7WLJ5GPuFpy50D712pftBcPCTI
+[HTTP/2 302  221ms]
+
+16:40:30.666 GET
+https://lh3.googleusercontent.com/gg/AEir0wIAU_zyxyVNWQSh0IpL_tejWDKa1P2oRS3IxQk8ONNYWoN1gPmOadU_4ljwL_XSHoqwu6gy8dcwdy7fuJIzD9fwIQyyqsR5CfV4Wyhjr-6J6dTUBw2oeLBYMB7o6419tx0BtZUB6ka_SbbRIlogq683iENy-fVLBG92pf0WT9uToUIlP7-RJ8fqVL4TqEv3VD3CjpQx5jgrcSWp5vRjV5ZHJWGuNh_dqLNZGO8SmZX0kjYe5WEb-hcVBcvYnzVVbNGTEp2Tiyxep1IIn6LLCeB8sHmhaHApETU
+[HTTP/2 302  207ms]
+
+16:40:30.668 GET
+https://lh3.googleusercontent.com/gg/AEir0wLEfv3oDOIwi8TdzFL9Kq6-WfZgsmSMnztehO_ij_rD43Cx0oDAK3gHKe-6BMicnwlgO6k1OBOycxLwnDhJsyYz7kz4C0_18_320jr_5CcmDzWIi9dRximTVnuj-WJ5DMg5bD7dj1n3BlclmjGzOHUL4B3RbbAOVC1iqiqYG996dx5bZaIzIrFtjg3orHDVQk4Pql_rvDnxN22td_LC0hq4kLfxAeC40ObI064czs_N7x2B6p35i5Z5_34-rNd75KW0EtFb6e1l36bzdh8oAy1RAJX_bdZJyA
+[HTTP/2 302  236ms]
+
+16:40:30.670 GET
+https://lh3.googleusercontent.com/gg/AEir0wJfN9fv6v-iyr6ucadfv0hGsLjbBzDX4altON36YyWmhOs7xCE282587h-LOCQLUB1ieoEeaKYGw9gq25qp-29O3X0iuimOCeY_y-Rozd4ZMRjwm_Hqtd_-XAq5MQDm3SOzfWt3cVaKk5fDXWOFpTa45jF8a8BwFBB_kIW07nGCFc1_jDmbvAU_aj2pEncXpPZN6jG8aHgDru0vCs9PHu18PJLkT1FIHR7-9WnOigtMtMMyyMT2u3Q4gtTbg8u4BZ4tk8DErgWJ7nCKBIYbjvJTbYYi-4yGxjc
+[HTTP/2 302  210ms]
+
+16:40:30.671 GET
+https://lh3.googleusercontent.com/gg/AEir0wIFckmukhB0nbaOskM-wVQ9KTsAP00q2LQpqJvYPtuI7fdF6QsX_018m7p1o2NATGqn2TyXcd3tZoXzzBHc0l5wZYtoq_01xiL3mDjFYcgWp1WK02tuSCA1pbBbLp5fO1RJkT6MHuNPNFf2RkKG--w1e0VcmCSdB_rz5FrJ5rxYunw5k6BGKOkhS00SC6K_Lbd82X1dXp4KsIqfFGi3Bb9_YpBie48EmGA0dxvynyK25_xg7uo6lY7LCd87z3l68JRx_yIJtsbqNTqZplix2rKwbQ_MHF3b90s
+[HTTP/2 302  211ms]
+
+16:40:30.672 GET
+https://lh3.googleusercontent.com/gg/AEir0wLPFG_7e04R2L6udDd-rZCv9M0vTvLe3JahrDiKXEiFa35zitnbq3UG-aizpwwYXDJcV0HDHy9-KVRD4EUqiKbViLYAG58-Dp5BOZX-Befm6wdEVWAXzqCTSu2irndvAL0XzqwCdWt6MqJVvnG-FsCHJXlvB0nDm_OQRUL_ZhnsjzHXnULkpM1n3fVUYGuFToXi24tIETVv7mZjoSkpO8cx-AWBmYpyDXsLHG0URi5uaSs_D-czVBMFKWbiChQftN8Cb46BQAGX2o3WnLSL3xOpItdHnBIRCQ
+[HTTP/2 302  212ms]
+
+16:40:30.681 GET
+https://lh3.googleusercontent.com/gg/AEir0wKZdv8mZJcvHVbiABwyQVWK27wi3diYLUrQYK_nGV8JnqTG4vUhCyCf0W1zqVDI0QA-eSrSfTLI_01FWM-9p2JXT-Ktu-r9Z8CQZpfxaw7VA0Yl0ySJZJI-gJeii7S9SC0ikzFmr21A0Yzucf0PNV0IfqXW1Cuo-FqVq1hih1HhnLYKrlsyHSyZwOSYrpo72hyaHuYcYk8gb5i2xlvnSdkCPn-GWWCk3-HVFCzBO1xVvzNisTWQa-mAe1qahCPvCpBd9ck-UvIBVdrhhlazKfyhrC9Bqtcx_9I
+[HTTP/2 302  206ms]
+
+16:40:30.799 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.804 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.811 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.820 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.828 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.833 GET
+https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCIhMl07v0x.woff2
+[HTTP/2 200  0ms]
+
+16:40:30.836 GET
+https://fonts.gstatic.com/s/googlesansmono/v15/P5sZzYWFYtnZ_Cg-t0Uq_rfivrdYNYhsAg.woff2
+[HTTP/3 200  0ms]
+
+16:40:30.838 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.847 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.859 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.865 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.918 GET
+https://fonts.gstatic.com/s/googlesanscode/v17/pxiSyogzv91QhV44Z_GQBHsGf5PuckJMZfIVTPZaiXEp_jF58LS-h3BzjSU.woff2
+[HTTP/3 200  0ms]
+
+16:40:30.919 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.919 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.929 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.929 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.946 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.946 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.955 GET
+https://fonts.gstatic.com/s/googlesanscode/v17/pxiSyogzv91QhV44Z_GQBHsGf5PuckJMZfIVTPZaiXEp_jEF8LS-h3BzjSU1uw.woff2
+[HTTP/3 200  0ms]
+
+16:40:30.961 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.961 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.973 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.973 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.987 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.987 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:30.999 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.000 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.017 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.017 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.026 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.026 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.033 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.033 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.041 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.041 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.051 GET
+https://drive-thirdparty.googleusercontent.com/32/type/application/pdf
+[HTTP/2 200  146ms]
+
+16:40:31.069 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CK6Z6b,CsakMb,E3fsbf,HbEaCf,HwBxOc,LBfWwb,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,euv2wd,hd8pi,o2nH0b,ponblb,uEAQfd,v9r4Te,xrScke/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=DQbBYc?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:31.143 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.143 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.155 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.155 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.174 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.174 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.192 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.192 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.196 Scroll anchoring was disabled in a scroll container because of too many consecutive adjustments (14) with too little total distance (0 px average, 0 px total). m=LQaXg:5478:52
+16:40:31.264 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=L5adhe&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2860028&rt=c
+[HTTP/3 200  230ms]
+
+16:40:31.474 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.474 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.493 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.493 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.507 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.507 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.525 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.525 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.549 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.549 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.563 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.563 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.580 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.580 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.590 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.590 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.599 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.599 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.611 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.611 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.626 XHRPOST
+https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=aPya6c&source-path=/app/f14bdd4bf90b8be8&bl=boq_assistant-bard-web-server_20260507.06_p3&f.sid=1160637649202337434&hl=en&_reqid=2960028&rt=c
+[HTTP/3 200  233ms]
+
+16:40:31.643 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.644 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.645 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.648 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.650 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.651 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.652 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.653 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.655 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.688 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.698 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.700 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.713 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.714 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.715 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.716 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.716 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.718 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.720 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.720 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.721 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.721 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.722 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.728 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.729 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.730 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.731 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.732 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_down_feb_2025_dark_mode_85ab099f135684540031a.json
+[HTTP/3 200  0ms]
+
+16:40:31.732 XHRGET
+https://www.gstatic.com/lamda/images/thumbs_up_feb_2025_dark_mode_159bb1a2547412a1ed1bf.json
+[HTTP/3 200  0ms]
+
+16:40:31.734 XHRGET
+https://www.gstatic.com/lamda/images/regenerate_feb_2025_dark_mode_f9a75ad6e83ac764ce461.json
+[HTTP/3 200  0ms]
+
+16:40:31.736 XHRGET
+https://gemini.gstatic.com/_/boq-bard-web/_/r/u6QJjJjFa-o.json
+[HTTP/3 200  0ms]
+
+16:40:31.791 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.791 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.808 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.808 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.816 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.816 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.825 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.825 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.836 Error in parsing value for ‘height’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.836 Error in parsing value for ‘margin’.  Declaration dropped. gemini.google.com:1:1
+16:40:31.842 GET
+https://drive-thirdparty.googleusercontent.com/32/type/application/pdf
+[HTTP/1.1 200 OK 0ms]
+
+16:40:31.893 GET
+https://lh3.google.com/rd-gg/AEir0wIa_T3_R2S1273Vsl2I3IeLGvgOaInaOqtRYSYDl1oHsBU1SXINsHe3EbTY8bcEG_veYKZ-dWND8tQHHX0o3vsbKaX2R07ShSNQNZvyDWB6mHQKEkjf7B_SlLS-0HV_Twj7BFoPUCDEk2vA-yjk-7cW5ksaFvDr3O-_0M2djl7rGrln4u75py9Vjot1mOa05FRnaJVvUgvKNA4tuJzBvqTxUJNv2ETeq3BoRob-G7CIHaYxL8Qtv_Tfjh9lpJPOoEXZLZCsvs2jCJFE0dhk87ZzlQYV3OGUx7b881Kr7-kmnsc5h0yMqo0sHiUFciZcDErEQRNhJzcre7JI5MNR0Xe6lB2AJCi8B9Rd6JlhNrCbcRlMPT1HU_1kHnSKlGdZrx1myjZXiyCkUoJNLiqp2SQ8JpAMG__JOTrUVCCQBh6uexct8nvRDsS8ZVY7JSCztTAu241DlOw3pe3dFHqPfIT10L9_7GDeAE5X9LP1=s512
+[HTTP/2 302  185ms]
+
+16:40:31.894 GET
+https://lh3.google.com/rd-gg/AEir0wIggD_Ans_JaqJQljPVhnZFgiISk3gyM_z8SqU_MdZOLZBMCPFmfSSjaktJAShRh9wjJjPfk56P_bLTCaBkEIYYjHgobU7SUUQvxkjd9qEE4rx0Hr7RMAulSyLXYmsw22llKWIz9XcLaSaZi56E2yFljSBBthMRQai8jDzFz7EICKyW7gbr1bWrd7cHzwvWJaAAK6gUiTqOKXkw77T1h3PNxoZV-WMzWGrmVd8_bLmZn-njq78CIP9p0g9ZVKH4JLLwFPqqO4uoyrn8h_Mioh_BJYyEe0s6TeKhEZ9NKkIXeafW06iQbZ-eTEI0VM6YyRiuYIxfyGjMdOviZ4bKsskmJcPVxmmDZu47lo6htNfYxPpG3ryUWxpZRhUQvnELwBZWC7DbvqItR1NcXm0M63sPRoSCpVv39O7QdB8ja4A25BNtRh2WFJ55lBULUSP4u5aUwDYmIeJXrsppYX2V1ZUu7mT-vxj35w5pio_Q=s512
+[HTTP/2 302  155ms]
+
+16:40:31.896 GET
+https://lh3.google.com/rd-gg/AEir0wJSO4SrojJs9l66lktal6BzvHQbPMG_Zarb03LEO-IZ8V0xlvspNA5tE4elPDpFwbxwbvjvW5Zy0l4crt_ZA1hGEajuVYQcs33aZWshQhzO5hBsDjNyODYq68Nz0U3FQQD7CGOjfxsqLhsiaNEn9A4PnFcpW0d0MeIRLWP71LwBYW4DcLY_kf7JH-O_Xr5Ej8iZS5WxoN6aoY78FDdiNX1FS_OmLcn_CDPe5Lfrv1QMzJMME05bsqMCm96e8mizXwTNkQFHpI7Q4_lFzUMJ_Eb3MW-Ejammx89qhS5T4SU359jpzdi4w5ab4JyXOT9Z7QQ1YWAkS4i2RYagJL-rKDQsBfnHV3WAtl0I9u_x3kFzOSMSsxgo0jrbH4YUQciF3X7q8fZWOl7wt5JmuvZ8cNCCO4LAV19NI7N8HTN-I-Ig1-Q3lEUI8gKysHWpXwJJIw-heHHj5tYfbCNgeWUKgSlp4tv-ezAJdi20D_Ns=s512
+[HTTP/2 302  141ms]
+
+16:40:31.898 GET
+https://lh3.google.com/rd-gg/AEir0wLyq9AebH_IJUHR1uJgCykqScBWW0Aaj4gAoQvHUfZ88q57R1FuFvPnNv8yPe-9RetYYdHVcLwRsMtWdz2l5IKCZ_IW_noHPvO9ie8nA3dHhG1fnFMMUSMZBgpK0z5CpLJ3qCEd5YtJVoVgk2k7Tm30fILUNNGKA1Y5nOX0wZXlkJhF5e624YmCVcjSHL-zWKpXBRfognf4xuLUZj5N6MhahljwvVm7Dxg9dQg7AXjnf0d7vOSM6P_EGwxGLjBnqZdb0eNYDmTRZOS5NDS1p0MKJP9miC7iLcxaSuhG9wB5lW7U_ZjNGIQSUP0nrXscvJZ9-lDXctp4yxZrNjVbdlc2xpXJgw8BofzOoTAToGXbaF8oAIAeQVzvqEILUcgyREk0y0BVfjSsvi66jRK0ZeIYRlmHOAdafI2gnQ5WZ9bz-WznpHwCiTJAclmjYLQsOy443D_FRQwompepSoaRI0xLBUX3tAa5MWj_GTuA=s512
+[HTTP/2 302  141ms]
+
+16:40:31.918 GET
+https://lh3.google.com/rd-gg/AEir0wKn5lCcvFP7nGs8x22_tI58YuBnBvxoLL6gMk9BFXsO8Bc6d13722zlJFsqM3lQpmhS_Of6C-NjzcUrgRvPlvu__rbgejjyRGz53vYS7xpyuobvVnk4_vRrX4Mz9VMYOSQNXDvVr4NhwYQPcqCi37_DPHlSWfkdGxGgUZny-ZgX3LqYaFiPJURHp68sElm82Y1H79ncOighNRDsJQfm_u4yRL0cQTSpy-LLYSXJyKTbAJ88N1xHtz4cw1t_9jXhpE15EyhsLghOGLRl5rSxRw1L_9cAVTSKlM1SnbJpkbRsvE9SZ3cvn3bEAWVMxher5PUKM7Ez_GXkY4Sm8RDhB51TWZYyhnQuVqiG9iCmnp1qEvxW3mDZAVT-gNEQxhv2hdoHtoOPDzZpZo5TvQCPM9ZdsG-9HQLH4ATDizVOWIK2dP6JqccSxnCKUUfPg45SrVsutg5iQU0P5sPsi24pXNn92RhUGiuSyGaaZjPh=s512
+[HTTP/2 302  151ms]
+
+16:40:31.919 GET
+https://lh3.google.com/rd-gg/AEir0wJ4ciJCTiPh2Xf1XZ3V-7L8hFWTNIb-onUUvh0vWku8Mspz3P4TJu9ot9_88Z8FJQZFPKMUrErjKPosr13dSXDAXWtrZuGJDm85k1wk83yt_MbS9N-4Jq_1rci4dX75GpiR315vapZ6qxl59aUP89yWpfOxheXCCQBZA60Tt_ro33RedAQ-hLRigIkSX_a715g6sPw-BwwWKNpvyvrnVvuVcV26ozmnrHN0rdJoJ_YusNHWN5VWxVCMVPj-l9YESQFa5VDjEmpayCuwKlT15rRm7DLB89zKWnlM5b71pEgrZ-HwT_jB0kRJ9Q457kYL0MypPdgHEFOwwTYLEpn0TEZRUNMpUIVwWBH-LKlQ80aPSaHSS593tyCxH9B0CYr0ahkgX7ZZlUd4jZIOaiuLxJ1LVz2c-pXQ1yOhwJrZ8ZHl9hnCPOv72oK5m9L4eKSuAT-JtlL6IiVrlLaoWMVrnz0_75kE0D29su545i7t=s512
+[HTTP/2 302  153ms]
+
+16:40:31.920 GET
+https://lh3.google.com/rd-gg/AEir0wLKtPLv2ef3HLN0fJiexFp41hkSq2-2ZKVZfsCPMeqA23_AUQvtSB9QIFZNEgUP6mbkDaI6Em7OnCKnH8fFJFFb5C4DxOabHou-ZlOxDxLcuzt-aJ7k7PpviutcBug0ade205i8ZmTdZ5CKvlrnBTF4s3vG5_CRloOSkjFseix-JI4an_AHI_H1efmhYZC3Qr5H2vTN2mRBHSPRnLDF_C3QHREd2-9FovYLpjF02ei4KylD4NxEuP2aI9Im6SULBrBAC5x5WUeuV6oVCk7KYH3_v1w0s84AJDqTbroMtC8beBUGfhnjHe3ty36iLsdS5MY93NircDCorDvxfMmTIMAIwQ6TPB2dRD-ZEbpt2EUVB87SaZu3D0wFOlG97mFRQqXIIwL6x5MUHOyVZQaWIRaF-U1Ei95llXHHRGBWafSAmB9Aay0eMBrcISX4T4gYbgx-FwekMbiARRdPw79oBLqKeY_yqhlu3SEL5CBV=s512
+[HTTP/2 302  154ms]
+
+16:40:31.921 GET
+https://lh3.google.com/rd-gg/AEir0wKGnusE_BnEPYU3mFV8OVGF5YRzEDjMCYSkzdLpMzy6F1qbY82E5l0RQGJx2rlI6uY9-l5x59bEtF6b5LOUtVD5v_x_KQ7nuMlI_owWLt6ak1GzHq7neoVLuA0Clfnjex-fbbXgsI_TRdkB1LI-4Po9WiQjGhyeK9XB6YhMJuw3MXI0jzK_bG094pq8rUTMqMwghlvBFI31yRokmGpkvX5d3XmCexFGGStFaCffSovzSp5pGuoimD7TP4DsIW1jz9wqh5metlpz9DKZhLjFWZU01b0-m1RCWhZnTUg4xYJljoU2IK6f0w_6wivA_uv2NCM0-91ZBZMvOdtK6uIBYWpyP8mTGc6MqabPonc48EfsBkeLN0__2bqu5wzaBomqI6pndY20VqnRZvmdnHuZ_U-Yu-eCIe3BQvI1SYS35YtfTUv8V2_wAnPO4uEeTWd5GabyQ1YA6-Bbx3Rk3WjOvAvjPTB1xJGxKdZspRMi=s512
+[HTTP/2 302  135ms]
+
+16:40:31.922 GET
+https://lh3.google.com/rd-gg/AEir0wKgZ5O1KGTQ9795EwSGrWBQwccwlgW1gOAclOdjwnAHCn74lL2Cf8ExTXCwEOEeqhWB6MSf3OhCsJiBeHBjuzGWkf5qzhzWcAYt0H1ORrNBLotmPmo61yjs74FpqaHBLDavv7KksjC-EBnb5K16PTlCtQ9730wXP9Hw9GKt8XPaGrrFYd1m7mE8mMs-yuujbuXL7cMmc7iXw954fiosDZt7hd9IldqoHG03UffvzlnSl9DKVRCdDKuWiCLOg1MOPeMgejXxkNP5t83wDSAtRZaPY-iT8uU6T-8E8l7WfE1VMQzbCh483XF37eFrwYyun_AVxxR9OUGvTNy2E9mXLFW9A_Y4AwoLr6DI_lzmbGDdwpTItGFrTIYVpdyy14QuJZnF9-PI7bhO2DAT_Oq3IbOfPt8XTbwBspv4SIDIOyCrU8IxJgPYt6hR80rr3K_iXk9HwvaTBGRkyg4qegd-eKL3T9ivzSvE1i1fl5gK=s512
+[HTTP/2 302  137ms]
+
+16:40:31.922 GET
+https://lh3.google.com/rd-gg/AEir0wKWMLVEMZoKibIP2ZXh9WnZ1tSYQ3tNjF7iAIOtgUDZ1LxenNdNqBLI0smBR6YeK4xLBUDLCFD1EEpNVqUiq8oSJRhALJS5kNZsGu2yhjBF15zOAr8qNfrvE6o1aQYqNtkZt6qhtc1EH6p-mbOEmkaCAS6HjbmxK8YcOnKmoPD7nPgJwhJtnEejd3pest7FBEqvWOYtUxqgg09LT9FM7o2xdxkLshyQwUG37U-7eKXe4ly2NIYrBGZEjx_hNRnBCnqFxRhnePcPH1Ij9E-HQtwJi4ZotOAKlARJ1QcjQCUxHOXVZqPaNgr_IoE-18EaY5Z6txW-UP3dTo5iijhwexGBWx8LUyI6B0yDBSfebNnbycOnwbpOfjKyV31IQmCCszF0pvE1oGZlwhAOFAxQU2ScLEtQUr35J0l8PwnZIQH2-OR2Q2J7HdCQ-q7dDUT4I9S5l4_O4BklzNGCte6Rh6QBC3e9otQJWYE6zsV_=s512
+[HTTP/2 302  135ms]
+
+16:40:31.923 GET
+https://lh3.google.com/rd-gg/AEir0wLGw8D4jXlIsxmOLH0u7erVSheaDWzjLhY5MxGyAh1hYNnnQZAsUDnB5Mb96Vie2MwZQmKl47kfGSkO4hW5HMMCoLgSrGikVxjbvWs5nitqNY9eX-1yw6PCCv-bkiHMHtKY_ropQ4w3DQRjEukuY56pEUEzd96Df1l-1PG62wCcpR6Lj9_UR6koT4ElLtxGylVgorGLWvxleivVfgu5segjXAZzz51t-lF4kKHBTchYzYkKUgK2YULUPmUyGJ2eUUm7B6tOOT4rJ1YhTe86vwOx8NkEnaO-HwjZwEDG2ZB_lApB2t1Lr3cGtPsBUmDL4gtlQEFL7xjcA-tDxF9Gn7uQugylcyy9oayDleNPetobCFy0DBzmzPOa7L2i2I39VL6RjYRDErgdqWRezP7PB0jJaYt9skG3YE84KF12rtQwuUEXjf2MP04uE-0DrP5WsAg-18fb2fZAB2pqh4ZJ3jpxe9tRkIcnWaxX2bX9=s512
+[HTTP/2 302  135ms]
+
+16:40:31.938 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wIa_T3_R2S1273Vsl2I3IeLGvgOaInaOqtRYSYDl1oHsBU1SXINsHe3EbTY8bcEG_veYKZ-dWND8tQHHX0o3vsbKaX2R07ShSNQNZvyDWB6mHQKEkjf7B_SlLS-0HV_Twj7BFoPUCDEk2vA-yjk-7cW5ksaFvDr3O-_0M2djl7rGrln4u75py9Vjot1mOa05FRnaJVvUgvKNA4tuJzBvqTxUJNv2ETeq3BoRob-G7CIHaYxL8Qtv_Tfjh9lpJPOoEXZLZCsvs2jCJFE0dhk87ZzlQYV3OGUx7b881Kr7-kmnsc5h0yMqo0sHiUFciZcDErEQRNhJzcre7JI5MNR0Xe6lB2AJCi8B9Rd6JlhNrCbcRlMPT1HU_1kHnSKlGdZrx1myjZXiyCkUoJNLiqp2SQ8JpAMG__JOTrUVCCQBh6uexct8nvRDsS8ZVY7JSCztTAu241DlOw3pe3dFHqPfIT10L9_7GDeAE5X9LP1=s512
+16:40:31.938 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wIa_T3_R2S1273Vsl2I3IeLGvgOaInaOqtRYSYDl1oHsBU1SXINsHe3EbTY8bcEG_veYKZ-dWND8tQHHX0o3vsbKaX2R07ShSNQNZvyDWB6mHQKEkjf7B_SlLS-0HV_Twj7BFoPUCDEk2vA-yjk-7cW5ksaFvDr3O-_0M2djl7rGrln4u75py9Vjot1mOa05FRnaJVvUgvKNA4tuJzBvqTxUJNv2ETeq3BoRob-G7CIHaYxL8Qtv_Tfjh9lpJPOoEXZLZCsvs2jCJFE0dhk87ZzlQYV3OGUx7b881Kr7-kmnsc5h0yMqo0sHiUFciZcDErEQRNhJzcre7JI5MNR0Xe6lB2AJCi8B9Rd6JlhNrCbcRlMPT1HU_1kHnSKlGdZrx1myjZXiyCkUoJNLiqp2SQ8JpAMG__JOTrUVCCQBh6uexct8nvRDsS8ZVY7JSCztTAu241DlOw3pe3dFHqPfIT10L9_7GDeAE5X9LP1=s512
+16:40:31.938 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wIggD_Ans_JaqJQljPVhnZFgiISk3gyM_z8SqU_MdZOLZBMCPFmfSSjaktJAShRh9wjJjPfk56P_bLTCaBkEIYYjHgobU7SUUQvxkjd9qEE4rx0Hr7RMAulSyLXYmsw22llKWIz9XcLaSaZi56E2yFljSBBthMRQai8jDzFz7EICKyW7gbr1bWrd7cHzwvWJaAAK6gUiTqOKXkw77T1h3PNxoZV-WMzWGrmVd8_bLmZn-njq78CIP9p0g9ZVKH4JLLwFPqqO4uoyrn8h_Mioh_BJYyEe0s6TeKhEZ9NKkIXeafW06iQbZ-eTEI0VM6YyRiuYIxfyGjMdOviZ4bKsskmJcPVxmmDZu47lo6htNfYxPpG3ryUWxpZRhUQvnELwBZWC7DbvqItR1NcXm0M63sPRoSCpVv39O7QdB8ja4A25BNtRh2WFJ55lBULUSP4u5aUwDYmIeJXrsppYX2V1ZUu7mT-vxj35w5pio_Q=s512
+16:40:31.938 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wIggD_Ans_JaqJQljPVhnZFgiISk3gyM_z8SqU_MdZOLZBMCPFmfSSjaktJAShRh9wjJjPfk56P_bLTCaBkEIYYjHgobU7SUUQvxkjd9qEE4rx0Hr7RMAulSyLXYmsw22llKWIz9XcLaSaZi56E2yFljSBBthMRQai8jDzFz7EICKyW7gbr1bWrd7cHzwvWJaAAK6gUiTqOKXkw77T1h3PNxoZV-WMzWGrmVd8_bLmZn-njq78CIP9p0g9ZVKH4JLLwFPqqO4uoyrn8h_Mioh_BJYyEe0s6TeKhEZ9NKkIXeafW06iQbZ-eTEI0VM6YyRiuYIxfyGjMdOviZ4bKsskmJcPVxmmDZu47lo6htNfYxPpG3ryUWxpZRhUQvnELwBZWC7DbvqItR1NcXm0M63sPRoSCpVv39O7QdB8ja4A25BNtRh2WFJ55lBULUSP4u5aUwDYmIeJXrsppYX2V1ZUu7mT-vxj35w5pio_Q=s512
+16:40:31.938 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wJSO4SrojJs9l66lktal6BzvHQbPMG_Zarb03LEO-IZ8V0xlvspNA5tE4elPDpFwbxwbvjvW5Zy0l4crt_ZA1hGEajuVYQcs33aZWshQhzO5hBsDjNyODYq68Nz0U3FQQD7CGOjfxsqLhsiaNEn9A4PnFcpW0d0MeIRLWP71LwBYW4DcLY_kf7JH-O_Xr5Ej8iZS5WxoN6aoY78FDdiNX1FS_OmLcn_CDPe5Lfrv1QMzJMME05bsqMCm96e8mizXwTNkQFHpI7Q4_lFzUMJ_Eb3MW-Ejammx89qhS5T4SU359jpzdi4w5ab4JyXOT9Z7QQ1YWAkS4i2RYagJL-rKDQsBfnHV3WAtl0I9u_x3kFzOSMSsxgo0jrbH4YUQciF3X7q8fZWOl7wt5JmuvZ8cNCCO4LAV19NI7N8HTN-I-Ig1-Q3lEUI8gKysHWpXwJJIw-heHHj5tYfbCNgeWUKgSlp4tv-ezAJdi20D_Ns=s512
+16:40:31.938 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wJSO4SrojJs9l66lktal6BzvHQbPMG_Zarb03LEO-IZ8V0xlvspNA5tE4elPDpFwbxwbvjvW5Zy0l4crt_ZA1hGEajuVYQcs33aZWshQhzO5hBsDjNyODYq68Nz0U3FQQD7CGOjfxsqLhsiaNEn9A4PnFcpW0d0MeIRLWP71LwBYW4DcLY_kf7JH-O_Xr5Ej8iZS5WxoN6aoY78FDdiNX1FS_OmLcn_CDPe5Lfrv1QMzJMME05bsqMCm96e8mizXwTNkQFHpI7Q4_lFzUMJ_Eb3MW-Ejammx89qhS5T4SU359jpzdi4w5ab4JyXOT9Z7QQ1YWAkS4i2RYagJL-rKDQsBfnHV3WAtl0I9u_x3kFzOSMSsxgo0jrbH4YUQciF3X7q8fZWOl7wt5JmuvZ8cNCCO4LAV19NI7N8HTN-I-Ig1-Q3lEUI8gKysHWpXwJJIw-heHHj5tYfbCNgeWUKgSlp4tv-ezAJdi20D_Ns=s512
+16:40:31.938 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wLyq9AebH_IJUHR1uJgCykqScBWW0Aaj4gAoQvHUfZ88q57R1FuFvPnNv8yPe-9RetYYdHVcLwRsMtWdz2l5IKCZ_IW_noHPvO9ie8nA3dHhG1fnFMMUSMZBgpK0z5CpLJ3qCEd5YtJVoVgk2k7Tm30fILUNNGKA1Y5nOX0wZXlkJhF5e624YmCVcjSHL-zWKpXBRfognf4xuLUZj5N6MhahljwvVm7Dxg9dQg7AXjnf0d7vOSM6P_EGwxGLjBnqZdb0eNYDmTRZOS5NDS1p0MKJP9miC7iLcxaSuhG9wB5lW7U_ZjNGIQSUP0nrXscvJZ9-lDXctp4yxZrNjVbdlc2xpXJgw8BofzOoTAToGXbaF8oAIAeQVzvqEILUcgyREk0y0BVfjSsvi66jRK0ZeIYRlmHOAdafI2gnQ5WZ9bz-WznpHwCiTJAclmjYLQsOy443D_FRQwompepSoaRI0xLBUX3tAa5MWj_GTuA=s512
+16:40:31.938 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wLyq9AebH_IJUHR1uJgCykqScBWW0Aaj4gAoQvHUfZ88q57R1FuFvPnNv8yPe-9RetYYdHVcLwRsMtWdz2l5IKCZ_IW_noHPvO9ie8nA3dHhG1fnFMMUSMZBgpK0z5CpLJ3qCEd5YtJVoVgk2k7Tm30fILUNNGKA1Y5nOX0wZXlkJhF5e624YmCVcjSHL-zWKpXBRfognf4xuLUZj5N6MhahljwvVm7Dxg9dQg7AXjnf0d7vOSM6P_EGwxGLjBnqZdb0eNYDmTRZOS5NDS1p0MKJP9miC7iLcxaSuhG9wB5lW7U_ZjNGIQSUP0nrXscvJZ9-lDXctp4yxZrNjVbdlc2xpXJgw8BofzOoTAToGXbaF8oAIAeQVzvqEILUcgyREk0y0BVfjSsvi66jRK0ZeIYRlmHOAdafI2gnQ5WZ9bz-WznpHwCiTJAclmjYLQsOy443D_FRQwompepSoaRI0xLBUX3tAa5MWj_GTuA=s512
+16:40:32.043 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKn5lCcvFP7nGs8x22_tI58YuBnBvxoLL6gMk9BFXsO8Bc6d13722zlJFsqM3lQpmhS_Of6C-NjzcUrgRvPlvu__rbgejjyRGz53vYS7xpyuobvVnk4_vRrX4Mz9VMYOSQNXDvVr4NhwYQPcqCi37_DPHlSWfkdGxGgUZny-ZgX3LqYaFiPJURHp68sElm82Y1H79ncOighNRDsJQfm_u4yRL0cQTSpy-LLYSXJyKTbAJ88N1xHtz4cw1t_9jXhpE15EyhsLghOGLRl5rSxRw1L_9cAVTSKlM1SnbJpkbRsvE9SZ3cvn3bEAWVMxher5PUKM7Ez_GXkY4Sm8RDhB51TWZYyhnQuVqiG9iCmnp1qEvxW3mDZAVT-gNEQxhv2hdoHtoOPDzZpZo5TvQCPM9ZdsG-9HQLH4ATDizVOWIK2dP6JqccSxnCKUUfPg45SrVsutg5iQU0P5sPsi24pXNn92RhUGiuSyGaaZjPh=s512
+16:40:32.043 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKn5lCcvFP7nGs8x22_tI58YuBnBvxoLL6gMk9BFXsO8Bc6d13722zlJFsqM3lQpmhS_Of6C-NjzcUrgRvPlvu__rbgejjyRGz53vYS7xpyuobvVnk4_vRrX4Mz9VMYOSQNXDvVr4NhwYQPcqCi37_DPHlSWfkdGxGgUZny-ZgX3LqYaFiPJURHp68sElm82Y1H79ncOighNRDsJQfm_u4yRL0cQTSpy-LLYSXJyKTbAJ88N1xHtz4cw1t_9jXhpE15EyhsLghOGLRl5rSxRw1L_9cAVTSKlM1SnbJpkbRsvE9SZ3cvn3bEAWVMxher5PUKM7Ez_GXkY4Sm8RDhB51TWZYyhnQuVqiG9iCmnp1qEvxW3mDZAVT-gNEQxhv2hdoHtoOPDzZpZo5TvQCPM9ZdsG-9HQLH4ATDizVOWIK2dP6JqccSxnCKUUfPg45SrVsutg5iQU0P5sPsi24pXNn92RhUGiuSyGaaZjPh=s512
+16:40:32.044 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wJ4ciJCTiPh2Xf1XZ3V-7L8hFWTNIb-onUUvh0vWku8Mspz3P4TJu9ot9_88Z8FJQZFPKMUrErjKPosr13dSXDAXWtrZuGJDm85k1wk83yt_MbS9N-4Jq_1rci4dX75GpiR315vapZ6qxl59aUP89yWpfOxheXCCQBZA60Tt_ro33RedAQ-hLRigIkSX_a715g6sPw-BwwWKNpvyvrnVvuVcV26ozmnrHN0rdJoJ_YusNHWN5VWxVCMVPj-l9YESQFa5VDjEmpayCuwKlT15rRm7DLB89zKWnlM5b71pEgrZ-HwT_jB0kRJ9Q457kYL0MypPdgHEFOwwTYLEpn0TEZRUNMpUIVwWBH-LKlQ80aPSaHSS593tyCxH9B0CYr0ahkgX7ZZlUd4jZIOaiuLxJ1LVz2c-pXQ1yOhwJrZ8ZHl9hnCPOv72oK5m9L4eKSuAT-JtlL6IiVrlLaoWMVrnz0_75kE0D29su545i7t=s512
+16:40:32.044 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wJ4ciJCTiPh2Xf1XZ3V-7L8hFWTNIb-onUUvh0vWku8Mspz3P4TJu9ot9_88Z8FJQZFPKMUrErjKPosr13dSXDAXWtrZuGJDm85k1wk83yt_MbS9N-4Jq_1rci4dX75GpiR315vapZ6qxl59aUP89yWpfOxheXCCQBZA60Tt_ro33RedAQ-hLRigIkSX_a715g6sPw-BwwWKNpvyvrnVvuVcV26ozmnrHN0rdJoJ_YusNHWN5VWxVCMVPj-l9YESQFa5VDjEmpayCuwKlT15rRm7DLB89zKWnlM5b71pEgrZ-HwT_jB0kRJ9Q457kYL0MypPdgHEFOwwTYLEpn0TEZRUNMpUIVwWBH-LKlQ80aPSaHSS593tyCxH9B0CYr0ahkgX7ZZlUd4jZIOaiuLxJ1LVz2c-pXQ1yOhwJrZ8ZHl9hnCPOv72oK5m9L4eKSuAT-JtlL6IiVrlLaoWMVrnz0_75kE0D29su545i7t=s512
+16:40:32.044 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wLKtPLv2ef3HLN0fJiexFp41hkSq2-2ZKVZfsCPMeqA23_AUQvtSB9QIFZNEgUP6mbkDaI6Em7OnCKnH8fFJFFb5C4DxOabHou-ZlOxDxLcuzt-aJ7k7PpviutcBug0ade205i8ZmTdZ5CKvlrnBTF4s3vG5_CRloOSkjFseix-JI4an_AHI_H1efmhYZC3Qr5H2vTN2mRBHSPRnLDF_C3QHREd2-9FovYLpjF02ei4KylD4NxEuP2aI9Im6SULBrBAC5x5WUeuV6oVCk7KYH3_v1w0s84AJDqTbroMtC8beBUGfhnjHe3ty36iLsdS5MY93NircDCorDvxfMmTIMAIwQ6TPB2dRD-ZEbpt2EUVB87SaZu3D0wFOlG97mFRQqXIIwL6x5MUHOyVZQaWIRaF-U1Ei95llXHHRGBWafSAmB9Aay0eMBrcISX4T4gYbgx-FwekMbiARRdPw79oBLqKeY_yqhlu3SEL5CBV=s512
+16:40:32.044 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wLKtPLv2ef3HLN0fJiexFp41hkSq2-2ZKVZfsCPMeqA23_AUQvtSB9QIFZNEgUP6mbkDaI6Em7OnCKnH8fFJFFb5C4DxOabHou-ZlOxDxLcuzt-aJ7k7PpviutcBug0ade205i8ZmTdZ5CKvlrnBTF4s3vG5_CRloOSkjFseix-JI4an_AHI_H1efmhYZC3Qr5H2vTN2mRBHSPRnLDF_C3QHREd2-9FovYLpjF02ei4KylD4NxEuP2aI9Im6SULBrBAC5x5WUeuV6oVCk7KYH3_v1w0s84AJDqTbroMtC8beBUGfhnjHe3ty36iLsdS5MY93NircDCorDvxfMmTIMAIwQ6TPB2dRD-ZEbpt2EUVB87SaZu3D0wFOlG97mFRQqXIIwL6x5MUHOyVZQaWIRaF-U1Ei95llXHHRGBWafSAmB9Aay0eMBrcISX4T4gYbgx-FwekMbiARRdPw79oBLqKeY_yqhlu3SEL5CBV=s512
+16:40:32.044 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKGnusE_BnEPYU3mFV8OVGF5YRzEDjMCYSkzdLpMzy6F1qbY82E5l0RQGJx2rlI6uY9-l5x59bEtF6b5LOUtVD5v_x_KQ7nuMlI_owWLt6ak1GzHq7neoVLuA0Clfnjex-fbbXgsI_TRdkB1LI-4Po9WiQjGhyeK9XB6YhMJuw3MXI0jzK_bG094pq8rUTMqMwghlvBFI31yRokmGpkvX5d3XmCexFGGStFaCffSovzSp5pGuoimD7TP4DsIW1jz9wqh5metlpz9DKZhLjFWZU01b0-m1RCWhZnTUg4xYJljoU2IK6f0w_6wivA_uv2NCM0-91ZBZMvOdtK6uIBYWpyP8mTGc6MqabPonc48EfsBkeLN0__2bqu5wzaBomqI6pndY20VqnRZvmdnHuZ_U-Yu-eCIe3BQvI1SYS35YtfTUv8V2_wAnPO4uEeTWd5GabyQ1YA6-Bbx3Rk3WjOvAvjPTB1xJGxKdZspRMi=s512
+16:40:32.044 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKGnusE_BnEPYU3mFV8OVGF5YRzEDjMCYSkzdLpMzy6F1qbY82E5l0RQGJx2rlI6uY9-l5x59bEtF6b5LOUtVD5v_x_KQ7nuMlI_owWLt6ak1GzHq7neoVLuA0Clfnjex-fbbXgsI_TRdkB1LI-4Po9WiQjGhyeK9XB6YhMJuw3MXI0jzK_bG094pq8rUTMqMwghlvBFI31yRokmGpkvX5d3XmCexFGGStFaCffSovzSp5pGuoimD7TP4DsIW1jz9wqh5metlpz9DKZhLjFWZU01b0-m1RCWhZnTUg4xYJljoU2IK6f0w_6wivA_uv2NCM0-91ZBZMvOdtK6uIBYWpyP8mTGc6MqabPonc48EfsBkeLN0__2bqu5wzaBomqI6pndY20VqnRZvmdnHuZ_U-Yu-eCIe3BQvI1SYS35YtfTUv8V2_wAnPO4uEeTWd5GabyQ1YA6-Bbx3Rk3WjOvAvjPTB1xJGxKdZspRMi=s512
+16:40:32.044 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKWMLVEMZoKibIP2ZXh9WnZ1tSYQ3tNjF7iAIOtgUDZ1LxenNdNqBLI0smBR6YeK4xLBUDLCFD1EEpNVqUiq8oSJRhALJS5kNZsGu2yhjBF15zOAr8qNfrvE6o1aQYqNtkZt6qhtc1EH6p-mbOEmkaCAS6HjbmxK8YcOnKmoPD7nPgJwhJtnEejd3pest7FBEqvWOYtUxqgg09LT9FM7o2xdxkLshyQwUG37U-7eKXe4ly2NIYrBGZEjx_hNRnBCnqFxRhnePcPH1Ij9E-HQtwJi4ZotOAKlARJ1QcjQCUxHOXVZqPaNgr_IoE-18EaY5Z6txW-UP3dTo5iijhwexGBWx8LUyI6B0yDBSfebNnbycOnwbpOfjKyV31IQmCCszF0pvE1oGZlwhAOFAxQU2ScLEtQUr35J0l8PwnZIQH2-OR2Q2J7HdCQ-q7dDUT4I9S5l4_O4BklzNGCte6Rh6QBC3e9otQJWYE6zsV_=s512
+16:40:32.044 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKWMLVEMZoKibIP2ZXh9WnZ1tSYQ3tNjF7iAIOtgUDZ1LxenNdNqBLI0smBR6YeK4xLBUDLCFD1EEpNVqUiq8oSJRhALJS5kNZsGu2yhjBF15zOAr8qNfrvE6o1aQYqNtkZt6qhtc1EH6p-mbOEmkaCAS6HjbmxK8YcOnKmoPD7nPgJwhJtnEejd3pest7FBEqvWOYtUxqgg09LT9FM7o2xdxkLshyQwUG37U-7eKXe4ly2NIYrBGZEjx_hNRnBCnqFxRhnePcPH1Ij9E-HQtwJi4ZotOAKlARJ1QcjQCUxHOXVZqPaNgr_IoE-18EaY5Z6txW-UP3dTo5iijhwexGBWx8LUyI6B0yDBSfebNnbycOnwbpOfjKyV31IQmCCszF0pvE1oGZlwhAOFAxQU2ScLEtQUr35J0l8PwnZIQH2-OR2Q2J7HdCQ-q7dDUT4I9S5l4_O4BklzNGCte6Rh6QBC3e9otQJWYE6zsV_=s512
+16:40:32.044 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKgZ5O1KGTQ9795EwSGrWBQwccwlgW1gOAclOdjwnAHCn74lL2Cf8ExTXCwEOEeqhWB6MSf3OhCsJiBeHBjuzGWkf5qzhzWcAYt0H1ORrNBLotmPmo61yjs74FpqaHBLDavv7KksjC-EBnb5K16PTlCtQ9730wXP9Hw9GKt8XPaGrrFYd1m7mE8mMs-yuujbuXL7cMmc7iXw954fiosDZt7hd9IldqoHG03UffvzlnSl9DKVRCdDKuWiCLOg1MOPeMgejXxkNP5t83wDSAtRZaPY-iT8uU6T-8E8l7WfE1VMQzbCh483XF37eFrwYyun_AVxxR9OUGvTNy2E9mXLFW9A_Y4AwoLr6DI_lzmbGDdwpTItGFrTIYVpdyy14QuJZnF9-PI7bhO2DAT_Oq3IbOfPt8XTbwBspv4SIDIOyCrU8IxJgPYt6hR80rr3K_iXk9HwvaTBGRkyg4qegd-eKL3T9ivzSvE1i1fl5gK=s512
+16:40:32.044 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wKgZ5O1KGTQ9795EwSGrWBQwccwlgW1gOAclOdjwnAHCn74lL2Cf8ExTXCwEOEeqhWB6MSf3OhCsJiBeHBjuzGWkf5qzhzWcAYt0H1ORrNBLotmPmo61yjs74FpqaHBLDavv7KksjC-EBnb5K16PTlCtQ9730wXP9Hw9GKt8XPaGrrFYd1m7mE8mMs-yuujbuXL7cMmc7iXw954fiosDZt7hd9IldqoHG03UffvzlnSl9DKVRCdDKuWiCLOg1MOPeMgejXxkNP5t83wDSAtRZaPY-iT8uU6T-8E8l7WfE1VMQzbCh483XF37eFrwYyun_AVxxR9OUGvTNy2E9mXLFW9A_Y4AwoLr6DI_lzmbGDdwpTItGFrTIYVpdyy14QuJZnF9-PI7bhO2DAT_Oq3IbOfPt8XTbwBspv4SIDIOyCrU8IxJgPYt6hR80rr3K_iXk9HwvaTBGRkyg4qegd-eKL3T9ivzSvE1i1fl5gK=s512
+16:40:32.044 Cookie “SEARCH_SAMESITE” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wLGw8D4jXlIsxmOLH0u7erVSheaDWzjLhY5MxGyAh1hYNnnQZAsUDnB5Mb96Vie2MwZQmKl47kfGSkO4hW5HMMCoLgSrGikVxjbvWs5nitqNY9eX-1yw6PCCv-bkiHMHtKY_ropQ4w3DQRjEukuY56pEUEzd96Df1l-1PG62wCcpR6Lj9_UR6koT4ElLtxGylVgorGLWvxleivVfgu5segjXAZzz51t-lF4kKHBTchYzYkKUgK2YULUPmUyGJ2eUUm7B6tOOT4rJ1YhTe86vwOx8NkEnaO-HwjZwEDG2ZB_lApB2t1Lr3cGtPsBUmDL4gtlQEFL7xjcA-tDxF9Gn7uQugylcyy9oayDleNPetobCFy0DBzmzPOa7L2i2I39VL6RjYRDErgdqWRezP7PB0jJaYt9skG3YE84KF12rtQwuUEXjf2MP04uE-0DrP5WsAg-18fb2fZAB2pqh4ZJ3jpxe9tRkIcnWaxX2bX9=s512
+16:40:32.044 Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect. AEir0wLGw8D4jXlIsxmOLH0u7erVSheaDWzjLhY5MxGyAh1hYNnnQZAsUDnB5Mb96Vie2MwZQmKl47kfGSkO4hW5HMMCoLgSrGikVxjbvWs5nitqNY9eX-1yw6PCCv-bkiHMHtKY_ropQ4w3DQRjEukuY56pEUEzd96Df1l-1PG62wCcpR6Lj9_UR6koT4ElLtxGylVgorGLWvxleivVfgu5segjXAZzz51t-lF4kKHBTchYzYkKUgK2YULUPmUyGJ2eUUm7B6tOOT4rJ1YhTe86vwOx8NkEnaO-HwjZwEDG2ZB_lApB2t1Lr3cGtPsBUmDL4gtlQEFL7xjcA-tDxF9Gn7uQugylcyy9oayDleNPetobCFy0DBzmzPOa7L2i2I39VL6RjYRDErgdqWRezP7PB0jJaYt9skG3YE84KF12rtQwuUEXjf2MP04uE-0DrP5WsAg-18fb2fZAB2pqh4ZJ3jpxe9tRkIcnWaxX2bX9=s512
+16:40:32.138 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CK6Z6b,CsakMb,DQbBYc,E3fsbf,HbEaCf,HwBxOc,LBfWwb,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,euv2wd,hd8pi,o2nH0b,ponblb,uEAQfd,v9r4Te,xrScke/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=v6p8ad?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:32.145 GET
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en.IhIBJDZSRJk.2018.O/ck=boq-bard-web.BardChatUi.P0oGRmy4PXI.L.F4.O/am=IQ4ExIAF9DeAIj4BAAAAvwEGAAAAIg/d=1/exm=ABELSd,AdpaDf,C3yBDb,CK6Z6b,CsakMb,DQbBYc,E3fsbf,HbEaCf,HwBxOc,LBfWwb,LQaXg,N9BqIf,NhhJOe,OpU7Tc,PzWdsc,Qvy4Bd,TRJwtb,UE0P2d,Wg2iZc,XVyMsc,Z8wCif,ZQlXXb,_b,bNyBZd,cteZTb,eK0zfd,euv2wd,hd8pi,o2nH0b,ponblb,uEAQfd,v6p8ad,v9r4Te,xrScke/excm=_b/ed=1/br=1/wt=2/ujg=1/rs=AL3bBk2KLTbd0U3ysl6l_f_XxS9CyHYVqw/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=KkfGCf?wli=BardChatUi.dqySX6qLyOs.libheifWasm.O:;BardChatUi.R3T9CRuBM-Q.loadWasmSipCoca.O:;
+[HTTP/3 200  0ms]
+
+16:40:32.148 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wKC9mGoFSSqjfempz7QIDMye9Jz4pFReR1z6LcJ4GvaQqG_IrtabwlPw7IiJrQxmJPouPsMQrEyd9N0pAHG6ErmJxbbSgJG1ghjH9dAqll4GLaS5F4mZoN-7ZS_TOqLOautjohqtSMG3-MReCjdUZsfQXcC5pkt1Imwg3Mrh_IL2wcSoM7oCbv33dNoMTcdTdItjHUGAQxomqCMTFlBXdx0r8BI-hZR8wkpOE0lacWOrIwpsXV1QYAl0mpm5gc6a1ZIIlnii1RyaTpfEZXo6xdT7MyEaCsWz0fRWPcfXmUf35dnyRyA6mnIDQF8pPT44TZ2BceisN2gU0Sd46itreegHuh66osEFJMJ23GVoCpfaIM1MOS57R1-7CSVoMYZ7BckD8mEiZSEukv1_Eiw-4vkByTfddbWqgQdJUTuQSjSTymiIQ3CzOPQTOI43VNBvMtsz3f9Cr7K04qEsa__NiHIKwdpfSMcWfq-nd4ilLYQm0d89ycZLpRYkW80LpSEuOZJxE-K-Cakk0l_l4mebvjA-kKb-M-OJzaae0zlWm6EsNUQm52uhO0gbLiXT9HW2_4AWzsR2ZG5FspW_6HPq9T_tAWth4CbIYLaKU4oqhj14780gFOqDhRiHxLBiSaHWeUbuukp3C_SqkCW-x26ImJTEyfGnrjij_SGC1NmYjxQgDXvWB1p_l54eoCEgwOUK_3HRRuigAAuiuZrzKfIqXYT9kcxYKS85codydp5ea75kSxj_FHboGo5WZzDLZhvATRtycKOOjkKHbX7F5Wm0KWIfzPd94faRmwwgkkrKzTVlul6eBW_H6mByuVD9cGLVTh9_nyFyDKTz4yLaR6fvhXOzbwN9tV1_vwJarXi-gfui8K48TfED9d6AxOYBjXyHURqK73zMGuafLYWzREP1welh9kJ90PRNmodFCAbkTdoiDUinng7E96w0NIdSFwPdy5NBiJNoyygt5BXm7f9eYQlETbQZzPz6hy5DkGyN2-QV1yddbN4SAc7Ra-CuykgvE-rKDk4LHyiqLo3vpOnb57ZaJJWixgvvbNzHvfsp2DVE4izUb-d6die7FDeL3bQJ_yqmZuGU-zA6d3t8n8--7p5mo5FhHwRX-MVrvXXgOD3teK4PD8X42O87-qoL4qO6dCtvqt-UjXadtblmncVjsvB-05bmw7-ONZ2yXczOXELmRIYPYe9dffDbsyM8J0vkTmGNWe2Mv1klqIWDq4uBaMxhhP7-6ciwCs3tyGWFT2aQn2Aj73H0Dn7RHRnHOK5iHlLglpnm6uKGOYPNR46rE6a1ow-uHJpG7EetL9txEqqoAA6v9d2DPagpzsN=s512
+[HTTP/2 200  288ms]
+
+16:40:32.151 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wICaYQJBPQNWx8zzbdrNgcrjtlZDBVH5LbGAg9kEHyGDDp4tLnujT-p0oU52H12iYpL8PUDjofDuh7itGbrQgCEqVPoG_Xay3B-1ipWbycF61xQMrfYG-xUSvKZE-fJox4rF4wa-q8P-VBiHB3MbI9CK76aP3oM8HqDUB3xynh76qp4vKeSJDzKWEqItU4jo0lOIO_n5o_p92UARJuS4BhabDBUdjM__HbiXxIwroC7cFjA428byCbm25KjrPIbfOk8Wg0GY1o3-MUG3ssEScfAFdtLjT_3L18pZpWOkF5xHWKqTk-kFxOXC4p2rZQdl9jBRzDzwn4BIe1dxfIdU6jQyE5_OA6thU558Kqb7QFufr5oLh4_JR9BsTha5lIrntVNIHfRi0a36Nq-AaYhTDN94Lz0kC0rQQzt-PXPi4IvzlxLAkQqAOCvU4hEI4vCdtVmS9W_glaNKrN5Ox-75MVKtA62eIyI4mN31Dt2digWjS_mMPn1o7Eg8iy1PhqXfvLoUzPyTapeD7kyKnxHQHeNiduzHrOBJMWJlJjHEZjb2wGxq3VPGN_70weqpWx3FdGCEQpGk_mItfBivtuyoViOx4xARXsvdlnr0VBlxiWSPyxrSzNHCh-pzMMrTfRHXAY9IH2AiyNLbvU6Wr8D-74CeFWkhfiMiNxX3DsuM5RxmfKBDvxmdzXBesXB560Azfq3z6JsK1YwxGjk_bmwQvwtIGdnXcsLZH7sfW2322dc9GxA7B8XOEGx1Ybvq3w57CgaxgQkyENXINAifFLhSYZqYcae2YJW7sGRqzkFaOkWofT8O-Lj_FIVsc2Lvo1-HpxEkYGlOtmPiO4msf_4KZDcmFRwhb0Q06CmaHwqm2fi3T4t4X-GDkgXs2hbqsssoMmWbsVWtGt26UHy5rROk5VcpDkWdtTgp8w3UkMbPKbweDnCIuI1p7A3QgO1O4EhG5uUvZ2MoSfTLr8pqDmXgzYQjqn4xViEW62MC6UHa-TBBoB2FeplJ7XEE6dFY6mWmqn5v-30uZTaH8eT81PnoTZJ43pCYZ96P2GxpHmCBPm-CPzc9T9o92FGSfISCpxppZft1pKH3xMPOMJE1165xLnecZ0HG-nQ-itDAtBvHOr_L7w8kyq-W6yNzMgxt7wXczrY9sPdFEoQ3ubBI294nBSaPc3bpSaBkQLbC1ukfWadMURJOaN6SqcbzjRrUBCfJiSJTjSeuzC0ru0S_Ghpx-2zGvxYnw46Sgds5XU-MD5Ah93aKXzWqMqIVG-S0_YUBGRtKPKmQyLMYypDClTjbpHBh_NxHEuHCSyzUWNvqczQV0Y_3HEiBnwJIr6J=s512
+[HTTP/2 200  280ms]
+
+16:40:32.152 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wICca3gFM5GMZnaINEwjdjneXNbUfo-1jDwd1XCkiHg9j-GyNDlOcSQTLrCZZ93Z-AhNPBBd311hF_Vf3qfjiJCP3VrN244pbS9P1hhm6zEx3sfEjS1oTwtYBsW8-sbMT140aaLe5iej8Rv9gWcwv8Zy25oPt5r6bk-eWJBN97yLfEd7Bbxtb3xuok3srT6GKA4X9hq2cCalEfij3m-MN3inFTGkuJpRF57QC5HChpQjSyGNm5l4vVuPye5rO_IggvYMAOkS5ORCj7V4T6pERJ7dvvMUf9yIq2ujAw7lhYf04X19Fa-AoCX4hkkqjD22siY_Tx6qQrFWMPQciyFTltbp1CYuOd7fDZmQOertaAsyVi9J87KQz3thGdiJTa8z9FCiUdQoq7sqXh1Aoxep8pUWq7tds2vEKyTeU3nSSWcssaMY6O0_D9TTvkXjpzfNeyrzBqu--GT2b_Czg_odnKDCGroY6CEzYRO9KeT91PmNaHUFe86N3bYQ-qV4wswdpIAlLPV_D0XSnsUojUq8Ed002vG4bOKuphgvO2qF07etc-TW2yhW03gcxRMejCH0QT4v-Lsr-U_zcvEiUXq-N-gTL5SRMUqkxn3_0wBFzITqBPj0_dlL5ErlRv136GJbV6a1923sX7kCqwgOC1C8kZVl376_wPCKVIf-dY6I4h8jwnIx7mGimMp5ClGZFMx4yVL5OW9ZjmRjh6wT6yRHINbirp-bx32eLlmR61O-gOK0m26zJaf_V5S7lc963kZYteTIV884ms_bqGSq_Cr6p4t-FnUlKUBcltf95xgim0qoO6VK3BbrZr6ZBmYDqOnTZ1CFJcD1ThZw6Pd0DLzICIRrABak7p8XThiUTzAe93jhzXGnoVKgpIawABrbbKXo-CbF7ZBp3CKVb3UOqNt_w4VuwsEgJg-aHSqbJo9txpHPn4vkv91cCPQ96w3D8qbQo5dkd-o0QK6Y_cuZWBIL2ZBW_KoZdD9r6kUe3S-BCJdDZj86Csb_IrtgZI-akQeKzNxGs2g_2fu-TR_yT3lLsM_y2QsXvrVM55XySvIOhXsJXLIkjMKJGErmNW8WyTtKkYMk1NWxE4QTg5Oc6i8txJ2tQDaI-h6GrFil94b_jddwoey0-SSQLsq1c6hiAk_wOC_yS8cia5o67RG6NbQHfRoofw0jeU1IpcwkRw31AmbFvtHfBB-nyD_PkavJc0DUOOx6mcmwICr7Tyuj2wNlRMmzpqXsmvxar4juXcv1ewScpFaZz6tVF2HrODtQ-Tz0AyoryVPXSKgEeb4dCEAoqedAn7-hxxm2dP95VM2PjITY_BUXdk2i4Z_VJ2f=s512
+[HTTP/2 200  218ms]
+
+16:40:32.153 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wKECgBDiadT-j8TRU61kdMt6POSS5_Nw3m-6IBtQh9JghWmIDpbxEN5NYklY5JGyidfw04LqtQNjIFJUuEJ89FDyVWDOxv7M726pyvcH0Sh2UIacXNnC9bZrMIC6qTdWmNGimvADryLZ2JVh8DlZ2eG77zOk8hUic4Iw69b4in2CUXiIr_ao430SdU1nUSPCXNg75gGbf60wpvveTJ1QGRKsd7YetnXgImMww5oKmnelV_lIj_WN5GYmxGAGYKelbj6b_zUsVA-4cbvKE_kqxcTBG89myq7Us_cMzNH9MaB2f7h18gidB39FbaK4X6ULxkYEq4MMVALC3qu4T5mlW837-RXJrBOzpN4w-yBuhdXH4nwaojrirUZ569BQSTxU6iPOJf2EhGfSmJVlY0YLdCv2lM3eOiWepiZ0rAxLbUvczzctaKPztsl6y6IMB87wzJSkvxzWlGKxHFx2l-Y7tnP90Y3AIedilXX9BzXeDd1ydiu_y2R1TlDvQy6oRKnkZUcYRpMcu8936pzxt_86FeLpCCGvXbtl0GeBztYYH101bGP3dCb0kRWjhwelLtwkzRnUmscPrgqHBhzucXhGZobnFynhALSHBGxTpq8SCRHqgQuX0S2t_TZkK2pTL8mr1iPOjFHttiZXIctUhYtKtw37hVi_cCYC2QfEV2-wPSERP0K0aMITexQ7Qb5uFGLtrD9d7RjaRGn795DTNRRnqygUlUOtqm0Ftg9c3YoYPbOV_yzJDUNztuxpti7NDmjZGbvkJR_zjh_qHge4Jjc3iI2UT8VYqEDS6x7D_m7fW7mAKWqI-o9cQXlB1V8Ixbgxqq5y22mSuUt1DWvXEqtiaaXjYouVhm3xicgvokqmcHHjKGSBC8mbYzVZKKUcYAEY5NmUtX-_DuyPxLShDLreVuo5wmUEIMxTWesDRB2vs8j4PdiflYmvdKzsOIexrbUegAAeyXkcrYIyCWaS_laR21CGNz6tqMZMthiKuoAuEXHgxt9okGM58t25jZB-0-SeP622iVRWi_KU9tZ0-IrjGLS1Hz7Fa1qU5thg80fTYN-Xk5cqXCb1ZUZluAWZEzyuEMB8ScI6xy8Hk7xFFC1hqHH9qN56ZG2Npi8K3bBvatLeyGHP79P8yMzHIMv0AhwetgDx4wIJWROKQrVU87XhekorQ70xe_VjJfM7SIrNOl80bLwHGKY9-Z1Un8iSCTXMntJXwlMSp6880rg4zETnqrAmOqs1DzcYFzmuhyqd04UCkfuWhegD-_BF17aUY8FNf38hN1HtlvSCX9l6amGFZBlRsrh_jUD7pEJAhr4VIc9kRVXc513ApB5hCWq=s512
+[HTTP/2 200  263ms]
+
+16:40:32.154 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wLrP_H0e66qPIpeIIQkcokZbut6aRGRhINJJ1uXmycMkXBBL3C_EC-mFiUuT_Ix786EHRfdAgSSzVerF8aIPHKihblOBFM2DQqHXkRlUJx0fDe8DaTRHRk5lgHppO2K1APg1r6128Cmp33noaIc4iQgVGAxisYnzSx9HvGVlOiaCePZZ0oCvvD_LQ4dKjlzxiQeSnIhYbtLwTHPk3RoN-NAALGOEcMxUTDtf4yaUkmW1bI6Lghhv6Fijaw9kPDJJyqB54JH-b77VNbFNi076SvGwmRqSqZgh3I6Bvwj0_1AMGtMI9x3wBQG2nJzSCPh2q0sSawVcn1mUs1W1_1uYIVm9f_QFoWnrgTWQtcGZM8yXlvQwTG_73fFaedSZcts7Bd-i-27gaADSZsnMgR6UljiO-pqEVGeg1SE6E63RcIdxAIP5H50SpssnavJqAMcAXDE9VMsXnzkZLYtRwVzDvUXWmK80zmieIg67W0Sd0BMhUfPSjjj6zE9KPUPSkvX86W6SXPXEt5pt0EBL_20IUodksmCzbQ9yGuO2qPhiZW-E2VBb-ldLDBF_koBUQpUba0Pfm0iRu3gMq7WmgJdDAL9Z9O4cBWnct04nrEVKfVb9H2zVmFbdI4zD7RnA8AnN3-eRLF49dLDxcLa_J0R9Y7xhRnerly0RWXiBQ-E-1blqcPHv9Q9T63_tS6QB6LeeImwQfrKT3dSC8aLm8eF_z45EkHOt3aIAk4tTvFM7f6l46E5BxwmvzsuJ21z7NpBULTPB9B22MHWZ90Z-hIlmX50wP6807SsjXxTIvRfqhA96OyACxQxJMc2ZcVoOfzY7bz9e9i2FY-ws12Kbo1xGcX9zQSft6nvx2c1HvpFuJSuup9jcgXU_t1ysqv7RMJJ7h-hyoOVUf4h6eEZyscinpVQTAZr29JH1eyuJOQpn-1QpawWinlgpPHbQsEKdLtSC8BR-JRpmoOZT_64QlWOAI8FGoGA4hpoDw8k8D8YclY5kV2tZLZCcxITohsEyuDofJSLi5HMzXuSF3eEYDcYN98nIgvOcLID-R2h0kOpSSx4oqmh_LH8t-ymWB9RXI2UDq7mSNVoDFRG3CKxgYjm7tkfX84fd8qtsrtMNK9N0J75MKeccvHUUvNGWjy-z143hOK0HCY0E9Ut61cdn_K6hSiitPT5n2xXY0sjxKT7BvvhZSYymHgy5Lb7shmyM-QbnF-E3__xX3xSv9_GsaObaVYBmU2HWorxOpZNubckJe-PfYq9TO22sh6D3P_W2fZpZM0RE4orOI2ZPxVTRH_c685aNaD7W6OflP33DgyMFf9shbRM0NYC6BSTsuLH=s512
+[HTTP/2 200  253ms]
+
+16:40:32.155 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wIu7QwfWFsBBVOA4phIHIopsit9hfX7zjHAyX23O_rSrrPviXeqI-zmW0gCHPH2-5ggga0mcAnvVpch2PGM37bJfXcCqqg-jIHNnn3ebhk2XwBBXTlNDZojQyadX2pGsApuBLwujROObCHlCUV0QIQd5H9IKo5Xf9vloFb_aXnved8TeYMo4ssdyzG5cqnafgD1fKb_M1K6VieTwPtibGbiVG53o5iaHlSWjroho6hkwckzkFP569yc_IUcaCxZgA2EKyova6k9XircqhkeVolfh6V2cuyABlfDI8kW-KtRWvDGXZcwtfpDCYaB_qK-sA_x67V94mARnd11QMQmTvEO-o4tgd672fCQ-K_c0PuV-3657gPi7nS_A4bW0OOeCUnhL95VZSToO9bH_GnmxfFkFFTdD5WjpzNhYasmJazeqVhFMRlbigpSDkIFGKgi7ccdjr_M5hvLy2Bj6wnQsl6vicucXOW5s_ko054AnQH-hEzNmtdjt6a4-F9BqDbZRlU7mSf6YkN5ycMGAP9-rAEWdesceDPLNBjFNYuTo0XMYzoULwfCEN8K7y5P8QTSIsryfm-N6ivajV75n34WunlJNuQa2asLZJPgbm0tEoXn6XTksx_MW5zkrdOQIsF_hKIgdwRkUdWnVnSlHHvilflnqVyaDLZQxQTc8Xdf9-HJ5Bj-PKWNfGymhdhxVIM2TPztDax1AdKDIlZazqK5TqGaC7X3URzUNg3F7y1j1osqLlNrTRv-a6QDVlHpVoa4K5n45zb3V-d1xYSwYLXbe91wUFFbWJ5TcxSxheifD-hQfyPp4CH36AaUgZw6NTcsCTEGl1QpOUAFvaTP8kH7BC-d6Uxd2f5Iz2XwPJw2MxSyLI38Zr8iUZjxvsYq1Jf_0qUYszEBGKaqzGJobsHA9wGY3Ez-MhGvpvLevgTVenqRs9_T92SQCEvVzKVX6NQLBUnkBY1hcdfo3B6ivgCAgswImfT_ge5vPibymM5VTUN8n1MzPAJHU0qB-ukpKoMUGoLLXOhclLq8nsGXNoCK5SJ5R8P2n_IIxA5ixDWK5f2GRMwCa2LJWIitxkBcL6NdJgElD53QlqvVj9EG9LYBmuGd9p3nuk1W_tvVoDvhO2EKEhTmY9jBIdMj6mNCrtYQn-SitgvwTcPplNM4i2uYlwUhZF0_epV7uM3scfFzpzw3N_TsE6DnG-leZKyKFTChbIjSsrKExcGLkY25RiwcxpwCoG8Gnqwl-O22ymSMxqv-OkhIFOhzFMpJkHoX3P60KEr3xNO4qjb53YpwIQ60R-pK7j5dflISF_XUVVZpMHj4Y7UGxkWs0kc89h8k=s512
+[HTTP/2 200  200ms]
+
+16:40:32.164 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wIcd5kWDNWZuWYfJMXYjoHHCNQi84SXacoXVZhcIncFYa4B6WQX1RMeCzm2nKG2KezswU0Xq8lkZKnT9iHzo41zk9klw1rd95dH5SLlGYjtYeKzHlHypWT85BrwV-6tbX6d4oamNMUqz-TrZN2DePY_WTloeFeNY6YfM1sswV-OscSpvMTQmcj8VPWPa_QlqphAXR4RroIlVI0t6S_rUAQplyZBFLl2Ck1vCfKC79RKc4rsCYAochsGHFj4pBtOPxJEcwvmIj91PJpFs4iu_pJEVic2GWAT6quW_Hc1xQHyIBEuywRTKmQvDWghpFMG-91rRzYN2AX2f8jIjx--5uGlnYbCTDdegAiyh93ltb7dNcDOxPP1V32dtlNiwtTjczg8Aa9fIjlZwxxNMrA5gWPa_wsUKV_E8csWJbO_wJ2pqhlQ5pbkRbdImsEWShaN5aKxgMMUTxZHNiVxdQ5uqQH8aAXc07-9sEidN-F6DHcqqVrTi-iqnysTPv076TtfVTzTE4TAl0pDQumxE0_xBZBgJrLSnEaHn7F501Vra7FL3JzUbCQ0UhZeR_1pKTkJJoQnmBqoXLTh3-t0aKXhOGrZZXU8ACFwFk6LaizPvh9OfNphTge-6sroehObYvIm0LB2o0psXEp8er8RVFQTK6jraqkGMnbC27xtFZEIKo2mPWCE0o8lZH8E6kNFeNVLv1NleJShvgLWL7hLOv7k9_izPyyYW0adQQqtPweCdpjRtI0kOXlGylOi0VJ5_VK0M0XNCW-pRCMJHhZZI7bQNmWSmyqSJsXSG2E3eR-OC39vT8pU3OsM_JRjfnpwSUw8jYEwRS2eq1vOYsHcQKpCPs_6xoKcxVDc6cqQ1OF6GqKMxa8y5NTAb_JGcGkE0x6dpOtg3vaviQJOxTWJssnh32NCbI1RBxgWvYO5WeSgi2jQukaGqw5P0eY7KL52I40G3tA4GjXpxX-cNMrUuxbTmp_2nHDBzVt83fMczfoJ-S9lI3etyP1UfrEgJbhdXnfQ-niTLqww3PSQPKZ_R18odWpmOXkYPND-1n0pRQPkZ19Kz7zpC9hFC9I4tXv0y9EOj43Al9efghPiJuCILSt-BHGBIuYtLUPQ9YxJIPje-ZzqtR_xMhX9Q9GRkaZ_m_W0JM43jKtdMDf2HZgNFfMx470hlWOvI6ha0l5KRzEr6TUedFQbzkK3Fi8wPEc6IcS67Lwlb2bWhNLq7s047KNMY0qVeBzAMMGfD2ijYu48oZ-CoCiArb6tCA4p2LSMqK62pXaQitz7XavH_PGFXVx7dguHMQUmCn3Y1QaGkjYLIcwQkO8x3uy-9Wn3FfKW=s512
+[HTTP/2 200  268ms]
+
+16:40:32.168 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wLjW-d4g95D7Olnd3aa8fBTO9CaOuXDTsepVuuWqIIoYcE1a9xpSQVgSs7OjOUYGvGxjS_mpWMamj_foEwi7rpC7BvSnKCL-PFzwrYuLXamQApJyrA34joP3fWIHxuLwhkEjhU7DatfrkYl-hUN_ArY11Lw-rl96qb-w5jGJB7vFTX7norO8CpmfW-KPmBUpdyN00xNttHKfsog5vW75qFdNpKP5syinkBVrhAdKdOFd6AsLbYgxbn1zu7nhqp7_6mlWe8wjp1M3BDJEqckeX3Tk5xP7LfKVffpBINk17enV3JOPL-APaK5WuGcUJCoqnhIJ7i8WQId7qiLt3EQ6V26LXwmJAJ1_dtjRyKRPhCBCTPg-qZZGBPk5fvqIe1AAvnVIf0XGaASRpXQ07rMb-B_Hu4cs-BWUbtnjkMO1zZSc2H8Sue2DHFO9ZxrynKbFqNbd1aX3JHMOzK2ryn7NekKDlTM-mNrMUaS3obdEtET0CCIIaMZ8P4xSLABqpV8UFwMo4Y3yWBpjHLN29f0dFtybMwADz623-Jb6ue864fRoAP7X8Ct1f7nkB2zB5XN_f9-evjJhiDzdFZwq2mffhR2MAOvodkvy7cMWZqA-bwtYpjqy4iTpTsvb-VP20cMLkWT5QO5KoovixDkKcVBLGph5mtV0TEvZAZQhi1IuN5ImtezhtfL9TexhZbiZy6J80PPiVa8EvsQ9kfdqaxOMm4LtCE1UiiUAUVsWoV5VKAHYmkncb3jUQJ_pihbadxzEU9U09V23xoAx8KuBt0-lrHolpE72WXpeBvIqGA8p0VodmlJYMr699MCzF6jnrQ3mQKECASeLds3TSbTcJ05c2oOgtpybaX1xGfTy-KzknU1TFwio6lDB23C3fnGt6cfQiVpxgvgcPwLuiVtz1HJSdA-nBGx7K_HeVjwWbi-aCuYb724ogZuiamKcV9PnkmEL_k0bnMBPNPq3K7e8YMoBhh_Qigt0BuJGegINbinQ4DuznhccPmIRb2a0GdRLd142c20e6povWWPoG4tM9UhawrVhn0-AqAUV4B-zNzo29urTdwRpd6qdL8Ns2g-vIO-0lsa-B2hrm0O2jeRfjZ_8a51ySOpHzMVT02atU4PIuyri2K0jYKTp_wO5z8XYtcxrvjbDV9qP7_RkGQ0INW7k6OJQ1Uvl_2FT3bMcb30cGHoyF7xMFXpra5n6h_3b9t-4KJScm5qq4fG4F9QWgzEAUVfiOTZrSXAgkWDWc7FWB2N8bKxOMv79UTLRWRTXXmk2eoxifk4Wgf4pPLD_UCYqTmENHrfD7tahs0iJV-OtlScOVZPatf4OgXHimK7=s512
+[HTTP/2 200  251ms]
+
+16:40:32.171 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wJb4u0-Ph3cJ-JB-dCYfI21_3tEepmGDFydiUVr-Ku14l1wg9nkuJGs6l6Ovu1PzF98uQvMsqM6V6MZuEe1aHrQZ2nlyUemCBUWg-1abXFXNl0MeEZNAD7rHbBXWZDWyy-N1pFr3ZE85xbBe0P8_0cR2qF5nLbGGrvvKYozzV29Pfk3fPNR2dgt9nQ0tdRomvU7WSGrLwJUcfXYhZpVL6jRakdnDor8p5LQZ_ToP6LMa44mUTmvPxD72jKrNXbqcI0VchloRF2xw_MjE8I1ca6GeRr_aIkOe7aYlgbGlvh6WE5x8dIKXUlBD8DVEOfkIoOG4nB_dSaihL_0DshDHXcxXAW28RujV73RaJe8LRfnAKoep_hYwJVE-KGj8n6LdNkj2VQIAwz3J9s5ncr2zrCRiKNkzkeh79W5pqVj3VFAk2EwKOoM2e1ZGxGag1UUpL5fdhkTsD9a5rEcet8go5mnoBk3nCMJhr-mIRi0Gw7ghwvQsZpBG19IW8QmV47OMr5KEReac0bW3PnZN2jWVswJTZCOur7LuCX2VzmV98LFkIK-9D0RSdD8gaDP9EP1cR9dtDUM2iD3V7x9nVaTa_GqTc9TtbPCeo1ZKzUJDgaDmWt8L63KDl_5ltC2Wbl5LgpcqXuaZkZmV_vtNn1m3uiwcB7UPExl90YC9u1PIlY42hf_AWzlkK_RuCQtN0SbH4MHoBuJoW2T0_ZaQaNFNNCo028XuSVNY-zjLj4pv59LIz4S70NPVRb1zebHx1ZDVvSIeT3CU4myc0l7i17PwDd9Pp9sIykcrWgbGB6pof2l8gfz-Xh2KXuH07jhNTwGAXAR0c2ZBpR9-IzxfFx6y_L0jp-kSYPztNSOfqYMusspOKdSBsa29DrMrDu1vjIS2ucImPRxnB4rcONB2tSKRFEo64j0tyo5xXPQaGadhpATGXobGE7wARwu0pypWygaKs5XpMctRVgsK2hJCQyfOGAlZimT1U4udopgAYoJODaJuJwjz6XIQu2FqiUfgMURZb8vrJgoB5Xsid5aB3EMmjSyorpOgdta386clSIPsstbbIlEfYREMfdOnWucP8dscVqPRIYQWyWm0zfhU1LlY7peZ76cX05JHkwtDNFLS3dBPDrf1LRF00ODX7wnCKcq2dadb91fZ4f4GECtIIfOau5Le8kyoJXxIRQZdYJmeH7WxvfTb2juyza6Z-gMktKPRDVGdrWc3-nynEas6yk_lDw9ZIM6AKkmLM68M0CZIKgF5ru3KDoH59x2HVuUdzggq7eBpWLEUT0_v2kGTWoQwHJwL3bUd3y0NVUDhvuwBK9hgL-vEiDBlVxwwI6d=s512
+[HTTP/2 200  204ms]
+
+16:40:32.179 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wKdxciKFu3ZbT9rSLqtTAGb1qNABlXkyjbgiLivkG6SG-1be8JtNR5L86NFzXWXEbA_GT5pPnjrkOmRK6i1tRDxDY9OImnqBuzYOEfL0LCH_xIpwcoDhOdWpApkMB6WTJFseY0vn7OX8O4THH_8iZHwk2WTy8cK_UeCXm1LZz5RLHFB9JF2UA2qP66CgyitUBECPHSH4ZL9dCHHDR0Ql3Vu91DbdJVqVi6vBjUbkXteueFJEio6kFdr9BZqyd6R5Aiyb1k0LOYzS_YQt6sq0BbBqD4rGSsOhSXW9xRo9jA0InK93aTcBrf8_lj-JPIYqD-0Z679EE4eLnGhU-J0F3ASi6pBvsvFEf2GmRrQ8cGJHNQsuGy0qVWZ7RIbXabTqvyhGjuPF0U8XokB44WlVd07vgHPXXKYFnV-4iZS9Xcer478a7iWBfGK9JCbpd0t45_kiXMI8B5cdfL1pAi7lXKeAUz67q6XyIeTWipzEpOCgT3VgN7UXEv_IrwnGUJCtsNoNk1Wft_XtHV8Uh9WjQ78D4_dcENrbBhlr30D0vIyo52U570nMXSkB6jaKwe4BEhJCLIU5uOyYd-5IxCjo-KcgjI-xHhwP32vMQmQpRGzqahp5iYiZKp2CEiARoyRjU4lMq34lAwijpdz2vOWlBwlNHk_GwvFyXjqyOJ8JCX_OWOIcxDZJB0nm5tAT2g2mxwIHYO82Jzfhfc56fSPynGKi7BIlsxSJ6LS_1V3aBVuI1HYrmyvz36g13j2YgGMu_Hewzv-06gfv1VE8-E-B_Xn8n9b0cgPilOi7u4fLlP9H2CAjC75mzrvdm55hJ2RLVEFijRuK_JUr8ZHLxUM3DkcYlubHnuqc8JV0IzkMGjM8f1gF7HlPF2lBQTChjTjAWC4SdtIiE_kWJSRx4HamZTR0cPIC_BVAeAtDyx7LOmaWEvrdnbCi_Hqm0Gw8SDa8Vk7PF4e1WFRwDUWyFH4XJtKUPb692wE5qAFC5XOkCNIfenZSTTcTPdA7o6AVU2L5qDYlZ3wVA8ubJtqLcQiMqkEIIWuwXNqp-kLeqkrNvl2Jx7nzaWIyfr_7kBqPtmbPoSqCQuS1UC0GOZY6HxB-yKsgx8a6lIKFF9Fa6xoduo0NxQ2Mq-qtH4AofPTV5Pv-sSv9Rb6ZvE2UJ2G57HA0rn_ePEX7l17uWWjeZX_X7i7GDl4wUSIU1g0YJbp4FK-IG_PjIiMMEuDNSdzahkzUu6AckF5Vf5x8NLDQA3lkAiZxsELA8hNYzKDLlCKN6Vyzjl1rIt5fepmuZJUh_i98BRkXtiw0WCs-YuL2gWg3AMvfhTZpnUrwpL6koUo=s512
+[HTTP/2 200  251ms]
+
+16:40:32.180 GET
+https://lh3.googleusercontent.com/rd-gg/AEir0wLk8e46eDhGq_kjdE8YbD7vr0OPVK3W30YcEXVU62BWtMaH4NV801fFuqPwp36X8sJsoyo_JmDSGG3qGr9cjRdEZTifvolQaulJEGD5YW6pk2xAsutl_A9QbYKfygGGwt6n8Yb3f84Ifis2su7N7ELaoLqo9jDcf-qJmRFcMtdsXHFjUpVoPNexDRGcUoKkbs0VmZFwv_CSfZQICWCTqSwnkxEs05zti7x6mukIQXB_f69ngdqmYFEjx4eF3L2e9hlzz4rxNiue1AivjP-1ZGOc6LzyeqW_rnMkL8R9T6We7vFGc34P-3AwfyLcdKtYeMVvCvpRtfVuSSuHX9GcL-m5vdxM3H-iX4tg9XjonvSbAQ_L6IgvX_bOTQ-01X_GU_s3jaQwGbdM6ubrdWHp0OgVvaZtEiNc9HEII-Bp65IsHywvkJj8lntx-fyydc21fGAyzo7IIMCcG24mtqaz4-G332JmEz9Inm0Eoyb2G3_yFKqWp1fFshwbihus-vXyrRTS7baJRmxygIasuNkq9p2rmaGJp67YYPoORESKqIpjR4zjHndepSuTUNlpDC7w_RDjO7T9jgKAorcevnQcc0E7o8pjfeT56C6nMOGwv_aiJrPfPdO8rWG3LYv3VTQP647OuzxAiZThzUAXvYdcQNpOc1UshCDUl63sR0lWgsjyE05F0uTIHP2RD3Zn8SJHlYgcinqcToq-Q3bQqd8axg4-u6q9_UZTD_kSrWosVvC38KfvpChlgr3yMrb5CBS1GKobjMgipTqMSqLxZacXPzmseU0nOgooKExDZrRA0urfWJ8Srk83e1q62dUkOPC5CWVNz2QiA7vBqldERG_aQkNQcMLxsSTgA2rhxODne3Z7Y5V9GX0M8o3egivaU5gfREVGSQNGONfnA-8Nnyz9PiTpTixgcqOr7lWfsn1aQr3JLLsvVlPTbm_vMvPSVrxrhLckhG4r6xCxI6SaUON_7yUl46WR5s3NZrFq1icWXnSb1-OTImoSrLwzSZsTPEZNwEb9IVfbgGb2aPgyVaQyLgjgnVmyVVuWoH4V0ln2HcnJgqV-q5QZDoMJAe-J9Pk-lfyFg5Ljb4vPQA8Ov3PPsOP_6IilE_51QaeYyhe0vP7xGrmK16kMqjf1EvZsr9rMVJLdGw0AzSi75CQWqPirhwAmZ6nJyqXgEqP-pkKhcEyjMRQAI5ViZ304oYhtgU5p3jUe4aHaHyWn-EbduX3Mqxo1VtT9Q2oGddqHOGnrBzAgEuSMAZTD3UQb7eXiFanRhURkTA8sh1dZuVbHczmTPppnhe_HR8R9dVIz_IaXPPE74KdjIPKsR0z0ZHwr=s512
+[HTTP/2 200  257ms]
+
+16:40:33.576 XHRPOST
+https://www.google-analytics.com/g/collect?v=2&tid=G-WC57KJ50ZZ&gtm=45je6570h2v9134258191z89113054662za20gzb9113054662zd9113054662&_p=1778370027234&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1886948499.1778042852&frm=0&lps=1&pscdl=noapi&rcb=4&sr=1525x858&ul=en-us&tag_exp=0~115616985~115938465~115938468~118463262~118851534&dr=https://www.google.com/&dl=https://gemini.google-b197145817.com/app/f14bdd4bf90b8be8/&dt=Google Gemini&sid=1778367594&sct=17&seg=1&_s=1&tfd=6646
+NS_ERROR_UNKNOWN_HOST
+
+16:40:33.594 XHRPOST
+https://www.google.com/g/collect?v=2&tid=G-WC57KJ50ZZ&gtm=45je6570h2v9134258191z89113054662za20gzb9113054662zd9113054662&_p=1778370027234&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1886948499.1778042852&frm=0&lps=1&pscdl=noapi&rcb=4&sr=1525x858&ul=en-us&tag_exp=0~115616985~115938465~115938468~118463262~118851534&dr=https://www.google.com/&dl=https://gemini.google-b197145817.com/app/f14bdd4bf90b8be8/&dt=Google+Gemini&sid=1778367594&sct=17&seg=1&_s=1&tfd=6646&gaf=1
+[HTTP/3 204  23ms]
+
+16:40:33.997 XHRPOST
+https://analytics.google.com/g/collect?v=2&tid=G-BF8Q35BMLM&gtm=45je6570h2v9229664005z89113054662za20gzb9113054662zd9113054662&_p=1778370027234&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1886948499.1778042852&frm=0&lps=1&pscdl=noapi&rcb=15&sr=1525x858&ul=en-us&gaf=2&_s=1&tag_exp=0~115938465~115938469~118463262&dl=https://gemini.google-b197145817.com/app/f14bdd4bf90b8be8/&dt=Google Gemini&sid=1778367595&sct=20&seg=1&dr=https://www.google.com/&en=page_view&ep.user_onboarding_status=available&ep.user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0&ep.is_eea=false&ep.percent_scrolled=0&ep.scroll_increment=10&ep.scroll_instance=1&up.signed_in=yes&up.is_u18=no&tfd=7067
+[HTTP/2 204  62ms]
+
+16:40:37.892 XHRPOST
+https://play.google.com/log?format=json&hasfast=true&authuser=0
+[HTTP/3 200  92ms]
+
+16:40:40.180 XHRPOST
+https://play.google.com/log?format=json&hasfast=true&authuser=0
+[HTTP/3 200  57ms]
+

@@ -1,0 +1,121 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:32 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                      CSP REPORT-ONLY ONE-PAGE RUNBOOK
+                NIST Staging — Content Security Policy Hardening
+══════════════════════════════════════════════════════════════════════════════
+Document ID : CSP-RB-2026-0512-001      Evidence: NST-STG-0002
+Owner       : Security (CSP/WAF)        SLA: < 4 hours (SEC-001)
+══════════════════════════════════════════════════════════════════════════════
+
+STEP 1 — DEPLOY REPORT-ONLY HEADER (per-host nonces)
+──────────────────────────────────────────────────────
+  Generate a cryptographically random nonce for EACH HTTP response:
+
+    # Node.js / Express middleware example
+    app.use((req, res, next) => {
+      const nonce = crypto.randomBytes(16).toString('base64');
+      res.locals.cspNonce = nonce;
+      res.setHeader('Content-Security-Policy-Report-Only',
+        `default-src 'self'; ` +
+        `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'; ` +
+        `style-src 'self' 'nonce-${nonce}'; ` +
+        `img-src 'self' data: https:; ` +
+        `connect-src 'self' https://csp-report.nist-stg.example.gov; ` +
+        `frame-ancestors 'none'; ` +
+        `report-uri https://csp-report.nist-stg.example.gov/__csp-report; ` +
+        `report-to csp-endpoint`
+      );
+      next();
+    });
+
+  Inject nonce into every inline <script> and <style> tag:
+    <script nonce="{cspNonce}">...</script>
+    <style  nonce="{cspNonce}">...</style>
+
+  NEVER use a static/cached nonce — must be unique per response.
+
+STEP 2 — CONFIGURE REPORT COLLECTOR
+──────────────────────────────────────
+  Report-To header (Reporting API v1):
+    Report-To: {"group":"csp-endpoint","max_age":86400,
+      "endpoints":[{"url":"https://csp-report.nist-stg.example.gov/__csp-report"}]}
+
+  Collector endpoint requirements:
+    • Accept POST application/csp-report and application/reports+json
+    • Log to structured JSON sink (ELK / Splunk)
+    • Retain reports 90 days per retention policy
+    • Alert on > 5 violations/min (threshold: alert-csp-threshold.yaml)
+
+  Verify collector is alive:
+    curl -X POST https://csp-report.nist-stg.example.gov/__csp-report \
+      -H 'Content-Type: application/csp-report' \
+      -d '{"csp-report":{"document-uri":"https://nist-stg.example.gov/test","violated-directive":"script-src-elem","blocked-uri":"inline"}}'
+    # Expected: HTTP 204 No Content
+
+STEP 3 — VALIDATE ZERO VIOLATIONS IN REPORT-ONLY MODE
+───────────────────────────────────────────────────────
+  Monitor report collector for 24 h before enforcing:
+    # Tail collector log (Splunk example)
+    index=nist-staging sourcetype=csp_report
+      | stats count by violated_directive
+      | where count > 0
+
+  Acceptable baseline: 0 violations for script-src-elem and style-src-elem.
+  If violations found: fix offending inline code before proceeding to Step 4.
+
+  Truncation note: NST-STG-0002 was truncated (IsTruncated: true).
+  Set collector max body size to 64 KB to prevent truncation:
+    nginx: client_max_body_size 64k;
+
+STEP 4 — PROMOTE TO ENFORCE MODE
+──────────────────────────────────
+  Replace Content-Security-Policy-Report-Only with Content-Security-Policy:
+    # Nginx config snippet
+    add_header Content-Security-Policy
+      "default-src 'self'; script-src 'self' 'nonce-${request_id}' 'strict-dynamic'; ..."
+      always;
+    # Remove Report-Only header
+    # more_clear_headers 'Content-Security-Policy-Report-Only';
+
+STEP 5 — RETENTION & ALERTING
+───────────────────────────────
+  • CSP violation logs retained 90 days (matches package retention)
+  • Alert rule: > 5 new unique violated-directives in 1 h → PagerDuty P2
+  • Weekly digest: csp-weekly-digest.sh → sends summary to security@
+
+ROLLBACK COMMANDS
+──────────────────
+  # Revert to Report-Only (if enforce breaks pages)
+  kubectl set env deployment/nist-staging-web CSP_MODE=report-only
+  kubectl rollout restart deployment/nist-staging-web
+  # Verify
+  curl -sI https://nist-stg.example.gov | grep -i content-security-policy
+
+VERIFICATION STEPS
+───────────────────
+  1. curl -sI https://nist-stg.example.gov | grep Content-Security-Policy
+     → Should show Report-Only header with nonce= directive
+  2. Browser: DevTools > Console — no CSP errors for legitimate scripts
+  3. Collector: confirm POST receipts within 30 s of page load
+  4. Confirm 'unsafe-inline' ABSENT from all CSP headers
+  5. Confirm 'strict-dynamic' PRESENT in script-src
+
+HOST-SPECIFIC NONCE CONFIG
+────────────────────────────
+  nist-stg.example.gov          → nonce via Express middleware (see Step 1)
+  analytics-staging.*           → CSP not applicable (API endpoint; no HTML)
+  csp-report.nist-stg.example.gov → CSP: default-src 'none'; frame-ancestors 'none'
+
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                CSP-RB-2026-0512-001

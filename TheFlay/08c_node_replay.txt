@@ -1,0 +1,122 @@
+// =============================================================================
+// FILE: test_harness/03_node_replay.mjs
+// PURPOSE: Node.js replay of evidence items for WAF/CSP/Sentry validation
+// CLASSIFICATION: CONFIDENTIAL — STAGING
+// Run: node 03_node_replay.mjs
+// =============================================================================
+import crypto from 'crypto';
+import https from 'https';
+
+const CID_HASH = crypto.createHash('sha256').update('cid-8f3a21bc904d').digest('hex');
+const RESULTS = [];
+
+function httpGet(url, headers = {}) {
+  return new Promise((resolve, reject) => {
+    const req = https.request(url, { method: 'GET', headers, timeout: 10000 }, (res) => {
+      let body = '';
+      res.on('data', d => body += d);
+      res.on('end', () => resolve({ status: res.statusCode, headers: res.headers, body }));
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('Timeout')); });
+    req.end();
+  });
+}
+
+function httpPost(url, headers = {}, body = '') {
+  return new Promise((resolve, reject) => {
+    const u = new URL(url);
+    const opts = {
+      hostname: u.hostname, path: u.pathname + u.search,
+      method: 'POST', headers: { ...headers, 'Content-Length': Buffer.byteLength(body) },
+      timeout: 10000
+    };
+    const req = https.request(opts, (res) => {
+      let b = '';
+      res.on('data', d => b += d);
+      res.on('end', () => resolve({ status: res.statusCode, headers: res.headers, body: b }));
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('Timeout')); });
+    req.write(body);
+    req.end();
+  });
+}
+
+function assert(label, condition, detail = '') {
+  const status = condition ? 'PASS' : 'FAIL';
+  console.log(`  [${status}] ${label}${detail ? ' — ' + detail : ''}`);
+  RESULTS.push({ label, status });
+}
+
+async function run() {
+  console.log('='.repeat(64));
+  console.log('  NIST STAGING — NODE.JS FORENSIC REPLAY HARNESS');
+  console.log(`  Date: ${new Date().toISOString()}`);
+  console.log('='.repeat(64));
+
+  // NST-STG-0001: Telemetry beacon
+  console.log('\n[NST-STG-0001] Telemetry beacon replay');
+  try {
+    const r = await httpGet(
+      `https://analytics-staging.nist-stg.example.com/collect?v=1&tid=UA-XXXX-STAGING&cid=${CID_HASH}&t=pageview&dp=%2Fnist-staging`,
+      { 'User-Agent': 'Mozilla/5.0 (compatible; NIST-Staging-Monitor/1.0)',
+        'CF-Ray': '8b2fa1c93e7d9f01-IAD' }
+    );
+    assert('Telemetry endpoint should be blocked (403/401)', r.status === 403 || r.status === 401, `Got ${r.status}`);
+    assert('No Set-Cookie with raw session', !r.headers['set-cookie']?.some(c => !c.includes('[REDACTED]')), '');
+  } catch (e) { console.log(`  [WARN] NST-STG-0001 unreachable: ${e.message}`); }
+
+  // NST-STG-0002: CSP report
+  console.log('\n[NST-STG-0002] CSP report collector liveness');
+  const cspBody = JSON.stringify({ 'csp-report': {
+    'document-uri': 'https://nist-stg.example.gov/test',
+    'violated-directive': 'script-src-elem', 'blocked-uri': 'inline',
+    'source-file': 'https://nist-stg.example.gov/test', 'line-number': 1, 'status-code': 0
+  }});
+  try {
+    const r = await httpPost(
+      'https://csp-report.nist-stg.example.gov/__csp-report?src=staging',
+      { 'Content-Type': 'application/csp-report', 'CF-Ray': '8b2fa1c93e7d9f02-IAD' },
+      cspBody
+    );
+    assert('CSP collector returns 204', r.status === 204, `Got ${r.status}`);
+  } catch (e) { console.log(`  [WARN] NST-STG-0002 unreachable: ${e.message}`); }
+
+  // NST-STG-0003: Sentry PII check
+  console.log('\n[NST-STG-0003] Sentry envelope — PII scrubber validation');
+  try {
+    const r = await httpGet(
+      'https://o123456.ingest.sentry.io/api/4567890/envelope/?sentry_key=REDACTED_TEST&sentry_version=7',
+      { 'CF-Ray': '8b2fa1c93e7d9f03-IAD' }
+    );
+    assert('Sentry ingest should be WAF-blocked or unauthorized',
+      r.status === 403 || r.status === 401 || r.status === 400, `Got ${r.status}`);
+    assert('Response body contains no raw email',
+      !r.body.includes('@') || r.body.includes('[REDACTED]'), '');
+  } catch (e) { console.log(`  [WARN] NST-STG-0003 unreachable: ${e.message}`); }
+
+  // NST-STG-0004: Service Worker
+  console.log('\n[NST-STG-0004] Service Worker /sw.js credentials check');
+  try {
+    const r = await httpGet(
+      'https://nist-stg.example.gov/sw.js',
+      { 'Service-Worker': 'script', 'CF-Ray': '8b2fa1c93e7d9f04-IAD' }
+    );
+    assert('sw.js does not contain credentials:include',
+      !r.body.includes("credentials: 'include'") && !r.body.includes('credentials:"include"'), '');
+    assert('sw.js contains credentials:omit',
+      r.body.includes("credentials: 'omit'") || r.body.includes('credentials:"omit"'), '');
+  } catch (e) { console.log(`  [WARN] NST-STG-0004 unreachable: ${e.message}`); }
+
+  // Summary
+  const pass = RESULTS.filter(r => r.status === 'PASS').length;
+  const fail = RESULTS.filter(r => r.status === 'FAIL').length;
+  console.log('\n' + '='.repeat(64));
+  console.log(`  RESULTS: PASS=${pass}  FAIL=${fail}`);
+  console.log(`  ${fail === 0 ? 'ALL CHECKS PASSED' : 'ACTION REQUIRED — SEE FAILS ABOVE'}`);
+  console.log('='.repeat(64));
+  process.exit(fail);
+}
+
+run().catch(e => { console.error(e); process.exit(1); });

@@ -1,0 +1,129 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:36 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                  SIGNED ARTIFACT PACKAGING INSTRUCTIONS
+                         & VERIFICATION COMMANDS
+══════════════════════════════════════════════════════════════════════════════
+Document ID : PKG-2026-0512-001
+Date        : 2026-05-12T18:36:00Z
+══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1 — PACKAGE INVENTORY (SHA-256 ABBREVIATED)
+──────────────────────────────────────────────────────
+  (Full hashes in MANIFEST.sha256)
+
+  a27ed2c3ba44996e...  00_EXECUTIVE_SUMMARY.txt                                     (6,693 B)
+  655f005200a45e30...  01_FORENSIC_REPORT.txt                                       (20,021 B)
+  b43a505dd0c95c62...  02_CUSIP_ACCOUNTING_TABLE.txt                                (10,213 B)
+  e0057571bf47b61a...  03_ENGINEERING_CHECKLIST.txt                                 (10,783 B)
+  28d15caf0180c0c2...  04_CSP_RUNBOOK.txt                                           (8,084 B)
+  4fc8ea1b0f70e428...  05_CSS_COMPATIBILITY_REPORT.txt                              (8,057 B)
+  e10f50b540fc1041...  06_REDACTION_MANIFEST.txt                                    (6,677 B)
+  eb00a75d4cf8db08...  07_DISCLOSURE_MANIFEST.txt                                   (6,725 B)
+  4584cc105a007cb2...  test_harness/01_waf_csp_sentry_validate.sh                   (5,898 B)
+  b64db859d5619d3a...  test_harness/02_curl_replay_snippets.sh                      (2,624 B)
+  59e2bc4386720dcb...  test_harness/03_node_replay.mjs                              (5,278 B)
+  a839ffc58f8c01c8...  test_harness/README.txt                                      (4,290 B)
+
+  MANIFEST.sha256  hash: b1af703abc547217c02d76a1bbf34422afac7bda49451ff6c7833092b43d60d2
+
+SECTION 2 — STEP-BY-STEP PACKAGING
+─────────────────────────────────────
+
+  Step 1: Verify all files present
+  ──────────────────────────────────
+    cd /path/to/forensic_package
+    ls -la
+    # Expected: 10 .txt files + test_harness/ dir (4 files) + MANIFEST.sha256
+
+  Step 2: Verify SHA-256 checksums
+  ──────────────────────────────────
+    sha256sum -c MANIFEST.sha256
+    # All lines should report: OK
+    # Any FAILED line = file corrupted or tampered — DO NOT transmit
+
+  Step 3: Create compressed archive
+  ───────────────────────────────────
+    cd /path/to/parent_directory
+    tar -czf forensic_package_NIST_STG_20260512.tar.gz \
+        --owner=0 --group=0 \
+        forensic_package/
+    # Verify archive integrity
+    tar -tzf forensic_package_NIST_STG_20260512.tar.gz | sort
+
+  Step 4: Hash the archive
+  ─────────────────────────
+    sha256sum forensic_package_NIST_STG_20260512.tar.gz \
+        > forensic_package_NIST_STG_20260512.tar.gz.sha256
+    cat forensic_package_NIST_STG_20260512.tar.gz.sha256
+
+  Step 5: GPG sign the archive
+  ──────────────────────────────
+    gpg --armor \
+        --detach-sign \
+        --local-user [SIGNING-KEY-ID] \
+        forensic_package_NIST_STG_20260512.tar.gz
+    # Produces: forensic_package_NIST_STG_20260512.tar.gz.asc
+
+  Step 6: (Optional) GPG encrypt to recipients
+  ──────────────────────────────────────────────
+    gpg --armor \
+        --encrypt \
+        --recipient [ENG-GPG-KEY-FINGERPRINT] \
+        --recipient [SEC-GPG-KEY-FINGERPRINT] \
+        --recipient [INFRA-GPG-KEY-FINGERPRINT] \
+        --recipient [LEGAL-GPG-KEY-FINGERPRINT] \
+        forensic_package_NIST_STG_20260512.tar.gz
+    # Produces: forensic_package_NIST_STG_20260512.tar.gz.asc (encrypted)
+
+  Step 7: Transmit (see 10_TRANSMISSION_CHECKLIST.txt)
+  ──────────────────────────────────────────────────────
+    Transmit files:
+      forensic_package_NIST_STG_20260512.tar.gz
+      forensic_package_NIST_STG_20260512.tar.gz.sha256
+      forensic_package_NIST_STG_20260512.tar.gz.asc
+
+SECTION 3 — VERIFICATION COMMANDS (RECIPIENT SIDE)
+──────────────────────────────────────────────────────
+    # 1. Verify GPG signature
+    gpg --verify \
+        forensic_package_NIST_STG_20260512.tar.gz.asc \
+        forensic_package_NIST_STG_20260512.tar.gz
+    # Expected: Good signature from [SIGNING-KEY-ID]
+
+    # 2. Verify SHA-256 of archive
+    sha256sum -c forensic_package_NIST_STG_20260512.tar.gz.sha256
+    # Expected: forensic_package_NIST_STG_20260512.tar.gz: OK
+
+    # 3. Extract archive
+    tar -xzf forensic_package_NIST_STG_20260512.tar.gz
+
+    # 4. Verify internal file checksums
+    cd forensic_package/
+    sha256sum -c MANIFEST.sha256
+    # Expected: all files: OK
+
+    # 5. Confirm no raw PII in package
+    grep -rE '\b[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}\b' . && echo "PII FOUND — DO NOT TRANSMIT" || echo "No raw email addresses found"
+    grep -rE '"(uid|session|token)"\s*:\s*"[^\["]' . && echo "RAW PII FIELD FOUND" || echo "No raw uid/session/token values found"
+
+SECTION 4 — INTEGRITY ATTESTATION
+────────────────────────────────────
+  Packager     : Automated Forensic Engine (Copilot Forensics)
+  Package date : 2026-05-12T18:36:00Z
+  Files count  : 12 (+ MANIFEST.sha256)
+  Classification: CONFIDENTIAL — STAGING
+  Retention    : Expires 2026-08-10
+
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                   PKG-2026-0512-001

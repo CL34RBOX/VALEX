@@ -1,0 +1,78 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗██╗     ███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗  ██╗  ║
+║ ██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗██╔╝  ║
+║ ██║     ██║     █████╗  ███████║██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚███╔╝   ║
+║ ██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║   ██║ ██╔██╗  ██╔██╗   ║
+║ ╚██████╗███████╗███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗██╔╝ ██╗  ║
+║  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CLASSIFICATION : CONFIDENTIAL — STAGING                                    ║
+║  PACKAGE DATE   : 2026-05-12  |  ASSEMBLED : 18:32 PDT                      ║
+║  RETENTION      : 90 days from package date (expires 2026-08-10)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                           REDACTION MANIFEST
+              NIST Staging Forensic Package — Policy & Field Registry
+══════════════════════════════════════════════════════════════════════════════
+Document ID : RDCT-2026-0512-001
+Date        : 2026-05-12
+Redaction Engine: Automated Forensic Engine v1.0
+══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1 — REDACTION POLICY
+──────────────────────────────
+  Field Name   │ Action            │ Output Value
+  ─────────────┼───────────────────┼──────────────────────────────────────────
+  uid          │ REDACTED          │ [REDACTED]
+  session      │ REDACTED          │ [REDACTED]
+  token        │ REDACTED          │ [REDACTED]
+  email        │ REDACTED          │ [REDACTED]
+  cid          │ SHA-256 HASH      │ e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40
+  sentry_key   │ REDACTED          │ [REDACTED]
+  dsn          │ REDACTED          │ [REDACTED]
+  nonce        │ REDACTED          │ [REDACTED]
+  Set-Cookie   │ VALUE REDACTED    │ [REDACTED]
+  X-Session-Id │ REDACTED          │ [REDACTED]
+  X-User-Token │ REDACTED          │ [REDACTED]
+  X-Email      │ REDACTED          │ [REDACTED]
+  X-Uid        │ REDACTED          │ [REDACTED]
+  user.id      │ REDACTED          │ [REDACTED]
+  user.email   │ REDACTED          │ [REDACTED]
+  event.id     │ REDACTED          │ [REDACTED]
+
+SECTION 2 — FIELD OCCURRENCES BY EVIDENCE ITEM
+─────────────────────────────────────────────────
+  Evidence ID  │ Field          │ Occurrences │ Action Applied
+  ─────────────┼────────────────┼─────────────┼───────────────────────────
+  NST-STG-0001 │ cid            │ 2           │ SHA-256 hashed
+  NST-STG-0001 │ Set-Cookie     │ 1           │ Value redacted
+  NST-STG-0002 │ X-Session-Id   │ 1           │ Redacted
+  NST-STG-0002 │ X-User-Token   │ 1           │ Redacted
+  NST-STG-0002 │ nonce          │ 1           │ Redacted
+  NST-STG-0003 │ sentry_key     │ 2           │ Redacted
+  NST-STG-0003 │ X-Email        │ 1           │ Redacted
+  NST-STG-0003 │ X-Uid          │ 1           │ Redacted
+  NST-STG-0003 │ user.id        │ 1           │ Redacted
+  NST-STG-0003 │ user.email     │ 1           │ Redacted
+  NST-STG-0003 │ event.id       │ 1           │ Redacted
+  NST-STG-0003 │ dsn            │ 1           │ Redacted
+
+SECTION 3 — CID HASH REGISTRY
+────────────────────────────────
+  Raw CID (NEVER stored in package): [NOT RECORDED]
+  SHA-256 of CID : e0320ec9a8bc5d9810de4e2421692491281da00ac7c4fccea59854bcd7e27f40
+  Algorithm      : SHA-256 (hex digest)
+  Salt           : None (deterministic for correlation traceability)
+  Note           : Raw CID value was purged from memory after hashing.
+                   Only the hash is retained in this package.
+
+SECTION 4 — ATTESTATION
+─────────────────────────
+  Redaction performed by : Automated Forensic Engine (Copilot Forensics)
+  Redaction date/time    : 2026-05-12T18:32:00Z
+  Human reviewer required: YES — Legal (Disclosure) must review
+                           NST-STG-0003 Sentry PII exposure fields
+  No raw PII present in any file in this package: ATTESTED
+
+══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION: CONFIDENTIAL — STAGING                 RDCT-2026-0512-001
