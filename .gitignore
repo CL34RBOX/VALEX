@@ -1,0 +1,26 @@
+# Block Cryptographic Keys and Signatures
+*.key
+*.pub
+*.asc
+*.sig
+*.private.bak
+*.compromised
+
+# Block Forensic Evidence & Encrypted Tarballs
+OMNIBUS_VAULT/
+XipeTotech_audit*/
+archives/
+audit_forensics/
+disclosure_staging/
+evidence/
+vault/
+*.tgz
+*.tgz.enc
+*.tar.gz
+
+# Block Databases and Active Logs
+*.log
+*.db
+telemetry_logs/
+logs/
+tmp/
