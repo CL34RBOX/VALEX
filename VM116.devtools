@@ -1,0 +1,3 @@
+fetch("https://cbegroup.com/wp-json/wp/v2/pages")
+  .then(r => r.json())
+  .then(data => console.log(data))
