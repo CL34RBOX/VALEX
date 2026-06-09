@@ -1,0 +1,22 @@
+{
+  "triad_mapping": {
+    "father": {
+      "component": "Database Relational Core (Root Substrate)",
+      "vulnerability": "Triple Crown Injection (CWE-89)",
+      "severity": "Critical (CVSS v3.1: 9.8)",
+      "impact": "Absolute schema modification and structured data compromise via unparameterized injection vectors."
+    },
+    "son": {
+      "component": "Client Runtime Substrate (The Manifestation)",
+      "vulnerability": "Prototype / Global Scope Mutation (CWE-471 / CWE-1321)",
+      "severity": "High (CVSS v3.1: 6.8)",
+      "impact": "Silent interaction harvesting, DOM hook placement, and framework-level event logic interception."
+    },
+    "spirit": {
+      "component": "Outbound Telemetry Streams (The Invisible Flow)",
+      "vulnerability": "Unverified Information Leakage (CWE-201 / CWE-209)",
+      "severity": "Medium-High (CVSS v3.1: 5.3 - 6.5)",
+      "impact": "Covert diagnostic leakage, background processing bypass, and tracking loops across browsing boundaries."
+    }
+  }
+}

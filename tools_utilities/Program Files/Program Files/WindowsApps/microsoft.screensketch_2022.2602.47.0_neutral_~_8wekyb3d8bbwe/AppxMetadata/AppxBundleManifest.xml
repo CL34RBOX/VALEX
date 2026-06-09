@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Bundle SchemaVersion="5.0" IgnorableNamespaces="b4 b5" xmlns="http://schemas.microsoft.com/appx/2013/bundle" xmlns:b4="http://schemas.microsoft.com/appx/2018/bundle" xmlns:b5="http://schemas.microsoft.com/appx/2019/bundle">
+	<Identity Name="Microsoft.ScreenSketch" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2022.2602.47.0"/>
+	<Packages>
+		<Package Type="application" Version="11.2602.47.0" Architecture="arm64" FileName="SnippingToolApp_11.2602.47.0_ARM64.msix" Offset="69" Size="370194658">
+			<Resources>
+				<Resource Language="EN-US"/>
+				<Resource Language="EN-GB"/>
+				<Resource Scale="200"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="application" Version="11.2602.47.0" Architecture="x64" FileName="SnippingToolApp_11.2602.47.0_x64.msix" Offset="371747973" Size="375738122">
+			<Resources>
+				<Resource Language="EN-US"/>
+				<Resource Language="EN-GB"/>
+				<Resource Scale="200"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-gl" FileName="SnippingToolApp_11.2602.47.0_language-gl.msix" Offset="370598742" Size="23094">
+			<Resources>
+				<Resource Language="gl-es"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-az-latn" FileName="SnippingToolApp_11.2602.47.0_language-az-latn.msix" Offset="370265397" Size="23388">
+			<Resources>
+				<Resource Language="az-latn-az"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-uk" FileName="SnippingToolApp_11.2602.47.0_language-uk.msix" Offset="371404079" Size="24691">
+			<Resources>
+				<Resource Language="uk-ua"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-hi" FileName="SnippingToolApp_11.2602.47.0_language-hi.msix" Offset="370644943" Size="24439">
+			<Resources>
+				<Resource Language="hi-in"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-am" FileName="SnippingToolApp_11.2602.47.0_language-am.msix" Offset="370217487" Size="24120">
+			<Resources>
+				<Resource Language="am-et"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-is" FileName="SnippingToolApp_11.2602.47.0_language-is.msix" Offset="370738336" Size="22768">
+			<Resources>
+				<Resource Language="is-is"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-sq" FileName="SnippingToolApp_11.2602.47.0_language-sq.msix" Offset="371238873" Size="23506">
+			<Resources>
+				<Resource Language="sq-al"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-lt" FileName="SnippingToolApp_11.2602.47.0_language-lt.msix" Offset="370926640" Size="23413">
+			<Resources>
+				<Resource Language="lt-lt"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-sk" FileName="SnippingToolApp_11.2602.47.0_language-sk.msix" Offset="371191984" Size="23510">
+			<Resources>
+				<Resource Language="sk-sk"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ru" FileName="SnippingToolApp_11.2602.47.0_language-ru.msix" Offset="371167339" Size="24546">
+			<Resources>
+				<Resource Language="ru-ru"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-el" FileName="SnippingToolApp_11.2602.47.0_language-el.msix" Offset="370406588" Size="25197">
+			<Resources>
+				<Resource Language="el-gr"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-pl" FileName="SnippingToolApp_11.2602.47.0_language-pl.msix" Offset="371090511" Size="23378">
+			<Resources>
+				<Resource Language="pl-pl"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-et" FileName="SnippingToolApp_11.2602.47.0_language-et.msix" Offset="370457710" Size="22674">
+			<Resources>
+				<Resource Language="et-ee"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-sl" FileName="SnippingToolApp_11.2602.47.0_language-sl.msix" Offset="371215593" Size="23181">
+			<Resources>
+				<Resource Language="sl-si"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.scale-100" FileName="SnippingToolApp_11.2602.47.0_scale-100.msix" Offset="371518982" Size="30480">
+			<Resources>
+				<Resource Scale="100"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ms" FileName="SnippingToolApp_11.2602.47.0_language-ms.msix" Offset="371023162" Size="22166">
+			<Resources>
+				<Resource Language="ms-my"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ml" FileName="SnippingToolApp_11.2602.47.0_language-ml.msix" Offset="370998039" Size="25024">
+			<Resources>
+				<Resource Language="ml-in"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-zh-hant" FileName="SnippingToolApp_11.2602.47.0_language-zh-hant.msix" Offset="371496969" Size="21916">
+			<Resources>
+				<Resource Language="zh-tw"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ta" FileName="SnippingToolApp_11.2602.47.0_language-ta.msix" Offset="371308473" Size="24472">
+			<Resources>
+				<Resource Language="ta-in"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-zh-hans" FileName="SnippingToolApp_11.2602.47.0_language-zh-hans.msix" Offset="371475346" Size="21519">
+			<Resources>
+				<Resource Language="zh-cn"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-th" FileName="SnippingToolApp_11.2602.47.0_language-th.msix" Offset="371357911" Size="23189">
+			<Resources>
+				<Resource Language="th-th"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-lv" FileName="SnippingToolApp_11.2602.47.0_language-lv.msix" Offset="370950152" Size="23106">
+			<Resources>
+				<Resource Language="lv-lv"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-hu" FileName="SnippingToolApp_11.2602.47.0_language-hu.msix" Offset="370692734" Size="23421">
+			<Resources>
+				<Resource Language="hu-hu"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-id" FileName="SnippingToolApp_11.2602.47.0_language-id.msix" Offset="370716254" Size="21983">
+			<Resources>
+				<Resource Language="id-id"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-tr" FileName="SnippingToolApp_11.2602.47.0_language-tr.msix" Offset="371381199" Size="22781">
+			<Resources>
+				<Resource Language="tr-tr"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-nb" FileName="SnippingToolApp_11.2602.47.0_language-nb.msix" Offset="371045427" Size="22309">
+			<Resources>
+				<Resource Language="nb-no"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ja" FileName="SnippingToolApp_11.2602.47.0_language-ja.msix" Offset="370784111" Size="22880">
+			<Resources>
+				<Resource Language="ja-jp"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-kk" FileName="SnippingToolApp_11.2602.47.0_language-kk.msix" Offset="370807090" Size="24240">
+			<Resources>
+				<Resource Language="kk-kz"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-km" FileName="SnippingToolApp_11.2602.47.0_language-km.msix" Offset="370831429" Size="23884">
+			<Resources>
+				<Resource Language="km-kh"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-vi" FileName="SnippingToolApp_11.2602.47.0_language-vi.msix" Offset="371452109" Size="23133">
+			<Resources>
+				<Resource Language="vi-vn"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-lo" FileName="SnippingToolApp_11.2602.47.0_language-lo.msix" Offset="370902618" Size="23923">
+			<Resources>
+				<Resource Language="lo-la"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-kn" FileName="SnippingToolApp_11.2602.47.0_language-kn.msix" Offset="370855412" Size="24413">
+			<Resources>
+				<Resource Language="kn-in"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-it" FileName="SnippingToolApp_11.2602.47.0_language-it.msix" Offset="370761203" Size="22809">
+			<Resources>
+				<Resource Language="it-it"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-hr" FileName="SnippingToolApp_11.2602.47.0_language-hr.msix" Offset="370669481" Size="23154">
+			<Resources>
+				<Resource Language="hr-hr"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-mk" FileName="SnippingToolApp_11.2602.47.0_language-mk.msix" Offset="370973357" Size="24583">
+			<Resources>
+				<Resource Language="mk-mk"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-fil-latn" FileName="SnippingToolApp_11.2602.47.0_language-fil-latn.msix" Offset="370549821" Size="22850">
+			<Resources>
+				<Resource Language="fil-ph"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-fi" FileName="SnippingToolApp_11.2602.47.0_language-fi.msix" Offset="370527000" Size="22716">
+			<Resources>
+				<Resource Language="fi-fi"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-eu" FileName="SnippingToolApp_11.2602.47.0_language-eu.msix" Offset="370480483" Size="22548">
+			<Resources>
+				<Resource Language="eu-es"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-nl" FileName="SnippingToolApp_11.2602.47.0_language-nl.msix" Offset="371067835" Size="22577">
+			<Resources>
+				<Resource Language="nl-nl"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-es" FileName="SnippingToolApp_11.2602.47.0_language-es.msix" Offset="370431884" Size="25727">
+			<Resources>
+				<Resource Language="es-es"/>
+				<Resource Language="es-mx"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-uz-latn" FileName="SnippingToolApp_11.2602.47.0_language-uz-latn.msix" Offset="371428874" Size="23136">
+			<Resources>
+				<Resource Language="uz-latn-uz"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ro" FileName="SnippingToolApp_11.2602.47.0_language-ro.msix" Offset="371144047" Size="23193">
+			<Resources>
+				<Resource Language="ro-ro"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.scale-125" FileName="SnippingToolApp_11.2602.47.0_scale-125.msix" Offset="371549559" Size="34524">
+			<Resources>
+				<Resource Scale="125"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.scale-150" FileName="SnippingToolApp_11.2602.47.0_scale-150.msix" Offset="371584180" Size="43463">
+			<Resources>
+				<Resource Scale="150"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-cs" FileName="SnippingToolApp_11.2602.47.0_language-cs.msix" Offset="370336875" Size="23511">
+			<Resources>
+				<Resource Language="cs-cz"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ca" FileName="SnippingToolApp_11.2602.47.0_language-ca.msix" Offset="370313597" Size="23179">
+			<Resources>
+				<Resource Language="ca-es"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-sr-latn" FileName="SnippingToolApp_11.2602.47.0_language-sr-latn.msix" Offset="371262483" Size="23230">
+			<Resources>
+				<Resource Language="sr-latn-rs"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-sv" FileName="SnippingToolApp_11.2602.47.0_language-sv.msix" Offset="371285812" Size="22562">
+			<Resources>
+				<Resource Language="sv-se"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-bg" FileName="SnippingToolApp_11.2602.47.0_language-bg.msix" Offset="370288884" Size="24614">
+			<Resources>
+				<Resource Language="bg-bg"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-te" FileName="SnippingToolApp_11.2602.47.0_language-te.msix" Offset="371333044" Size="24768">
+			<Resources>
+				<Resource Language="te-in"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ar" FileName="SnippingToolApp_11.2602.47.0_language-ar.msix" Offset="370241706" Size="23587">
+			<Resources>
+				<Resource Language="ar-sa"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-af" FileName="SnippingToolApp_11.2602.47.0_language-af.msix" Offset="370194826" Size="22562">
+			<Resources>
+				<Resource Language="af-za"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-ko" FileName="SnippingToolApp_11.2602.47.0_language-ko.msix" Offset="370879924" Size="22595">
+			<Resources>
+				<Resource Language="ko-kr"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-da" FileName="SnippingToolApp_11.2602.47.0_language-da.msix" Offset="370360485" Size="22636">
+			<Resources>
+				<Resource Language="da-dk"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-he" FileName="SnippingToolApp_11.2602.47.0_language-he.msix" Offset="370621935" Size="22909">
+			<Resources>
+				<Resource Language="he-il"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-fr" FileName="SnippingToolApp_11.2602.47.0_language-fr.msix" Offset="370572770" Size="25873">
+			<Resources>
+				<Resource Language="fr-ca"/>
+				<Resource Language="fr-fr"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-de" FileName="SnippingToolApp_11.2602.47.0_language-de.msix" Offset="370383220" Size="23269">
+			<Resources>
+				<Resource Language="de-de"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-pt" FileName="SnippingToolApp_11.2602.47.0_language-pt.msix" Offset="371113988" Size="29960">
+			<Resources>
+				<Resource Language="pt-br"/>
+				<Resource Language="pt-pt"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.language-fa" FileName="SnippingToolApp_11.2602.47.0_language-fa.msix" Offset="370503130" Size="23771">
+			<Resources>
+				<Resource Language="fa-ir"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+		<Package Type="resource" Version="11.2602.47.0" ResourceId="split.scale-400" FileName="SnippingToolApp_11.2602.47.0_scale-400.msix" Offset="371627740" Size="120142">
+			<Resources>
+				<Resource Scale="400"/>
+			</Resources>
+			<b4:Dependencies>
+				<b4:TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22000.0" MaxVersionTested="10.0.26226.0"/>
+			</b4:Dependencies>
+		</Package>
+	</Packages>
+</Bundle>

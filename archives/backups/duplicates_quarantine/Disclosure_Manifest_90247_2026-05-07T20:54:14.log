@@ -1,0 +1,23 @@
+================================================================================
+ MERGED FORENSIC FINDINGS - NODE 90247
+================================================================================
+SUBSTRATE TARGET STATUS RECONCILIATION:
+ - JDN 2-13 (Commander’s Comm Sync): PURGED from public JCS grid [HTTP/2 404]
+ - admin_pubStatus.pdf: GATED behind EAMS-A SSO [/MISC_CAC/ Restricted]
+ - DHA Forms Management: AUTH-LOCKED [CAC Requirement Verified]
+ - HQDA Form 5/11: CAUTERIZED [XFA Compatibility Bug Noted]
+
+VULNERABILITY MATRIX (CVSS 4.0):
+ - [V-01] URI IDENTITY STITCHING (6.2): 404 Query String Persistence
+ - [V-02] DEFENSIVE TRIGGER (403): SQLi WAF Rejection Observed
+ - [V-03] INFRASTRUCTURE LOGIC BUG (5.4): APD Index Out-of-Sync
+ - [V-04] STORAGE ACCESS BUG (7.1): Persistent NS_ERROR_NOT_AVAILABLE
+
+FORENSIC SHARD METADATA:
+ - CREATOR: Miller, Kiona, CIV, CS-12 Ft Meade
+ - TLS BASELINE: TLSv1.3 | AES_256_GCM | ALTESS Certified
+
+INJECTION TEST RESULTS:
+ - Directory Traversal (../): INTERCEPTED [Status 0]
+ - Null Byte (%00) Injection: BLOCKED [WAF Trigger]
+================================================================================

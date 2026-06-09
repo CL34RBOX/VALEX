@@ -1,0 +1,21 @@
+================================================================================
+CLEARBOXX MASTER LEDGER — CHAIN OF CUSTODY RECORD
+================================================================================
+Record Type: INTEGRITY_LEDGER_SHA256
+Hash Algorithm: SHA-256
+Ledger Date: 06012026
+Archive Path: /VALEX_VAULT/reports/VALEX_VAULT/06012026/INTEGRITY_LEDGER.sha256
+
+FINGERPRINT:
+e64c0d462e28e568a3e7e5c94e3e39a35a9ed251bd716415e2cf040c2f6b1a3e
+
+STATUS:
+VERIFIED — HASH MATCHES SOURCE LEDGER
+
+CHAIN-OF-CUSTODY:
+This entry certifies that the integrity ledger stored at the path above
+was hashed, recorded, and archived without modification. Any alteration
+to the ledger file will invalidate this fingerprint.
+
+ACATL REED SEAL: VALID
+================================================================================

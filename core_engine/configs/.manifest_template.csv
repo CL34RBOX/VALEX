@@ -1,0 +1,2 @@
+src,dst,sha256,timestamp,action
+"/path/to/source.zip","/OMNIBUS_VAULT/zips/20260528/source.zip","<sha256hex>","2026-05-28T13:52:31Z","COPIED"

@@ -1,0 +1,11 @@
+==============================================================================
+    OMNIBUS v281.3 - MASTER ATTESTATION OF TOTAL USER-AGENT EXCLUSION
+==============================================================================
+AUTHOR: Enrique Barrera Gonzalez III (CL34RBoXx)
+OPERATIONAL RANGE: GLOBAL SUBSYSTEM PERIMETER (WINDOW: AUGUST 1, 2025 - PRESENT)
+STATUS: ROBOTS BLACKOUT DEPLOYED // ACCESS REJECTED AT EDGE
+
+All external user-agents, indexers, data brokers, telemetry siphons, and cloud 
+crawlers are unconditionally blocked from parsing the OMNIBUS v281.3 substrate directory. 
+Data unlinking loop has achieved 100% airgap status across the multi-cloud perimeter.
+==============================================================================

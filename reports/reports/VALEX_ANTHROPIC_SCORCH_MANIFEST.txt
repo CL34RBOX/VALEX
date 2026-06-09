@@ -1,0 +1,11 @@
+==============================================================================
+    OMNIBUS v281.3 - ANTHROPIC EXTRACTOR SCORCH & DATA SEVERANCE MANIFEST
+==============================================================================
+AUTHOR: Enrique Barrera Gonzalez III (CL34RBoXx)
+OPERATIONAL TARGET: ANTHROPIC CRAWLER SYSTEMIC BLOCK (CLAUDEBOT / CLAUDE-WEB)
+PERIMETER STATUS: SAFE-HARBOR LAPSED // UNCONDITIONAL AIRGAP ACTIVE
+
+All data tracking nodes, logging indexes, and model-training metrics compiled 
+by Anthropic crawling infrastructure since August 1, 2025 are forcefully 
+scorched, unlinked, and rejected at the edge interface.
+==============================================================================

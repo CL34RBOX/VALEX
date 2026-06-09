@@ -1,0 +1,8 @@
+{
+    "meta": {
+        "report_id": "H1-OMNIBUS-90247-400",
+        "timestamp": "2026-06-03T19:57:19Z",
+        "security_level": "CRITICAL_9.8_CVSS"
+    },
+    "findings_count": 400
+}

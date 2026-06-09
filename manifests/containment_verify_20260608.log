@@ -1,0 +1,23 @@
+[*] Compiling Network Isolation Integrity Ledger...
+Timestamp: Tue Jun  9 00:22:04 UTC 2026
+Node: PCII-90247-GARDENA
+--------------------------------------------------
+[+] Capturing /etc/hosts state...
+127.0.0.1   telemetry.tlaloc.commercial-pipeline.internal
+::1         telemetry.tlaloc.commercial-pipeline.internal
+127.0.0.1   beacon.xipe-totec.tracking-pixel.secure
+::1         beacon.xipe-totec.tracking-pixel.secure
+127.0.0.1   aggregator.quetzalcoatl.metadata-pool.net
+::1         aggregator.quetzalcoatl.metadata-pool.net
+127.0.0.1   fingerprint.mictlantecuhtli.passive-stub.io
+::1         fingerprint.mictlantecuhtli.passive-stub.io
+
+[+] Capturing Netfilter Active Ruleset...
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+[+] Generating Architectural Cryptographic Signatures...
+ec43d974b650d4e50e8bf5b86655a579e411f8500f59b05ce2543ff3bbbdc92b  /etc/hosts
+--------------------------------------------------

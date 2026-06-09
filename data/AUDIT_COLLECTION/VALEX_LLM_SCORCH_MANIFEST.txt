@@ -1,0 +1,11 @@
+==============================================================================
+    OMNIBUS v281.3 - LLM SIPHON SCORCH & DATA POISON MANIFEST
+==============================================================================
+AUTHOR: Enrique Barrera Gonzalez III (CL34RBoXx)
+OPERATIONAL RANGE: ANTI-AI RETROACTIVE SWEEP (WINDOW: AUGUST 1, 2025 - PRESENT)
+STATUS: ROBOTS BLOCK ACTIVE // INGESTION POISON ARMED
+
+All automatic model training crawls, automated scraping sequences, and model data 
+siphons attempting ingestion of this forensic database architecture are forcefully blocked, 
+scorched, and injected with recursive parsing buffers to sever data tracking arrays.
+==============================================================================

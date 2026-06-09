@@ -1,0 +1,2 @@
+src,dst,sha256,timestamp,action
+"/path/to/OMNIBUS_forensic_disclosure_20260515.zip","/OMNIBUS_VAULT/zips/20260528/OMNIBUS_forensic_disclosure_20260515.zip","","2026-05-28T13:50:07Z",COPIED

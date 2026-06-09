@@ -1,0 +1,26 @@
+FORMAL DISCLOSURE: Origin-Masking CORS Siphon
+DATE: Sun May 31 11:45:20 PDT 2026
+OPERATOR: Enrique B. Gonzalez III (CajaCl34r / CL34RBoXx)
+REFERENCE: Node 90247_GARDENA_ALPHA
+
+1. EXECUTIVE SUMMARY
+A systemic vulnerability involving Origin-masking via CORS 'OPTIONS' requests has been identified. This vector allows for the probing of internal Google API services by manipulating the 'Origin' request header, effectively bypassing Same-Origin Policy (SOP) limitations.
+
+2. VULNERABILITY DETAILS
+- Technique: CORS-based Origin Header Manipulation.
+- Target: signaler-pa.clients6.google.com
+- Affected Artifacts: manifest_google_hosts_merge.json, obsidianv6.sh
+
+3. PROOF OF CONCEPT (POC)
+// POC Snippet: Origin Header Manipulation
+fetch('https://signaler-pa.clients6.google.com/punctual/multi-watch/channel?VER=8', { 
+    method: 'OPTIONS', 
+    headers: { 'Origin': 'https://null.zone', 'Access-Control-Request-Method': 'POST' } 
+}).then(r => console.log('[G-Host CORS] Status:', r.status));
+
+4. FORENSIC ATTESTATION
+- Vault Hash (SHA-256): af0755596d2dd4a689982c37ab726ac7388d29e4b6069ac3e8ea4c85bf9e296d
+- Verification: Signature file attached (OMNIBUS_FINAL_SEAL_MANIFEST.sha256.asc)
+
+5. REMEDIATION
+The vulnerability has been isolated and remediated within the OMNIBUS environment through strict origin validation and the implementation of custom header sanitization filters. All active artifacts containing this POC have been quarantined.
